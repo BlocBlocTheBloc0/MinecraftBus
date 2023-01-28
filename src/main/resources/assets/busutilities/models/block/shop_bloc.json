@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "busutilities:blocks/buyticketcarddown",
+    "up": "busutilities:blocks/buyticketcardtop",
+    "north": "busutilities:blocks/buyticketcardsides",
+    "east": "busutilities:blocks/buyticketcardsides",
+    "south": "busutilities:blocks/buyticketcardsides",
+    "west": "busutilities:blocks/buyticketcardsides",
+    "particle": "busutilities:blocks/buyticketcarddown"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,103 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Maintenance GUI",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Maintenance GUI",
+          "x": 168,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "X",
+          "onClick": {
+            "name": "ExitGUI"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "X",
+          "x": 267,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Maintenance Mode is : ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Maintenance Mode is : ",
+          "x": 141,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Maintenace_Mode>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:Maintenace_Mode>",
+          "x": 258,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Set to ON",
+          "onClick": {
+            "name": "MaintenanceModOn"
+          },
+          "width": 71,
+          "height": 20,
+          "name": "Set to ON",
+          "x": 177,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Set to OFF",
+          "onClick": {
+            "name": "MaintenanceModOff"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Set to OFF",
+          "x": 177,
+          "y": 134
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

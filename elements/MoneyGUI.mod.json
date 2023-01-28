@@ -1,0 +1,90 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Money GUI",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Money GUI",
+          "x": 186,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "X",
+          "onClick": {
+            "name": "ExitGUI"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "X",
+          "x": 267,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Ajouter",
+          "onClick": {
+            "name": "MoneyAddopen"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Ajouter",
+          "x": 177,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Retirer",
+          "onClick": {
+            "name": "MoneyRecuAddopen"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Retirer",
+          "x": 177,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Vous avez : <VAR:Money> Money",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Vous avez : <VAR:Money> Money",
+          "x": 141,
+          "y": 152
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

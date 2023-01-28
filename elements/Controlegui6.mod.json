@@ -1,0 +1,115 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 220,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:ticket_use_name_5>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:ticket_use_name_5>",
+          "x": 141,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:ticket_use_text_5>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:ticket_use_text_5>",
+          "x": 141,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:ticket_use_date_5>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:ticket_use_date_5>",
+          "x": 141,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:ticket_use_heure_5>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:ticket_use_heure_5>",
+          "x": 141,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Page 6/10",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Page 6/10",
+          "x": 195,
+          "y": 197
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "Controlecmdopengui5"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 114,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "onClick": {
+            "name": "Controlecmdopengui7"
+          },
+          "width": 30,
+          "height": 20,
+          "name": ">",
+          "x": 285,
+          "y": 188
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
