@@ -78,6 +78,18 @@ public class BusutilitiesModItems {
 	public static final RegistryObject<Item> CARTEDETRANSPORT_3 = REGISTRY.register("cartedetransport_3", () -> new Cartedetransport3Item());
 	public static final RegistryObject<Item> CARTEDETRANSPORT_2 = REGISTRY.register("cartedetransport_2", () -> new Cartedetransport2Item());
 	public static final RegistryObject<Item> CARTEDETRANSPORT_1 = REGISTRY.register("cartedetransport_1", () -> new Cartedetransport1Item());
+	public static final RegistryObject<Item> LIGNE_A = block(BusutilitiesModBlocks.LIGNE_A, BusutilitiesModTabs.TAB_CREATIFTAB);
+	public static final RegistryObject<Item> LIGNE_B = block(BusutilitiesModBlocks.LIGNE_B, BusutilitiesModTabs.TAB_CREATIFTAB);
+	public static final RegistryObject<Item> LIGNE_C = block(BusutilitiesModBlocks.LIGNE_C, BusutilitiesModTabs.TAB_CREATIFTAB);
+	public static final RegistryObject<Item> LIGNE_D = block(BusutilitiesModBlocks.LIGNE_D, BusutilitiesModTabs.TAB_CREATIFTAB);
+	public static final RegistryObject<Item> LIGNE_E = block(BusutilitiesModBlocks.LIGNE_E, BusutilitiesModTabs.TAB_CREATIFTAB);
+	public static final RegistryObject<Item> LIGNE_F = block(BusutilitiesModBlocks.LIGNE_F, BusutilitiesModTabs.TAB_CREATIFTAB);
+	public static final RegistryObject<Item> LIGNE_G = block(BusutilitiesModBlocks.LIGNE_G, BusutilitiesModTabs.TAB_CREATIFTAB);
+	public static final RegistryObject<Item> LIGNE_H = block(BusutilitiesModBlocks.LIGNE_H, BusutilitiesModTabs.TAB_CREATIFTAB);
+	public static final RegistryObject<Item> LIGNE_EA = block(BusutilitiesModBlocks.LIGNE_EA, BusutilitiesModTabs.TAB_CREATIFTAB);
+	public static final RegistryObject<Item> LIGNE_EB = block(BusutilitiesModBlocks.LIGNE_EB, BusutilitiesModTabs.TAB_CREATIFTAB);
+	public static final RegistryObject<Item> LIGNE_EC = block(BusutilitiesModBlocks.LIGNE_EC, BusutilitiesModTabs.TAB_CREATIFTAB);
+	public static final RegistryObject<Item> LIGNE_ED = block(BusutilitiesModBlocks.LIGNE_ED, BusutilitiesModTabs.TAB_CREATIFTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

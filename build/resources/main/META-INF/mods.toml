@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="Public Domain"
+
+[[mods]]
+modId="busutilities"
+version="1"
+displayName="BusUtilities"
+credits="Yo, nobody read this :)"
+displayURL="https://mcreator.net"
+authors="BlocBlocTheBloc"
+description='''
+No descripts
+'''
+
+[[dependencies.busutilities]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

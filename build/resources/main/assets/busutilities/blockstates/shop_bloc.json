@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "busutilities:block/shop_bloc"
+    },
+    "facing=east": {
+      "model": "busutilities:block/shop_bloc",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "busutilities:block/shop_bloc",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "busutilities:block/shop_bloc",
+      "y": 270
+    }
+  }
+}
