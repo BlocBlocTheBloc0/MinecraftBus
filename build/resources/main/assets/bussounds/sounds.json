@@ -1,0 +1,1307 @@
+{
+  "place_campagne": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:place_campagnet",
+        "stream": false
+      }
+    ]
+  },
+  "champs_de_ble": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:champs_de_ble",
+        "stream": false
+      }
+    ]
+  },
+  "sogzit": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:sogzit",
+        "stream": false
+      }
+    ]
+  },
+  "pain": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:pain",
+        "stream": false
+      }
+    ]
+  },
+  "feb_21": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:21_feb",
+        "stream": false
+      }
+    ]
+  },
+  "parc_commun": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:parc_commun",
+        "stream": false
+      }
+    ]
+  },
+  "roust": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:roust",
+        "stream": false
+      }
+    ]
+  },
+  "point_bronze": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:point_bronze",
+        "stream": false
+      }
+    ]
+  },
+  "centre_ville": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:centre_ville",
+        "stream": false
+      }
+    ]
+  },
+  "gare": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:gare",
+        "stream": false
+      }
+    ]
+  },
+  "castadream": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:castadream",
+        "stream": false
+      }
+    ]
+  },
+  "feb_29": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:29_feb",
+        "stream": false
+      }
+    ]
+  },
+  "litieum": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:litieum",
+        "stream": false
+      }
+    ]
+  },
+  "frank": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:frank",
+        "stream": false
+      }
+    ]
+  },
+  "abby": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:abby",
+        "stream": false
+      }
+    ]
+  },
+  "decolor": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:decolor",
+        "stream": false
+      }
+    ]
+  },
+  "roland": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:roland",
+        "stream": false
+      }
+    ]
+  },
+  "centre_logistique": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:centre_logistique",
+        "stream": false
+      }
+    ]
+  },
+  "ile": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:ile",
+        "stream": false
+      }
+    ]
+  },
+  "feuwar": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:feuwar",
+        "stream": false
+      }
+    ]
+  },
+  "rails": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:rails",
+        "stream": false
+      }
+    ]
+  },
+  "cimetiere": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:cimetiere",
+        "stream": false
+      }
+    ]
+  },
+  "rue": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:rue",
+        "stream": false
+      }
+    ]
+  },
+  "nov_11": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:11_nov",
+        "stream": false
+      }
+    ]
+  },
+  "campagne": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:campagne",
+        "stream": false
+      }
+    ]
+  },
+  "fontaine": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:fontaine",
+        "stream": false
+      }
+    ]
+  },
+  "charmaux": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:charmaux",
+        "stream": false
+      }
+    ]
+  },
+  "pont_deau": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:pont_deau",
+        "stream": false
+      }
+    ]
+  },
+  "flaurete": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:flaurete",
+        "stream": false
+      }
+    ]
+  },
+  "durian": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:durian",
+        "stream": false
+      }
+    ]
+  },
+  "troubadour": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:troubadour",
+        "stream": false
+      }
+    ]
+  },
+  "st_poulin": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:st_poulin",
+        "stream": false
+      }
+    ]
+  },
+  "eduico": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:eduico",
+        "stream": false
+      }
+    ]
+  },
+  "mais_1": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:1_mais",
+        "stream": false
+      }
+    ]
+  },
+  "theatre": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:theatre",
+        "stream": false
+      }
+    ]
+  },
+  "viticul": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:viticul",
+        "stream": false
+      }
+    ]
+  },
+  "outils": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:outils",
+        "stream": false
+      }
+    ]
+  },
+  "nuances": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:nuances",
+        "stream": false
+      }
+    ]
+  },
+  "point_rond": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:point_rond",
+        "stream": false
+      }
+    ]
+  },
+  "sans": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:sans",
+        "stream": false
+      }
+    ]
+  },
+  "corps": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:corps",
+        "stream": false
+      }
+    ]
+  },
+  "jui_14": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:14_jui",
+        "stream": false
+      }
+    ]
+  },
+  "leguerrier": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:leguerrier",
+        "stream": false
+      }
+    ]
+  },
+  "residance": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:residance",
+        "stream": false
+      }
+    ]
+  },
+  "renar": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:renar",
+        "stream": false
+      }
+    ]
+  },
+  "sources": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:sources",
+        "stream": false
+      }
+    ]
+  },
+  "romains": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:romains",
+        "stream": false
+      }
+    ]
+  },
+  "feu": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:feu",
+        "stream": false
+      }
+    ]
+  },
+  "janv_1": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:1_janv",
+        "stream": false
+      }
+    ]
+  },
+  "restauration": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:restauration",
+        "stream": false
+      }
+    ]
+  },
+  "marche": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:marche",
+        "stream": false
+      }
+    ]
+  },
+  "theo": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:theo",
+        "stream": false
+      }
+    ]
+  },
+  "roudin": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:roudin",
+        "stream": false
+      }
+    ]
+  },
+  "centre_administratif": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:centre_administratif",
+        "stream": false
+      }
+    ]
+  },
+  "chemin": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:chemin",
+        "stream": false
+      }
+    ]
+  },
+  "delacour": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:delacour",
+        "stream": false
+      }
+    ]
+  },
+  "mania": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:mania",
+        "stream": false
+      }
+    ]
+  },
+  "mais": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:mais",
+        "stream": false
+      }
+    ]
+  },
+  "ducarton": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:ducarton",
+        "stream": false
+      }
+    ]
+  },
+  "tunes": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:tunes",
+        "stream": false
+      }
+    ]
+  },
+  "hopital": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:hopital",
+        "stream": false
+      }
+    ]
+  },
+  "lamcombre": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:lamcombre",
+        "stream": false
+      }
+    ]
+  },
+  "lacanaile": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:lacanaile",
+        "stream": false
+      }
+    ]
+  },
+  "ancienne_gare": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:ancienne_gare",
+        "stream": false
+      }
+    ]
+  },
+  "clinique": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:clinique",
+        "stream": false
+      }
+    ]
+  },
+  "appartement": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:appartement",
+        "stream": false
+      }
+    ]
+  },
+  "aurelien": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:aurelien",
+        "stream": false
+      }
+    ]
+  },
+  "use": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:use",
+        "stream": false
+      }
+    ]
+  },
+  "surcote": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:surcote",
+        "stream": false
+      }
+    ]
+  },
+  "pigment": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:pigment",
+        "stream": false
+      }
+    ]
+  },
+  "potage": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:potage",
+        "stream": false
+      }
+    ]
+  },
+  "duboulange": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:duboulange",
+        "stream": false
+      }
+    ]
+  },
+  "ete": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:ete",
+        "stream": false
+      }
+    ]
+  },
+  "magasins_usine": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:magasins_usinet",
+        "stream": false
+      }
+    ]
+  },
+  "centre_commercial": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:centre_commercial",
+        "stream": false
+      }
+    ]
+  },
+  "thelay": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:thelay",
+        "stream": false
+      }
+    ]
+  },
+  "olmar": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:olmar",
+        "stream": false
+      }
+    ]
+  },
+  "bourse": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:bourse",
+        "stream": false
+      }
+    ]
+  },
+  "louis": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:louis",
+        "stream": false
+      }
+    ]
+  },
+  "parvi": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:parvi",
+        "stream": false
+      }
+    ]
+  },
+  "degant": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:degant",
+        "stream": false
+      }
+    ]
+  },
+  "passage": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:passage",
+        "stream": false
+      }
+    ]
+  },
+  "nagi": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:nagi",
+        "stream": false
+      }
+    ]
+  },
+  "coeur": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:coeur",
+        "stream": false
+      }
+    ]
+  },
+  "paix": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:paix",
+        "stream": false
+      }
+    ]
+  },
+  "char": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:char",
+        "stream": false
+      }
+    ]
+  },
+  "loge": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:loge",
+        "stream": false
+      }
+    ]
+  },
+  "college_st_demain": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:college_st_demain",
+        "stream": false
+      }
+    ]
+  },
+  "kiro": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:kiro",
+        "stream": false
+      }
+    ]
+  },
+  "universite": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:universite",
+        "stream": false
+      }
+    ]
+  },
+  "campus": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:campus",
+        "stream": false
+      }
+    ]
+  },
+  "ecoles": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:ecoles",
+        "stream": false
+      }
+    ]
+  },
+  "chants": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:chants",
+        "stream": false
+      }
+    ]
+  },
+  "verti": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:verti",
+        "stream": false
+      }
+    ]
+  },
+  "martre": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:martre",
+        "stream": false
+      }
+    ]
+  },
+  "lithya": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:lithya",
+        "stream": false
+      }
+    ]
+  },
+  "soleil": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:soleil",
+        "stream": false
+      }
+    ]
+  },
+  "sous_cote": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:sous_cote",
+        "stream": false
+      }
+    ]
+  },
+  "elemento": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:elemento",
+        "stream": false
+      }
+    ]
+  },
+  "pont_de_laube": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:pont_de_laube",
+        "stream": false
+      }
+    ]
+  },
+  "bulon": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:bulon",
+        "stream": false
+      }
+    ]
+  },
+  "habitacle": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:habitacle",
+        "stream": false
+      }
+    ]
+  },
+  "luen": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:luen",
+        "stream": false
+      }
+    ]
+  },
+  "hakim": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:hakim",
+        "stream": false
+      }
+    ]
+  },
+  "soufflerie": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:soufflerie",
+        "stream": false
+      }
+    ]
+  },
+  "calamarde": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:calamarde",
+        "stream": false
+      }
+    ]
+  },
+  "parc_logistique": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:parc_logistique",
+        "stream": false
+      }
+    ]
+  },
+  "tails": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:tails",
+        "stream": false
+      }
+    ]
+  },
+  "pont_de_lair": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:pont_de_lair",
+        "stream": false
+      }
+    ]
+  },
+  "jardins_de_la_gare": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:jardins_de_la_gare",
+        "stream": false
+      }
+    ]
+  },
+  "gare_centrale": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:gare_centrale",
+        "stream": false
+      }
+    ]
+  },
+  "mairie": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:mairie",
+        "stream": false
+      }
+    ]
+  },
+  "rouloni": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:rouloni",
+        "stream": false
+      }
+    ]
+  },
+  "sep_1": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:1_sep",
+        "stream": false
+      }
+    ]
+  },
+  "parsolona": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:parsolona",
+        "stream": false
+      }
+    ]
+  },
+  "sabrina": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:sabrina",
+        "stream": false
+      }
+    ]
+  },
+  "pres_bulon": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:pres_bulon",
+        "stream": false
+      }
+    ]
+  },
+  "humbourgeur": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:humbourgeur",
+        "stream": false
+      }
+    ]
+  },
+  "nord": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:nord",
+        "stream": false
+      }
+    ]
+  },
+  "fiouse": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:fiouse",
+        "stream": false
+      }
+    ]
+  },
+  "oriental": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:oriental",
+        "stream": false
+      }
+    ]
+  },
+  "mont": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:mont",
+        "stream": false
+      }
+    ]
+  },
+  "champs_de_davi": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:champs_de_davi",
+        "stream": false
+      }
+    ]
+  },
+  "armageddon": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:armageddon",
+        "stream": false
+      }
+    ]
+  },
+  "tetedu": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:tetedu",
+        "stream": false
+      }
+    ]
+  },
+  "maternel": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:maternel",
+        "stream": false
+      }
+    ]
+  },
+  "demi-ciel": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:demi-ciel",
+        "stream": false
+      }
+    ]
+  },
+  "porte_au_bois": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:porte_au_bois",
+        "stream": false
+      }
+    ]
+  },
+  "champonais": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:champonais",
+        "stream": false
+      }
+    ]
+  },
+  "masteur": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:masteur",
+        "stream": false
+      }
+    ]
+  },
+  "floch": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:floch",
+        "stream": false
+      }
+    ]
+  },
+  "lumiere": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:lumiere",
+        "stream": false
+      }
+    ]
+  },
+  "cheminee": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:cheminee",
+        "stream": false
+      }
+    ]
+  },
+  "starless": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:starless",
+        "stream": false
+      }
+    ]
+  },
+  "trident": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:trident",
+        "stream": false
+      }
+    ]
+  },
+  "banleta": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:banleta",
+        "stream": false
+      }
+    ]
+  },
+  "an": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:an",
+        "stream": false
+      }
+    ]
+  },
+  "samruto": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:samruto",
+        "stream": false
+      }
+    ]
+  },
+  "dachan": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:dachan",
+        "stream": false
+      }
+    ]
+  },
+  "crytaline": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:crytaline",
+        "stream": false
+      }
+    ]
+  },
+  "kyou": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:kyou",
+        "stream": false
+      }
+    ]
+  },
+  "ecolesnt": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:ecolesnt",
+        "stream": false
+      }
+    ]
+  },
+  "residancent": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:residancent",
+        "stream": false
+      }
+    ]
+  },
+  "pont_de_laubent": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:pont_de_laubent",
+        "stream": false
+      }
+    ]
+  },
+  "magasins_usinent": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bussounds:magasins_usine",
+        "stream": false
+      }
+    ]
+  }
+}
