@@ -2594,6 +2594,135 @@
       "locked_code": false,
       "registry_name": "ligne_ed",
       "path": "~/Lignes"
+    },
+    {
+      "name": "MoneyGenT1",
+      "type": "item",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_gen_t_1",
+      "path": "~/MoneySystem/Generator/Tier 1"
+    },
+    {
+      "name": "MoneygiveT1",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moneygive_t_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/MoneySystem/Generator/Tier 1"
+    },
+    {
+      "name": "News",
+      "type": "command",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "news",
+      "path": "~/Changelogs"
+    },
+    {
+      "name": "NewsGUI",
+      "type": "gui",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "news_gui",
+      "path": "~/Changelogs"
+    },
+    {
+      "name": "Newsopen",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "newsopen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Changelogs"
+    },
+    {
+      "name": "MoneyGenT2",
+      "type": "item",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_gen_t_2",
+      "path": "~/MoneySystem/Generator/Tier2"
+    },
+    {
+      "name": "MoneyGen2",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_gen_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/MoneySystem/Generator/Tier2"
+    },
+    {
+      "name": "UpgradeT1",
+      "type": "item",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade_t_1",
+      "path": "~/MoneySystem/Generator/Upgrades"
+    },
+    {
+      "name": "Upgradet1craft",
+      "type": "recipe",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgradet_1craft",
+      "path": "~/MoneySystem/Generator/Upgrades"
     }
   ],
   "variable_elements": [
@@ -2868,6 +2997,7 @@
       "item.busutilities.cartedetransport_2": "Carte de transport",
       "item.busutilities.ticket_10_voyage": "Ticket 10 Voyage",
       "item.busutilities.ticket_10_voyage_7": "Ticket 10 Voyage",
+      "item.busutilities.money_gen_t_2": "Money Generator",
       "item.busutilities.ticket_10_voyage_6": "Ticket 10 Voyage",
       "item.busutilities.ticket_10_voyage_5": "Ticket 10 Voyage",
       "item.busutilities.ticket_10_voyage_4": "Ticket 10 Voyage",
@@ -2875,6 +3005,8 @@
       "item.busutilities.ticket_10_voyage_2": "Ticket 10 Voyage",
       "item.busutilities.ticket_3_voyage": "Ticket 3 Voyage",
       "item.busutilities.ticket_1_voyage": "Ticket 1 Voyage",
+      "item.busutilities.money_gen_t_1": "Money Generator",
+      "item.busutilities.upgrade_t_1": "Upgrade Tier 1 -\u003e Tier 2",
       "block.busutilities.ligne_a": "Ligne A",
       "block.busutilities.ligne_b": "Ligne B",
       "block.busutilities.ligne_c": "Ligne C",
@@ -2914,6 +3046,7 @@
       "item.busutilities.cartedetransport_2": "Carte de transport",
       "item.busutilities.ticket_10_voyage": "Ticket 10 Voyage",
       "item.busutilities.ticket_10_voyage_7": "Ticket 10 Voyage",
+      "item.busutilities.money_gen_t_2": "Money Gen T 2",
       "item.busutilities.ticket_10_voyage_6": "Ticket 10 Voyage",
       "item.busutilities.ticket_10_voyage_5": "Ticket 10 Voyage",
       "item.busutilities.ticket_10_voyage_4": "Ticket 10 Voyage",
@@ -2921,6 +3054,8 @@
       "item.busutilities.ticket_10_voyage_2": "Ticket 10 Voyage",
       "item.busutilities.ticket_3_voyage": "Ticket 3 Voyage",
       "item.busutilities.ticket_1_voyage": "Ticket 1 Voyage",
+      "item.busutilities.money_gen_t_1": "Money Generator",
+      "item.busutilities.upgrade_t_1": "Upgrade Tier 1 -\u003e Tier 2",
       "block.busutilities.ligne_a": "Ligne A",
       "block.busutilities.ligne_b": "Ligne A",
       "block.busutilities.ligne_c": "Ligne A",
@@ -3076,10 +3211,36 @@
       },
       {
         "name": "MoneySystem",
-        "children": []
+        "children": [
+          {
+            "name": "Generator",
+            "children": [
+              {
+                "name": "Tier 1",
+                "children": []
+              },
+              {
+                "name": "Upgrades",
+                "children": []
+              },
+              {
+                "name": "Tier2",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Lignes",
+        "children": []
+      },
+      {
+        "name": "Changelogs",
+        "children": []
+      },
+      {
+        "name": "Aide",
         "children": []
       }
     ]

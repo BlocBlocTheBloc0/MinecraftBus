@@ -14,6 +14,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 import fr.blocblocthebloc.busutilities.client.gui.ShopchoixScreen;
 import fr.blocblocthebloc.busutilities.client.gui.ServerToolGUIScreen;
 import fr.blocblocthebloc.busutilities.client.gui.ServerCMDGUIScreen;
+import fr.blocblocthebloc.busutilities.client.gui.NewsGUIScreen;
 import fr.blocblocthebloc.busutilities.client.gui.MoneyRecuGUIScreen;
 import fr.blocblocthebloc.busutilities.client.gui.MoneyGUIScreen;
 import fr.blocblocthebloc.busutilities.client.gui.MoneyAddGUIScreen;
@@ -71,6 +72,7 @@ public class BusutilitiesModScreens {
 			MenuScreens.register(BusutilitiesModMenus.MONEY_ADD_GUI.get(), MoneyAddGUIScreen::new);
 			MenuScreens.register(BusutilitiesModMenus.MONEY_RECU_GUI.get(), MoneyRecuGUIScreen::new);
 			MenuScreens.register(BusutilitiesModMenus.BUY_TICKET_1_EXPRESS_GUI.get(), BuyTicket1ExpressGUIScreen::new);
+			MenuScreens.register(BusutilitiesModMenus.NEWS_GUI.get(), NewsGUIScreen::new);
 		});
 	}
 }

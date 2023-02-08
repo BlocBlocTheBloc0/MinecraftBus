@@ -14,6 +14,7 @@ import net.minecraft.world.inventory.MenuType;
 import fr.blocblocthebloc.busutilities.world.inventory.ShopchoixMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.ServerToolGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.ServerCMDGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.NewsGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyRecuGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyAddGUIMenu;
@@ -96,4 +97,5 @@ public class BusutilitiesModMenus {
 			() -> IForgeMenuType.create(MoneyRecuGUIMenu::new));
 	public static final RegistryObject<MenuType<BuyTicket1ExpressGUIMenu>> BUY_TICKET_1_EXPRESS_GUI = REGISTRY.register("buy_ticket_1_express_gui",
 			() -> IForgeMenuType.create(BuyTicket1ExpressGUIMenu::new));
+	public static final RegistryObject<MenuType<NewsGUIMenu>> NEWS_GUI = REGISTRY.register("news_gui", () -> IForgeMenuType.create(NewsGUIMenu::new));
 }
