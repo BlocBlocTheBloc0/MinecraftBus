@@ -1,0 +1,11 @@
+{
+  "_fv": 34,
+  "_type": "tab",
+  "definition": {
+    "name": "BusSounds",
+    "icon": {
+      "value": "CUSTOM:PlaceCampagne"
+    },
+    "showSearch": false
+  }
+}
