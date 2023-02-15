@@ -1,0 +1,96 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Aide",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Aide",
+          "x": 195,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Lignes",
+          "onClick": {
+            "name": "LignesAcces"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Lignes",
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Tickets",
+          "onClick": {
+            "name": "OpenAidt1"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Tickets",
+          "x": 231,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Lieu",
+          "width": 46,
+          "height": 20,
+          "name": "Lieu",
+          "x": 132,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Money",
+          "width": 51,
+          "height": 20,
+          "name": "Money",
+          "x": 240,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Crédits",
+          "width": 61,
+          "height": 20,
+          "name": "Crédits",
+          "x": 177,
+          "y": 179
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -79,7 +79,7 @@ chatPreview:1
 onlyShowSecureChat:false
 key_key.attack:key.mouse.left
 key_key.use:key.mouse.right
-key_key.forward:key.keyboard.w
+key_key.forward:key.keyboard.z
 key_key.left:key.keyboard.a
 key_key.back:key.keyboard.s
 key_key.right:key.keyboard.d

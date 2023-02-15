@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "busutilities:money_gen_t_2"
+    },
+    {
+      "item": "busutilities:upgrade_t_2"
+    }
+  ],
+  "result": {
+    "item": "busutilities:money_gen_t_2",
+    "count": 1
+  }
+}

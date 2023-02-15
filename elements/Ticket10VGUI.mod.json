@@ -1,0 +1,151 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 208,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Ticket 10 Voyages",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Ticket 10 Voyages",
+          "x": 195,
+          "y": 26
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ticket_10_voyage.png",
+          "use1Xscale": false,
+          "name": "ticket_10_voyage.png",
+          "x": 150,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Coût : 10 Emeraudes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Coût : 10 Emeraudes",
+          "x": 150,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Temps de voyage : 1h",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Temps de voyage : 1h",
+          "x": 150,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Nombre de voyages : 10",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Nombre de voyages : 10",
+          "x": 150,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Lieu d'achat :",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Lieu d'achat :",
+          "x": 150,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "-Gare",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "-Gare",
+          "x": 159,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "-Point de vente",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "-Point de vente",
+          "x": 159,
+          "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "onClick": {
+            "name": "OpenAidCarte"
+          },
+          "width": 30,
+          "height": 20,
+          "name": ">",
+          "x": 267,
+          "y": 197
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "OpenAidT3"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 132,
+          "y": 197
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

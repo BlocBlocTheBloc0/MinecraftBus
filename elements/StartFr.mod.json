@@ -1,0 +1,115 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 204,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Bienvenue sur la map MinecraftBus !",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Bienvenue sur la map MinecraftBus !",
+          "x": 122,
+          "y": 42
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Sur cette map vous allez",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Sur cette map vous allez",
+          "x": 123,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "pouvoir expérimenter le système",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "pouvoir expérimenter le système",
+          "x": 123,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "de transport en commun sur Minecraft",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "de transport en commun sur Minecraft",
+          "x": 123,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "avec les trains du mod Create",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "avec les trains du mod Create",
+          "x": 123,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Suite",
+          "onClick": {
+            "name": "StartFrOp0"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Suite",
+          "x": 258,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Fermer",
+          "onClick": {
+            "name": "ExitGUI"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Fermer",
+          "x": 186,
+          "y": 179
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

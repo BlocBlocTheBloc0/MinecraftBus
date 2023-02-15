@@ -11,6 +11,21 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import fr.blocblocthebloc.busutilities.world.inventory.Ticket3VGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.Ticket1VGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.Ticket10VGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.StartlangMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.StartFrMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.StartFr9Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.StartFr8Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.StartFr7Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.StartFr6Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.StartFr5Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.StartFr4Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.StartFr3Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.StartFr2Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.StartFr1Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.StartFr0Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.ShopchoixMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.ServerToolGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.ServerCMDGUIMenu;
@@ -19,6 +34,7 @@ import fr.blocblocthebloc.busutilities.world.inventory.MoneyRecuGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyAddGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MaintenanceModMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.HelpMenuMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.CreateCardMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.ControleguiMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.Controlegui9Menu;
@@ -31,6 +47,7 @@ import fr.blocblocthebloc.busutilities.world.inventory.Controlegui3Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.Controlegui2Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.Controlegui10Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.CarteexistanteMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.CarteGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.BuyTicket3Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.BuyTicket1Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.BuyTicket1ExpressGUIMenu;
@@ -98,4 +115,37 @@ public class BusutilitiesModMenus {
 	public static final RegistryObject<MenuType<BuyTicket1ExpressGUIMenu>> BUY_TICKET_1_EXPRESS_GUI = REGISTRY.register("buy_ticket_1_express_gui",
 			() -> IForgeMenuType.create(BuyTicket1ExpressGUIMenu::new));
 	public static final RegistryObject<MenuType<NewsGUIMenu>> NEWS_GUI = REGISTRY.register("news_gui", () -> IForgeMenuType.create(NewsGUIMenu::new));
+	public static final RegistryObject<MenuType<StartlangMenu>> STARTLANG = REGISTRY.register("startlang",
+			() -> IForgeMenuType.create(StartlangMenu::new));
+	public static final RegistryObject<MenuType<StartFrMenu>> START_FR = REGISTRY.register("start_fr", () -> IForgeMenuType.create(StartFrMenu::new));
+	public static final RegistryObject<MenuType<StartFr0Menu>> START_FR_0 = REGISTRY.register("start_fr_0",
+			() -> IForgeMenuType.create(StartFr0Menu::new));
+	public static final RegistryObject<MenuType<StartFr1Menu>> START_FR_1 = REGISTRY.register("start_fr_1",
+			() -> IForgeMenuType.create(StartFr1Menu::new));
+	public static final RegistryObject<MenuType<StartFr2Menu>> START_FR_2 = REGISTRY.register("start_fr_2",
+			() -> IForgeMenuType.create(StartFr2Menu::new));
+	public static final RegistryObject<MenuType<StartFr3Menu>> START_FR_3 = REGISTRY.register("start_fr_3",
+			() -> IForgeMenuType.create(StartFr3Menu::new));
+	public static final RegistryObject<MenuType<StartFr4Menu>> START_FR_4 = REGISTRY.register("start_fr_4",
+			() -> IForgeMenuType.create(StartFr4Menu::new));
+	public static final RegistryObject<MenuType<StartFr5Menu>> START_FR_5 = REGISTRY.register("start_fr_5",
+			() -> IForgeMenuType.create(StartFr5Menu::new));
+	public static final RegistryObject<MenuType<StartFr6Menu>> START_FR_6 = REGISTRY.register("start_fr_6",
+			() -> IForgeMenuType.create(StartFr6Menu::new));
+	public static final RegistryObject<MenuType<StartFr7Menu>> START_FR_7 = REGISTRY.register("start_fr_7",
+			() -> IForgeMenuType.create(StartFr7Menu::new));
+	public static final RegistryObject<MenuType<StartFr8Menu>> START_FR_8 = REGISTRY.register("start_fr_8",
+			() -> IForgeMenuType.create(StartFr8Menu::new));
+	public static final RegistryObject<MenuType<StartFr9Menu>> START_FR_9 = REGISTRY.register("start_fr_9",
+			() -> IForgeMenuType.create(StartFr9Menu::new));
+	public static final RegistryObject<MenuType<HelpMenuMenu>> HELP_MENU = REGISTRY.register("help_menu",
+			() -> IForgeMenuType.create(HelpMenuMenu::new));
+	public static final RegistryObject<MenuType<Ticket1VGUIMenu>> TICKET_1_VGUI = REGISTRY.register("ticket_1_vgui",
+			() -> IForgeMenuType.create(Ticket1VGUIMenu::new));
+	public static final RegistryObject<MenuType<Ticket3VGUIMenu>> TICKET_3_VGUI = REGISTRY.register("ticket_3_vgui",
+			() -> IForgeMenuType.create(Ticket3VGUIMenu::new));
+	public static final RegistryObject<MenuType<Ticket10VGUIMenu>> TICKET_10_VGUI = REGISTRY.register("ticket_10_vgui",
+			() -> IForgeMenuType.create(Ticket10VGUIMenu::new));
+	public static final RegistryObject<MenuType<CarteGUIMenu>> CARTE_GUI = REGISTRY.register("carte_gui",
+			() -> IForgeMenuType.create(CarteGUIMenu::new));
 }

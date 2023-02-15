@@ -1,0 +1,194 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 410,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Suite",
+          "onClick": {
+            "name": "StartFrOp5"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Suite",
+          "x": 357,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Fermer",
+          "onClick": {
+            "name": "ExitGUI"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Fermer",
+          "x": 186,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Choses à savoir !",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Choses à savoir !",
+          "x": 168,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Retour",
+          "onClick": {
+            "name": "StartFrOp3"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Retour",
+          "x": 15,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Abonnement Essentiel :",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Abonnement Essentiel :",
+          "x": 15,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "5 Voyages de 1h",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "5 Voyages de 1h",
+          "x": 33,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "4 Emeraudes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "4 Emeraudes",
+          "x": 42,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Abonnement Illimité :",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Abonnement Illimité :",
+          "x": 159,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "∞ Voyages de 1h",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "∞ Voyages de 1h",
+          "x": 177,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "64 Emeraudes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "64 Emeraudes",
+          "x": 186,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Abonnement 10 Voyages",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Abonnement 10 Voyages",
+          "x": 303,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "10 Voyages de 1h",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "10 Voyages de 1h",
+          "x": 312,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "8 Emeraudes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "8 Emeraudes",
+          "x": 321,
+          "y": 125
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

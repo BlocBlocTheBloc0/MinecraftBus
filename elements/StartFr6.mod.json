@@ -1,0 +1,155 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 204,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Suite",
+          "onClick": {
+            "name": "StartFrOp7"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Suite",
+          "x": 258,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Fermer",
+          "onClick": {
+            "name": "ExitGUI"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Fermer",
+          "x": 186,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Ticket d'urgence",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Ticket d'urgence",
+          "x": 168,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Retour",
+          "onClick": {
+            "name": "StartFrOp5"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Retour",
+          "x": 114,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Toutefois si vous n'avez pas",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Toutefois si vous n'avez pas",
+          "x": 123,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "pu acheter de titre, une option",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "pu acheter de titre, une option",
+          "x": 123,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "est disponible pour vous !",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "est disponible pour vous !",
+          "x": 123,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Le ticket d'urgence est",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Le ticket d'urgence est",
+          "x": 123,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "comme un ticket 1 voyage mais",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "comme un ticket 1 voyage mais",
+          "x": 123,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "facturé au prix de 2 emeraudes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "facturé au prix de 2 emeraudes",
+          "x": 123,
+          "y": 152
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

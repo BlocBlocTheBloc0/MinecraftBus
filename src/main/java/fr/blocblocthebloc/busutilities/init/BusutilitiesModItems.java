@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import fr.blocblocthebloc.busutilities.item.UpgradeT2Item;
 import fr.blocblocthebloc.busutilities.item.UpgradeT1Item;
 import fr.blocblocthebloc.busutilities.item.Ticket3VoyageItem;
 import fr.blocblocthebloc.busutilities.item.Ticket3Voyage2Item;
@@ -31,6 +32,7 @@ import fr.blocblocthebloc.busutilities.item.Ticket10Voyage3Item;
 import fr.blocblocthebloc.busutilities.item.Ticket10Voyage2Item;
 import fr.blocblocthebloc.busutilities.item.Ticket10Voyage1Item;
 import fr.blocblocthebloc.busutilities.item.Ticket10Voyage0Item;
+import fr.blocblocthebloc.busutilities.item.MoneyGenT3Item;
 import fr.blocblocthebloc.busutilities.item.MoneyGenT2Item;
 import fr.blocblocthebloc.busutilities.item.MoneyGenT1Item;
 import fr.blocblocthebloc.busutilities.item.CartedetransportItem;
@@ -96,6 +98,8 @@ public class BusutilitiesModItems {
 	public static final RegistryObject<Item> MONEY_GEN_T_1 = REGISTRY.register("money_gen_t_1", () -> new MoneyGenT1Item());
 	public static final RegistryObject<Item> MONEY_GEN_T_2 = REGISTRY.register("money_gen_t_2", () -> new MoneyGenT2Item());
 	public static final RegistryObject<Item> UPGRADE_T_1 = REGISTRY.register("upgrade_t_1", () -> new UpgradeT1Item());
+	public static final RegistryObject<Item> MONEY_GEN_T_3 = REGISTRY.register("money_gen_t_3", () -> new MoneyGenT3Item());
+	public static final RegistryObject<Item> UPGRADE_T_2 = REGISTRY.register("upgrade_t_2", () -> new UpgradeT2Item());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

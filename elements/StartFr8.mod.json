@@ -1,0 +1,155 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 204,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Suite",
+          "onClick": {
+            "name": "StartFrOp9"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Suite",
+          "x": 258,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Fermer",
+          "onClick": {
+            "name": "ExitGUI"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Fermer",
+          "x": 186,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "L'argent !",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "L'argent !",
+          "x": 186,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Retour",
+          "onClick": {
+            "name": "StartFrOp7"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Retour",
+          "x": 114,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Pour acheter des ticket il vous faut",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Pour acheter des ticket il vous faut",
+          "x": 123,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "des emeraude, pour ce faire",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "des emeraude, pour ce faire",
+          "x": 123,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "vous avez un objet qui vous",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "vous avez un objet qui vous",
+          "x": 123,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "en donne, avec la commande :",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "en donne, avec la commande :",
+          "x": 123,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/moneygen",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "/moneygen",
+          "x": 123,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "vous l'aurez",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "vous l'aurez",
+          "x": 177,
+          "y": 134
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

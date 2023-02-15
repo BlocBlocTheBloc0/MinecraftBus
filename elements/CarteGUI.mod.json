@@ -1,0 +1,280 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 400,
+    "height": 208,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Coût : 8 Emeraudes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Coût : 8 Emeraudes",
+          "x": 24,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Temps de voyage : 1h",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Temps de voyage : 1h",
+          "x": 24,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Nombre de voyages : 10",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Nombre de voyages : 10",
+          "x": 24,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Lieu d'achat :",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Lieu d'achat :",
+          "x": 24,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "-Gare",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "-Gare",
+          "x": 33,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "OpenAidT10"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 15,
+          "y": 197
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Carte 10 Voyages",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Carte 10 Voyages",
+          "x": 33,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Carte Illimité",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Carte Illimité",
+          "x": 177,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Coût : 64 Emeraudes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Coût : 64 Emeraudes",
+          "x": 159,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Temps de voyage : 1h",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Temps de voyage : 1h",
+          "x": 159,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Nombre de voyages : ∞",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Nombre de voyages : ∞",
+          "x": 159,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Lieu d'achat :",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Lieu d'achat :",
+          "x": 159,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "-Gare",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "-Gare",
+          "x": 168,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carte_infite_voayge.png",
+          "use1Xscale": false,
+          "name": "carte_infite_voayge.png",
+          "x": 195,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Carte Essensiel",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Carte Essensiel",
+          "x": 312,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Coût : 4 Emeraudes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Coût : 4 Emeraudes",
+          "x": 294,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Temps de voyage : 1h",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Temps de voyage : 1h",
+          "x": 294,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Nombre de voyages : 5",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Nombre de voyages : 5",
+          "x": 294,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Lieu d'achat :",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Lieu d'achat :",
+          "x": 294,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "-Gare",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "-Gare",
+          "x": 303,
+          "y": 161
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

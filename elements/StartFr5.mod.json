@@ -1,0 +1,142 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 204,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Suite",
+          "onClick": {
+            "name": "StartFrOp6"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Suite",
+          "x": 258,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Fermer",
+          "onClick": {
+            "name": "ExitGUI"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Fermer",
+          "x": 186,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Choses à savoir !",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Choses à savoir !",
+          "x": 168,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Retour",
+          "onClick": {
+            "name": "StartFrOp4"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Retour",
+          "x": 114,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "La carte est au prix de 5 Emeraudes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "La carte est au prix de 5 Emeraudes",
+          "x": 123,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "et est rechargeable que lorsque",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "et est rechargeable que lorsque",
+          "x": 123,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "plus aucun voyages ne puisse",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "plus aucun voyages ne puisse",
+          "x": 123,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "être réalisé",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "être réalisé",
+          "x": 123,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Soyez vigilants !",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Soyez vigilants !",
+          "x": 168,
+          "y": 143
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
