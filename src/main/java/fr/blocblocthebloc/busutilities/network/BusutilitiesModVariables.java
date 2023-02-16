@@ -79,9 +79,12 @@ public class BusutilitiesModVariables {
 					.orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new PlayerVariables()));
+			clone.Money = original.Money;
 			if (!event.isWasDeath()) {
 				clone.validite_titre = original.validite_titre;
-				clone.Money = original.Money;
+				clone.CalcV1 = original.CalcV1;
+				clone.CalcV2 = original.CalcV2;
+				clone.CalcResult = original.CalcResult;
 			}
 		}
 
@@ -372,6 +375,9 @@ public class BusutilitiesModVariables {
 	public static class PlayerVariables {
 		public String validite_titre = "\"\"";
 		public double Money = 0;
+		public double CalcV1 = 0;
+		public double CalcV2 = 0;
+		public double CalcResult = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -382,6 +388,9 @@ public class BusutilitiesModVariables {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putString("validite_titre", validite_titre);
 			nbt.putDouble("Money", Money);
+			nbt.putDouble("CalcV1", CalcV1);
+			nbt.putDouble("CalcV2", CalcV2);
+			nbt.putDouble("CalcResult", CalcResult);
 			return nbt;
 		}
 
@@ -389,6 +398,9 @@ public class BusutilitiesModVariables {
 			CompoundTag nbt = (CompoundTag) Tag;
 			validite_titre = nbt.getString("validite_titre");
 			Money = nbt.getDouble("Money");
+			CalcV1 = nbt.getDouble("CalcV1");
+			CalcV2 = nbt.getDouble("CalcV2");
+			CalcResult = nbt.getDouble("CalcResult");
 		}
 	}
 
@@ -416,6 +428,9 @@ public class BusutilitiesModVariables {
 							.orElse(new PlayerVariables()));
 					variables.validite_titre = message.data.validite_titre;
 					variables.Money = message.data.Money;
+					variables.CalcV1 = message.data.CalcV1;
+					variables.CalcV2 = message.data.CalcV2;
+					variables.CalcResult = message.data.CalcResult;
 				}
 			});
 			context.setPacketHandled(true);

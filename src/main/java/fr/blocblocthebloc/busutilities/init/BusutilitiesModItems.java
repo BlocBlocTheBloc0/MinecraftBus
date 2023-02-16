@@ -100,6 +100,8 @@ public class BusutilitiesModItems {
 	public static final RegistryObject<Item> UPGRADE_T_1 = REGISTRY.register("upgrade_t_1", () -> new UpgradeT1Item());
 	public static final RegistryObject<Item> MONEY_GEN_T_3 = REGISTRY.register("money_gen_t_3", () -> new MoneyGenT3Item());
 	public static final RegistryObject<Item> UPGRADE_T_2 = REGISTRY.register("upgrade_t_2", () -> new UpgradeT2Item());
+	public static final RegistryObject<Item> CALCULES_BLOCS = block(BusutilitiesModBlocks.CALCULES_BLOCS, BusutilitiesModTabs.TAB_CREATIFTAB);
+	public static final RegistryObject<Item> TERMS_BLOCS = block(BusutilitiesModBlocks.TERMS_BLOCS, BusutilitiesModTabs.TAB_CREATIFTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,0 +1,101 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Accès",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Accès",
+          "x": 195,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Via les lignes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Via les lignes",
+          "x": 177,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "C (Direction Centre Admin.)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "C (Direction Centre Admin.)",
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "et",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "et",
+          "x": 204,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Expresse D",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Expresse D",
+          "x": 186,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "CAOPEN0"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 132,
+          "y": 179
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

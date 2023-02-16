@@ -1,0 +1,118 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Selection du crédit",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Selection du crédit",
+          "x": 159,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "La Map",
+          "onClick": {
+            "name": "MapCreditOpen"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "La Map",
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Serveur",
+          "onClick": {
+            "name": "ServeurOpen"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Serveur",
+          "x": 195,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "BusUtilities/Sounds/Verif",
+          "width": 156,
+          "height": 20,
+          "name": "BusUtilities/Sounds/Verif",
+          "x": 132,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Create",
+          "width": 56,
+          "height": 20,
+          "name": "Create",
+          "x": 132,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "JEI",
+          "width": 40,
+          "height": 20,
+          "name": "JEI",
+          "x": 195,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "The One Probe",
+          "width": 92,
+          "height": 20,
+          "name": "The One Probe",
+          "x": 132,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Optifine",
+          "width": 67,
+          "height": 20,
+          "name": "Optifine",
+          "x": 132,
+          "y": 170
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

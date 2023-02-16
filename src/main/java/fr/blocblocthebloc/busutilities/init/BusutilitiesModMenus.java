@@ -11,9 +11,11 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import fr.blocblocthebloc.busutilities.world.inventory.UnbugGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.Ticket3VGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.Ticket1VGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.Ticket10VGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.TermsGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.StartlangMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.StartFrMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.StartFr9Menu;
@@ -27,14 +29,25 @@ import fr.blocblocthebloc.busutilities.world.inventory.StartFr2Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.StartFr1Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.StartFr0Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.ShopchoixMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.ServeurGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.ServerToolGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.ServerCMDGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.SelectCreditMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.NewsGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyRecuGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.MoneyGUIDemoMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyAddGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.MapCreditGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MaintenanceModMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.MUGUI1Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.MUGUI0Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.LieuGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.HelpMenuMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.GareGUI1Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.GareGUI0Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.GCGUI1Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.GCGUI0Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.CreateCardMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.ControleguiMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.Controlegui9Menu;
@@ -48,6 +61,13 @@ import fr.blocblocthebloc.busutilities.world.inventory.Controlegui2Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.Controlegui10Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.CarteexistanteMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.CarteGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.CalcGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.CLGUI1Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.CLGUI0Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.CCGUI1Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.CCGUI0Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.CAGUI1Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.CAGUI0Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.BuyTicket3Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.BuyTicket1Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.BuyTicket1ExpressGUIMenu;
@@ -148,4 +168,32 @@ public class BusutilitiesModMenus {
 			() -> IForgeMenuType.create(Ticket10VGUIMenu::new));
 	public static final RegistryObject<MenuType<CarteGUIMenu>> CARTE_GUI = REGISTRY.register("carte_gui",
 			() -> IForgeMenuType.create(CarteGUIMenu::new));
+	public static final RegistryObject<MenuType<LieuGUIMenu>> LIEU_GUI = REGISTRY.register("lieu_gui", () -> IForgeMenuType.create(LieuGUIMenu::new));
+	public static final RegistryObject<MenuType<GareGUI0Menu>> GARE_GUI_0 = REGISTRY.register("gare_gui_0",
+			() -> IForgeMenuType.create(GareGUI0Menu::new));
+	public static final RegistryObject<MenuType<GareGUI1Menu>> GARE_GUI_1 = REGISTRY.register("gare_gui_1",
+			() -> IForgeMenuType.create(GareGUI1Menu::new));
+	public static final RegistryObject<MenuType<CalcGUIMenu>> CALC_GUI = REGISTRY.register("calc_gui", () -> IForgeMenuType.create(CalcGUIMenu::new));
+	public static final RegistryObject<MenuType<UnbugGUIMenu>> UNBUG_GUI = REGISTRY.register("unbug_gui",
+			() -> IForgeMenuType.create(UnbugGUIMenu::new));
+	public static final RegistryObject<MenuType<TermsGUIMenu>> TERMS_GUI = REGISTRY.register("terms_gui",
+			() -> IForgeMenuType.create(TermsGUIMenu::new));
+	public static final RegistryObject<MenuType<CLGUI0Menu>> CLGUI_0 = REGISTRY.register("clgui_0", () -> IForgeMenuType.create(CLGUI0Menu::new));
+	public static final RegistryObject<MenuType<CLGUI1Menu>> CLGUI_1 = REGISTRY.register("clgui_1", () -> IForgeMenuType.create(CLGUI1Menu::new));
+	public static final RegistryObject<MenuType<CAGUI0Menu>> CAGUI_0 = REGISTRY.register("cagui_0", () -> IForgeMenuType.create(CAGUI0Menu::new));
+	public static final RegistryObject<MenuType<CAGUI1Menu>> CAGUI_1 = REGISTRY.register("cagui_1", () -> IForgeMenuType.create(CAGUI1Menu::new));
+	public static final RegistryObject<MenuType<MUGUI0Menu>> MUGUI_0 = REGISTRY.register("mugui_0", () -> IForgeMenuType.create(MUGUI0Menu::new));
+	public static final RegistryObject<MenuType<MUGUI1Menu>> MUGUI_1 = REGISTRY.register("mugui_1", () -> IForgeMenuType.create(MUGUI1Menu::new));
+	public static final RegistryObject<MenuType<CCGUI0Menu>> CCGUI_0 = REGISTRY.register("ccgui_0", () -> IForgeMenuType.create(CCGUI0Menu::new));
+	public static final RegistryObject<MenuType<CCGUI1Menu>> CCGUI_1 = REGISTRY.register("ccgui_1", () -> IForgeMenuType.create(CCGUI1Menu::new));
+	public static final RegistryObject<MenuType<GCGUI0Menu>> GCGUI_0 = REGISTRY.register("gcgui_0", () -> IForgeMenuType.create(GCGUI0Menu::new));
+	public static final RegistryObject<MenuType<GCGUI1Menu>> GCGUI_1 = REGISTRY.register("gcgui_1", () -> IForgeMenuType.create(GCGUI1Menu::new));
+	public static final RegistryObject<MenuType<MoneyGUIDemoMenu>> MONEY_GUI_DEMO = REGISTRY.register("money_gui_demo",
+			() -> IForgeMenuType.create(MoneyGUIDemoMenu::new));
+	public static final RegistryObject<MenuType<SelectCreditMenu>> SELECT_CREDIT = REGISTRY.register("select_credit",
+			() -> IForgeMenuType.create(SelectCreditMenu::new));
+	public static final RegistryObject<MenuType<MapCreditGUIMenu>> MAP_CREDIT_GUI = REGISTRY.register("map_credit_gui",
+			() -> IForgeMenuType.create(MapCreditGUIMenu::new));
+	public static final RegistryObject<MenuType<ServeurGUIMenu>> SERVEUR_GUI = REGISTRY.register("serveur_gui",
+			() -> IForgeMenuType.create(ServeurGUIMenu::new));
 }

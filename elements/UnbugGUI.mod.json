@@ -1,0 +1,61 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:CalcV1>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:CalcV1>",
+          "x": 180,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:CalcV2>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:CalcV2>",
+          "x": 176,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:CalcResult>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:CalcResult>",
+          "x": 170,
+          "y": 137
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Acceptez-vous les termes ?",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Acceptez-vous les termes ?",
+          "x": 141,
+          "y": 44
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "text": "Lu et approuvé",
+          "name": "terms",
+          "x": 159,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Terminer",
+          "onClick": {
+            "name": "TermsVerif"
+          },
+          "width": 67,
+          "height": 20,
+          "name": "Terminer",
+          "x": 177,
+          "y": 170
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

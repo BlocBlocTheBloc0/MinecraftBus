@@ -1,0 +1,75 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Fonctions",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Fonctions",
+          "x": 186,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Lieu de génération d'argent",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Lieu de génération d'argent",
+          "x": 141,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "avec des Calcules Blocs",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "avec des Calcules Blocs",
+          "x": 150,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "onClick": {
+            "name": "CLOpen1"
+          },
+          "width": 30,
+          "height": 20,
+          "name": ">",
+          "x": 267,
+          "y": 179
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

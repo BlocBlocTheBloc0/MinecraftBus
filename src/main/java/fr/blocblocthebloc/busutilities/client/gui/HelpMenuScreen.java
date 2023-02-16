@@ -97,10 +97,20 @@ public class HelpMenuScreen extends AbstractContainerScreen<HelpMenuMenu> {
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 52, 46, 20, Component.literal("Lieu"), e -> {
+			if (true) {
+				BusutilitiesMod.PACKET_HANDLER.sendToServer(new HelpMenuButtonMessage(2, x, y, z));
+				HelpMenuButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 114, this.topPos + 52, 51, 20, Component.literal("Money"), e -> {
+			if (true) {
+				BusutilitiesMod.PACKET_HANDLER.sendToServer(new HelpMenuButtonMessage(3, x, y, z));
+				HelpMenuButtonMessage.handleButtonAction(entity, 3, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 51, this.topPos + 142, 61, 20, Component.literal("Crédits"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 240, this.topPos + 178, 51, 20, Component.literal("Autre"), e -> {
 		}));
 	}
 }

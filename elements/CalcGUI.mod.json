@@ -1,0 +1,99 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Calcule Bloc",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Calcule Bloc",
+          "x": 177,
+          "y": 44
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 120,
+          "height": 20,
+          "name": "Resultat",
+          "x": 150,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:CalcV1>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:CalcV1>",
+          "x": 177,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "+",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "+",
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:CalcV2>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:CalcV2>",
+          "x": 222,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Calculer",
+          "onClick": {
+            "name": "CalcVerif"
+          },
+          "width": 67,
+          "height": 20,
+          "name": "Calculer",
+          "x": 177,
+          "y": 161
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

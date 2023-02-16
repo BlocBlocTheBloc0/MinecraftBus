@@ -4,7 +4,7 @@ license="Public Domain"
 
 [[mods]]
 modId="busutilities"
-version="1"
+version="0.3"
 displayName="BusUtilities"
 credits="Yo, nobody read this :)"
 displayURL="https://mcreator.net"

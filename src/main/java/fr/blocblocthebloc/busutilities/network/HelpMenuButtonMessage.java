@@ -16,7 +16,9 @@ import java.util.HashMap;
 
 import fr.blocblocthebloc.busutilities.world.inventory.HelpMenuMenu;
 import fr.blocblocthebloc.busutilities.procedures.OpenAidt1Procedure;
+import fr.blocblocthebloc.busutilities.procedures.MoneyDemoOpenProcedure;
 import fr.blocblocthebloc.busutilities.procedures.LignesAccesProcedure;
+import fr.blocblocthebloc.busutilities.procedures.LieuGUIOpenProcedure;
 import fr.blocblocthebloc.busutilities.BusutilitiesMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -70,6 +72,14 @@ public class HelpMenuButtonMessage {
 		if (buttonID == 1) {
 
 			OpenAidt1Procedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 2) {
+
+			LieuGUIOpenProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 3) {
+
+			MoneyDemoOpenProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

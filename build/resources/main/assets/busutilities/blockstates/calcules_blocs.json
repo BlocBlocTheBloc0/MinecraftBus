@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "busutilities:block/calcules_blocs"
+    },
+    "facing=east": {
+      "model": "busutilities:block/calcules_blocs",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "busutilities:block/calcules_blocs",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "busutilities:block/calcules_blocs",
+      "y": 270
+    }
+  }
+}

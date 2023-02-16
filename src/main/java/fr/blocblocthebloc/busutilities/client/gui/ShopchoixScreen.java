@@ -72,6 +72,7 @@ public class ShopchoixScreen extends AbstractContainerScreen<ShopchoixMenu> {
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "Selecteur de boutique", 33, 7, -12829636);
+		this.font.draw(poseStack, "D\u00E9sactiv\u00E9", 60, 88, -3407872);
 	}
 
 	@Override
@@ -97,10 +98,6 @@ public class ShopchoixScreen extends AbstractContainerScreen<ShopchoixMenu> {
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 97, 119, 20, Component.literal("Boutique de Cartes"), e -> {
-			if (true) {
-				BusutilitiesMod.PACKET_HANDLER.sendToServer(new ShopchoixButtonMessage(2, x, y, z));
-				ShopchoixButtonMessage.handleButtonAction(entity, 2, x, y, z);
-			}
 		}));
 	}
 }

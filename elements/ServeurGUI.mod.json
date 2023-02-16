@@ -1,0 +1,139 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Crédit du serveur",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Crédit du serveur",
+          "x": 168,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Serveur :",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Serveur :",
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hébergé par BlocBlocTheBloc",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Hébergé par BlocBlocTheBloc",
+          "x": 132,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Contact : BlocBlocTheBlocඞ#1645",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Contact : BlocBlocTheBlocඞ#1645",
+          "x": 132,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Proxy :",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Proxy :",
+          "x": 132,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hébergé par FalixNodes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Hébergé par FalixNodes",
+          "x": 132,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Contact : ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Contact : ",
+          "x": 132,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "https://falixnodes.net/",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "https://falixnodes.net/",
+          "x": 132,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "----------------------------------",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "----------------------------------",
+          "x": 123,
+          "y": 107
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import fr.blocblocthebloc.busutilities.block.VerifBlocBlock;
+import fr.blocblocthebloc.busutilities.block.TermsBlocsBlock;
 import fr.blocblocthebloc.busutilities.block.ShopBlocBlock;
 import fr.blocblocthebloc.busutilities.block.LigneHBlock;
 import fr.blocblocthebloc.busutilities.block.LigneGBlock;
@@ -24,6 +25,7 @@ import fr.blocblocthebloc.busutilities.block.LigneDBlock;
 import fr.blocblocthebloc.busutilities.block.LigneCBlock;
 import fr.blocblocthebloc.busutilities.block.LigneBBlock;
 import fr.blocblocthebloc.busutilities.block.LigneABlock;
+import fr.blocblocthebloc.busutilities.block.CalculesBlocsBlock;
 import fr.blocblocthebloc.busutilities.BusutilitiesMod;
 
 public class BusutilitiesModBlocks {
@@ -42,4 +44,6 @@ public class BusutilitiesModBlocks {
 	public static final RegistryObject<Block> LIGNE_EB = REGISTRY.register("ligne_eb", () -> new LigneEBBlock());
 	public static final RegistryObject<Block> LIGNE_EC = REGISTRY.register("ligne_ec", () -> new LigneECBlock());
 	public static final RegistryObject<Block> LIGNE_ED = REGISTRY.register("ligne_ed", () -> new LigneEDBlock());
+	public static final RegistryObject<Block> CALCULES_BLOCS = REGISTRY.register("calcules_blocs", () -> new CalculesBlocsBlock());
+	public static final RegistryObject<Block> TERMS_BLOCS = REGISTRY.register("terms_blocs", () -> new TermsBlocsBlock());
 }

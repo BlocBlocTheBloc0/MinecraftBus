@@ -1,5 +1,11 @@
 [
   {
+    "uuid": "1c944205-88c9-4728-9a57-13b761639dcb",
+    "name": "BlocBlocTheBloc",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "5084e6f3-8f54-43f1-8df5-1dca109e430f",
     "name": "Dev",
     "level": 4,

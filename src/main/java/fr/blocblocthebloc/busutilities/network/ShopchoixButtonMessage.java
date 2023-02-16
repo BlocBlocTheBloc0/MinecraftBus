@@ -16,7 +16,6 @@ import java.util.HashMap;
 
 import fr.blocblocthebloc.busutilities.world.inventory.ShopchoixMenu;
 import fr.blocblocthebloc.busutilities.procedures.ExitGUIProcedure;
-import fr.blocblocthebloc.busutilities.procedures.CarteexistantopenProcedure;
 import fr.blocblocthebloc.busutilities.procedures.BuyTicket1AccesProcedure;
 import fr.blocblocthebloc.busutilities.BusutilitiesMod;
 
@@ -71,10 +70,6 @@ public class ShopchoixButtonMessage {
 		if (buttonID == 1) {
 
 			BuyTicket1AccesProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 2) {
-
-			CarteexistantopenProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

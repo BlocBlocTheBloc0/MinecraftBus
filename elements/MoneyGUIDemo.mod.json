@@ -1,0 +1,100 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Système de Money",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Système de Money",
+          "x": 168,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Le système agit comme un",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Le système agit comme un",
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "stockage d'émeraudes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "stockage d'émeraudes",
+          "x": 132,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Vous pouvez ajouter et",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Vous pouvez ajouter et",
+          "x": 132,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "retirer des émeraude via",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "retirer des émeraude via",
+          "x": 132,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "la commande : /money",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "la commande : /money",
+          "x": 132,
+          "y": 134
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

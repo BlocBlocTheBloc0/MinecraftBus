@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "busutilities:blocks/calcsides",
+    "up": "busutilities:blocks/termstop",
+    "north": "busutilities:blocks/calcsides",
+    "east": "busutilities:blocks/calcsides",
+    "south": "busutilities:blocks/calcsides",
+    "west": "busutilities:blocks/calcsides",
+    "particle": "busutilities:blocks/calcsides"
+  },
+  "render_type": "solid"
+}
