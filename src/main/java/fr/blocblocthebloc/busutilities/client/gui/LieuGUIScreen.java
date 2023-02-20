@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,12 @@ public class LieuGUIScreen extends AbstractContainerScreen<LieuGUIMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_gare;
+	Button button_centre_logistique;
+	Button button_centre_administratif;
+	Button button_magasin_usines;
+	Button button_gare_centrale;
+	Button button_centre_commercial;
 
 	public LieuGUIScreen(LieuGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,7 +76,7 @@ public class LieuGUIScreen extends AbstractContainerScreen<LieuGUIMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Lieu", 120, 6, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.lieu_gui.label_lieu"), 120, 6, -12829636);
 	}
 
 	@Override
@@ -84,41 +89,53 @@ public class LieuGUIScreen extends AbstractContainerScreen<LieuGUIMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 12, this.topPos + 24, 46, 20, Component.literal("Gare"), e -> {
+		button_gare = new Button(this.leftPos + 12, this.topPos + 24, 46, 20, Component.translatable("gui.busutilities.lieu_gui.button_gare"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new LieuGUIButtonMessage(0, x, y, z));
 				LieuGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 66, this.topPos + 24, 114, 20, Component.literal("Centre Logistique"), e -> {
+		});
+		guistate.put("button:button_gare", button_gare);
+		this.addRenderableWidget(button_gare);
+		button_centre_logistique = new Button(this.leftPos + 66, this.topPos + 24, 114, 20, Component.translatable("gui.busutilities.lieu_gui.button_centre_logistique"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new LieuGUIButtonMessage(1, x, y, z));
 				LieuGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 12, this.topPos + 51, 129, 20, Component.literal("Centre Administratif"), e -> {
+		});
+		guistate.put("button:button_centre_logistique", button_centre_logistique);
+		this.addRenderableWidget(button_centre_logistique);
+		button_centre_administratif = new Button(this.leftPos + 12, this.topPos + 51, 129, 20, Component.translatable("gui.busutilities.lieu_gui.button_centre_administratif"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new LieuGUIButtonMessage(2, x, y, z));
 				LieuGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 147, this.topPos + 51, 98, 20, Component.literal("Magasin Usines"), e -> {
+		});
+		guistate.put("button:button_centre_administratif", button_centre_administratif);
+		this.addRenderableWidget(button_centre_administratif);
+		button_magasin_usines = new Button(this.leftPos + 147, this.topPos + 51, 98, 20, Component.translatable("gui.busutilities.lieu_gui.button_magasin_usines"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new LieuGUIButtonMessage(3, x, y, z));
 				LieuGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 138, this.topPos + 78, 93, 20, Component.literal("Gare Centrale"), e -> {
+		});
+		guistate.put("button:button_magasin_usines", button_magasin_usines);
+		this.addRenderableWidget(button_magasin_usines);
+		button_gare_centrale = new Button(this.leftPos + 138, this.topPos + 78, 93, 20, Component.translatable("gui.busutilities.lieu_gui.button_gare_centrale"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new LieuGUIButtonMessage(4, x, y, z));
 				LieuGUIButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 12, this.topPos + 78, 114, 20, Component.literal("Centre Commercial"), e -> {
+		});
+		guistate.put("button:button_gare_centrale", button_gare_centrale);
+		this.addRenderableWidget(button_gare_centrale);
+		button_centre_commercial = new Button(this.leftPos + 12, this.topPos + 78, 114, 20, Component.translatable("gui.busutilities.lieu_gui.button_centre_commercial"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new LieuGUIButtonMessage(5, x, y, z));
 				LieuGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_centre_commercial", button_centre_commercial);
+		this.addRenderableWidget(button_centre_commercial);
 	}
 }

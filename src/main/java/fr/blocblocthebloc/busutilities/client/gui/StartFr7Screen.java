@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,9 @@ public class StartFr7Screen extends AbstractContainerScreen<StartFr7Menu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_suite;
+	Button button_fermer;
+	Button button_retour;
 
 	public StartFr7Screen(StartFr7Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,10 +73,10 @@ public class StartFr7Screen extends AbstractContainerScreen<StartFr7Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Ticket d'urgence", 56, 7, -12829636);
-		this.font.draw(poseStack, "Vous pouvez achet\u00E9 ce ticket", 11, 25, -12829636);
-		this.font.draw(poseStack, "avec la commande :", 11, 43, -12829636);
-		this.font.draw(poseStack, "/ticket", 110, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_7.label_ticket_durgence"), 56, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_7.label_vous_pouvez_achete_ce_ticket"), 11, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_7.label_avec_la_commande"), 11, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_7.label_ticket"), 110, 43, -12829636);
 	}
 
 	@Override
@@ -87,23 +89,29 @@ public class StartFr7Screen extends AbstractContainerScreen<StartFr7Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 146, this.topPos + 142, 51, 20, Component.literal("Suite"), e -> {
+		button_suite = new Button(this.leftPos + 146, this.topPos + 142, 51, 20, Component.translatable("gui.busutilities.start_fr_7.button_suite"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFr7ButtonMessage(0, x, y, z));
 				StartFr7ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 74, this.topPos + 142, 56, 20, Component.literal("Fermer"), e -> {
+		});
+		guistate.put("button:button_suite", button_suite);
+		this.addRenderableWidget(button_suite);
+		button_fermer = new Button(this.leftPos + 74, this.topPos + 142, 56, 20, Component.translatable("gui.busutilities.start_fr_7.button_fermer"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFr7ButtonMessage(1, x, y, z));
 				StartFr7ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 2, this.topPos + 142, 56, 20, Component.literal("Retour"), e -> {
+		});
+		guistate.put("button:button_fermer", button_fermer);
+		this.addRenderableWidget(button_fermer);
+		button_retour = new Button(this.leftPos + 2, this.topPos + 142, 56, 20, Component.translatable("gui.busutilities.start_fr_7.button_retour"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFr7ButtonMessage(2, x, y, z));
 				StartFr7ButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_retour", button_retour);
+		this.addRenderableWidget(button_retour);
 	}
 }

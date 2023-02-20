@@ -75,7 +75,6 @@ public class StartFr9ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(StartFr9ButtonMessage.class, StartFr9ButtonMessage::buffer, StartFr9ButtonMessage::new,
-				StartFr9ButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(StartFr9ButtonMessage.class, StartFr9ButtonMessage::buffer, StartFr9ButtonMessage::new, StartFr9ButtonMessage::handler);
 	}
 }

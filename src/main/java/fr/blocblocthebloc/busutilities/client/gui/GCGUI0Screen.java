@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ public class GCGUI0Screen extends AbstractContainerScreen<GCGUI0Menu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
 
 	public GCGUI0Screen(GCGUI0Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,9 +71,9 @@ public class GCGUI0Screen extends AbstractContainerScreen<GCGUI0Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Fonctions", 60, 7, -12829636);
-		this.font.draw(poseStack, "Gare des lignes expresses", 24, 25, -12829636);
-		this.font.draw(poseStack, "A, B et C", 60, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.gcgui_0.label_fonctions"), 60, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.gcgui_0.label_gare_des_lignes_expresses"), 24, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.gcgui_0.label_a_b_et_c"), 60, 43, -12829636);
 	}
 
 	@Override
@@ -86,11 +86,13 @@ public class GCGUI0Screen extends AbstractContainerScreen<GCGUI0Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.literal(">"), e -> {
+		button_empty = new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.translatable("gui.busutilities.gcgui_0.button_empty"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new GCGUI0ButtonMessage(0, x, y, z));
 				GCGUI0ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
 	}
 }

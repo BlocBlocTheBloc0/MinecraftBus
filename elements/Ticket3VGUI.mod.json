@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Ticket 3 Voyages",
+          "name": "label_ticket_3_voyages",
+          "text": {
+            "fixedValue": "Ticket 3 Voyages"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Ticket 3 Voyages",
           "x": 195,
           "y": 26
         }
@@ -28,7 +30,6 @@
         "data": {
           "image": "ticket_3_voayge.png",
           "use1Xscale": false,
-          "name": "ticket_3_voayge.png",
           "x": 150,
           "y": 17
         }
@@ -36,12 +37,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Coût : 3 Emeraudes",
+          "name": "label_cout_3_emeraudes",
+          "text": {
+            "fixedValue": "Coût : 3 Emeraudes"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Coût : 3 Emeraudes",
           "x": 150,
           "y": 53
         }
@@ -49,12 +52,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Temps de voyage : 1h",
+          "name": "label_temps_de_voyage_1h",
+          "text": {
+            "fixedValue": "Temps de voyage : 1h"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Temps de voyage : 1h",
           "x": 150,
           "y": 80
         }
@@ -62,12 +67,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Nombre de voyages : 3",
+          "name": "label_nombre_de_voyages_3",
+          "text": {
+            "fixedValue": "Nombre de voyages : 3"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Nombre de voyages : 3",
           "x": 150,
           "y": 107
         }
@@ -75,12 +82,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Lieu d'achat :",
+          "name": "label_lieu_dachat",
+          "text": {
+            "fixedValue": "Lieu d'achat :"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Lieu d'achat :",
           "x": 150,
           "y": 134
         }
@@ -88,12 +97,14 @@
       {
         "type": "label",
         "data": {
-          "text": "-Gare",
+          "name": "label_gare",
+          "text": {
+            "fixedValue": "-Gare"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "-Gare",
           "x": 159,
           "y": 152
         }
@@ -101,12 +112,14 @@
       {
         "type": "label",
         "data": {
-          "text": "-Point de vente",
+          "name": "label_point_de_vente",
+          "text": {
+            "fixedValue": "-Point de vente"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "-Point de vente",
           "x": 159,
           "y": 170
         }
@@ -114,13 +127,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": ">",
           "onClick": {
             "name": "OpenAidT10"
           },
           "width": 30,
           "height": 20,
-          "name": ">",
           "x": 267,
           "y": 197
         }
@@ -128,13 +141,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty1",
           "text": "<",
           "onClick": {
             "name": "OpenAidt1"
           },
           "width": 30,
           "height": 20,
-          "name": "<",
           "x": 132,
           "y": 197
         }

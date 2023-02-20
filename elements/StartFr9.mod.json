@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,13 +13,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_fermer",
           "text": "Fermer",
           "onClick": {
             "name": "ExitGUI"
           },
           "width": 56,
           "height": 20,
-          "name": "Fermer",
           "x": 186,
           "y": 179
         }
@@ -27,13 +27,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_retour",
           "text": "Retour",
           "onClick": {
             "name": "StartFrOp8"
           },
           "width": 56,
           "height": 20,
-          "name": "Retour",
           "x": 114,
           "y": 179
         }
@@ -41,12 +41,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Fin",
+          "name": "label_fin",
+          "text": {
+            "fixedValue": "Fin"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Fin",
           "x": 204,
           "y": 44
         }
@@ -54,12 +56,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Si vous avez d'autre questions",
+          "name": "label_si_vous_avez_dautre_questions",
+          "text": {
+            "fixedValue": "Si vous avez d'autre questions"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Si vous avez d'autre questions",
           "x": 123,
           "y": 62
         }
@@ -67,12 +71,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Faite la commande /aide ou",
+          "name": "label_faite_la_commande_aide_ou",
+          "text": {
+            "fixedValue": "Faite la commande /aide ou"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Faite la commande /aide ou",
           "x": 123,
           "y": 80
         }
@@ -80,12 +86,14 @@
       {
         "type": "label",
         "data": {
-          "text": "rejoignez le serveur discord :",
+          "name": "label_rejoignez_le_serveur_discord",
+          "text": {
+            "fixedValue": "rejoignez le serveur discord :"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "rejoignez le serveur discord :",
           "x": 123,
           "y": 98
         }
@@ -93,12 +101,14 @@
       {
         "type": "label",
         "data": {
-          "text": "*ID DISCORD*",
+          "name": "label_id_discord",
+          "text": {
+            "fixedValue": "*ID DISCORD*"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "*ID DISCORD*",
           "x": 123,
           "y": 116
         }
@@ -106,12 +116,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Bon jeu !",
+          "name": "label_bon_jeu",
+          "text": {
+            "fixedValue": "Bon jeu !"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Bon jeu !",
           "x": 191,
           "y": 156
         }

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Accès",
+          "name": "label_acces",
+          "text": {
+            "fixedValue": "Accès"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Accès",
           "x": 195,
           "y": 44
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Via les lignes",
+          "name": "label_via_les_lignes",
+          "text": {
+            "fixedValue": "Via les lignes"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Via les lignes",
           "x": 177,
           "y": 62
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "C (Direction Centre Admin.)",
+          "name": "label_c_direction_centre_admin",
+          "text": {
+            "fixedValue": "C (Direction Centre Admin.)"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "C (Direction Centre Admin.)",
           "x": 141,
           "y": 80
         }
@@ -52,12 +58,14 @@
       {
         "type": "label",
         "data": {
-          "text": "et",
+          "name": "label_et",
+          "text": {
+            "fixedValue": "et"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "et",
           "x": 204,
           "y": 98
         }
@@ -65,12 +73,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Expresse D",
+          "name": "label_expresse_d",
+          "text": {
+            "fixedValue": "Expresse D"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Expresse D",
           "x": 186,
           "y": 116
         }
@@ -78,13 +88,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": "<",
           "onClick": {
             "name": "CAOPEN0"
           },
           "width": 30,
           "height": 20,
-          "name": "<",
           "x": 132,
           "y": 179
         }

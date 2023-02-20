@@ -79,7 +79,7 @@ public class BuyTicket1ExpressGUIMenu extends AbstractContainerMenu implements S
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (Items.EMERALD == stack.getItem());
+				return Items.EMERALD == stack.getItem();
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 124, 35) {

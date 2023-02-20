@@ -75,7 +75,6 @@ public class BuyCarteIllimiteButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(BuyCarteIllimiteButtonMessage.class, BuyCarteIllimiteButtonMessage::buffer,
-				BuyCarteIllimiteButtonMessage::new, BuyCarteIllimiteButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(BuyCarteIllimiteButtonMessage.class, BuyCarteIllimiteButtonMessage::buffer, BuyCarteIllimiteButtonMessage::new, BuyCarteIllimiteButtonMessage::handler);
 	}
 }

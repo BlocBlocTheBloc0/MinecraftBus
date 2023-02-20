@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Crédit du serveur",
+          "name": "label_credit_du_serveur",
+          "text": {
+            "fixedValue": "Crédit du serveur"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Crédit du serveur",
           "x": 168,
           "y": 44
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Serveur :",
+          "name": "label_serveur",
+          "text": {
+            "fixedValue": "Serveur :"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Serveur :",
           "x": 132,
           "y": 62
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Hébergé par BlocBlocTheBloc",
+          "name": "label_heberge_par_blocblocthebloc",
+          "text": {
+            "fixedValue": "Hébergé par BlocBlocTheBloc"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Hébergé par BlocBlocTheBloc",
           "x": 132,
           "y": 80
         }
@@ -52,12 +58,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Contact : BlocBlocTheBlocඞ#1645",
+          "name": "label_contact_blocbloctheblocng1645",
+          "text": {
+            "fixedValue": "Contact : BlocBlocTheBlocඞ#1645"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Contact : BlocBlocTheBlocඞ#1645",
           "x": 132,
           "y": 98
         }
@@ -65,12 +73,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Proxy :",
+          "name": "label_proxy",
+          "text": {
+            "fixedValue": "Proxy :"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Proxy :",
           "x": 132,
           "y": 125
         }
@@ -78,12 +88,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Hébergé par FalixNodes",
+          "name": "label_heberge_par_falixnodes",
+          "text": {
+            "fixedValue": "Hébergé par FalixNodes"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Hébergé par FalixNodes",
           "x": 132,
           "y": 143
         }
@@ -91,12 +103,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Contact : ",
+          "name": "label_contact",
+          "text": {
+            "fixedValue": "Contact : "
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Contact : ",
           "x": 132,
           "y": 161
         }
@@ -104,12 +118,14 @@
       {
         "type": "label",
         "data": {
-          "text": "https://falixnodes.net/",
+          "name": "label_httpsfalixnodesnet",
+          "text": {
+            "fixedValue": "https://falixnodes.net/"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "https://falixnodes.net/",
           "x": 132,
           "y": 179
         }
@@ -117,12 +133,14 @@
       {
         "type": "label",
         "data": {
-          "text": "----------------------------------",
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "----------------------------------"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "----------------------------------",
           "x": 123,
           "y": 107
         }

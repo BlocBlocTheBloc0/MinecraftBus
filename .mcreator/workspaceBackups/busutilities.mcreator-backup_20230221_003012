@@ -4234,6 +4234,326 @@
         ]
       },
       "path": "~/Aide/About/Lieu/Magasins Usines"
+    },
+    {
+      "name": "CCGUI0",
+      "type": "gui",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ccgui_0",
+      "path": "~/Aide/About/Lieu/Centre Commercial"
+    },
+    {
+      "name": "CCGUI1",
+      "type": "gui",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ccgui_1",
+      "path": "~/Aide/About/Lieu/Centre Commercial"
+    },
+    {
+      "name": "CCOPEN0",
+      "type": "procedure",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ccopen_0",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Aide/About/Lieu/Centre Commercial"
+    },
+    {
+      "name": "CCOPEN1",
+      "type": "procedure",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ccopen_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Aide/About/Lieu/Centre Commercial"
+    },
+    {
+      "name": "GCGUI0",
+      "type": "gui",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gcgui_0",
+      "path": "~/Aide/About/Lieu/Gare Centrale"
+    },
+    {
+      "name": "GCGUI1",
+      "type": "gui",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gcgui_1",
+      "path": "~/Aide/About/Lieu/Gare Centrale"
+    },
+    {
+      "name": "CGOPEN0",
+      "type": "procedure",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cgopen_0",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Aide/About/Lieu/Gare Centrale"
+    },
+    {
+      "name": "CGOPEN1",
+      "type": "procedure",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cgopen_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Aide/About/Lieu/Gare Centrale"
+    },
+    {
+      "name": "MoneyGUIDemo",
+      "type": "gui",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_gui_demo",
+      "path": "~/Aide/About/Money"
+    },
+    {
+      "name": "MoneyDemoOpen",
+      "type": "procedure",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_demo_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Aide/About/Money"
+    },
+    {
+      "name": "AutreAide",
+      "type": "procedure",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "autre_aide",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Aide/About/Autre"
+    },
+    {
+      "name": "SelectCredit",
+      "type": "gui",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_credit",
+      "path": "~/Aide/About/Credits"
+    },
+    {
+      "name": "MapCreditGUI",
+      "type": "gui",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "map_credit_gui",
+      "path": "~/Aide/About/Credits/Map"
+    },
+    {
+      "name": "MapCreditOpen",
+      "type": "procedure",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "map_credit_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Aide/About/Credits/Map"
+    },
+    {
+      "name": "ServeurGUI",
+      "type": "gui",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "serveur_gui",
+      "path": "~/Aide/About/Credits/Serveur"
+    },
+    {
+      "name": "ServeurOpen",
+      "type": "procedure",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "serveur_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Aide/About/Credits/Serveur"
     }
   ],
   "variable_elements": [
@@ -4492,7 +4812,7 @@
     {
       "name": "Money",
       "type": "number",
-      "scope": "player_lifetime",
+      "scope": "player_persistent",
       "value": "0"
     },
     {
@@ -4846,6 +5166,31 @@
                   },
                   {
                     "name": "Centre Commercial",
+                    "children": []
+                  },
+                  {
+                    "name": "Gare Centrale",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Money",
+                "children": []
+              },
+              {
+                "name": "Autre",
+                "children": []
+              },
+              {
+                "name": "Credits",
+                "children": [
+                  {
+                    "name": "Map",
+                    "children": []
+                  },
+                  {
+                    "name": "Serveur",
                     "children": []
                   }
                 ]

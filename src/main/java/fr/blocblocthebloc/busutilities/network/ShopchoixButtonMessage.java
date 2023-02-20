@@ -75,7 +75,6 @@ public class ShopchoixButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(ShopchoixButtonMessage.class, ShopchoixButtonMessage::buffer, ShopchoixButtonMessage::new,
-				ShopchoixButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(ShopchoixButtonMessage.class, ShopchoixButtonMessage::buffer, ShopchoixButtonMessage::new, ShopchoixButtonMessage::handler);
 	}
 }

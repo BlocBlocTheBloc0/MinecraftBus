@@ -100,7 +100,6 @@ public class ServerCMDGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(ServerCMDGUIButtonMessage.class, ServerCMDGUIButtonMessage::buffer, ServerCMDGUIButtonMessage::new,
-				ServerCMDGUIButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(ServerCMDGUIButtonMessage.class, ServerCMDGUIButtonMessage::buffer, ServerCMDGUIButtonMessage::new, ServerCMDGUIButtonMessage::handler);
 	}
 }

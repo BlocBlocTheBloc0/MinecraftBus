@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:CalcV1>",
+          "name": "label_varcalcv1",
+          "text": {
+            "fixedValue": "<VAR:CalcV1>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:CalcV1>",
           "x": 180,
           "y": 63
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:CalcV2>",
+          "name": "label_varcalcv2",
+          "text": {
+            "fixedValue": "<VAR:CalcV2>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:CalcV2>",
           "x": 176,
           "y": 92
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:CalcResult>",
+          "name": "label_varcalcresult",
+          "text": {
+            "fixedValue": "<VAR:CalcResult>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:CalcResult>",
           "x": 170,
           "y": 137
         }

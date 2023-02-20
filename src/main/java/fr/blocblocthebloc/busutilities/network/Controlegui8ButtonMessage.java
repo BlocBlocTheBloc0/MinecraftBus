@@ -75,7 +75,6 @@ public class Controlegui8ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(Controlegui8ButtonMessage.class, Controlegui8ButtonMessage::buffer, Controlegui8ButtonMessage::new,
-				Controlegui8ButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(Controlegui8ButtonMessage.class, Controlegui8ButtonMessage::buffer, Controlegui8ButtonMessage::new, Controlegui8ButtonMessage::handler);
 	}
 }

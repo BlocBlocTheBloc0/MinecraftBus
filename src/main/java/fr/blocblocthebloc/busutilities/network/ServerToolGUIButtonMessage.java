@@ -85,7 +85,6 @@ public class ServerToolGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(ServerToolGUIButtonMessage.class, ServerToolGUIButtonMessage::buffer, ServerToolGUIButtonMessage::new,
-				ServerToolGUIButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(ServerToolGUIButtonMessage.class, ServerToolGUIButtonMessage::buffer, ServerToolGUIButtonMessage::new, ServerToolGUIButtonMessage::handler);
 	}
 }

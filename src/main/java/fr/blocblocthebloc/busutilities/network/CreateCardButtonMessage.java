@@ -70,7 +70,6 @@ public class CreateCardButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(CreateCardButtonMessage.class, CreateCardButtonMessage::buffer, CreateCardButtonMessage::new,
-				CreateCardButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(CreateCardButtonMessage.class, CreateCardButtonMessage::buffer, CreateCardButtonMessage::new, CreateCardButtonMessage::handler);
 	}
 }

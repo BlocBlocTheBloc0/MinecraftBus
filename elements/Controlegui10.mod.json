@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:ticket_use_name_9>",
+          "name": "label_varticket_use_name_9",
+          "text": {
+            "fixedValue": "<VAR:ticket_use_name_9>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:ticket_use_name_9>",
           "x": 141,
           "y": 35
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:ticket_use_text_9>",
+          "name": "label_varticket_use_text_9",
+          "text": {
+            "fixedValue": "<VAR:ticket_use_text_9>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:ticket_use_text_9>",
           "x": 141,
           "y": 71
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:ticket_use_date_9>",
+          "name": "label_varticket_use_date_9",
+          "text": {
+            "fixedValue": "<VAR:ticket_use_date_9>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:ticket_use_date_9>",
           "x": 141,
           "y": 116
         }
@@ -52,12 +58,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:ticket_use_heure_9>",
+          "name": "label_varticket_use_heure_9",
+          "text": {
+            "fixedValue": "<VAR:ticket_use_heure_9>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:ticket_use_heure_9>",
           "x": 141,
           "y": 152
         }
@@ -65,12 +73,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Page 10/10",
+          "name": "label_page_1010",
+          "text": {
+            "fixedValue": "Page 10/10"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Page 10/10",
           "x": 195,
           "y": 197
         }
@@ -78,13 +88,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": "<",
           "onClick": {
             "name": "Controlecmdopengui9"
           },
           "width": 30,
           "height": 20,
-          "name": "<",
           "x": 114,
           "y": 188
         }

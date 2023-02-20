@@ -70,7 +70,6 @@ public class TermsGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(TermsGUIButtonMessage.class, TermsGUIButtonMessage::buffer, TermsGUIButtonMessage::new,
-				TermsGUIButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(TermsGUIButtonMessage.class, TermsGUIButtonMessage::buffer, TermsGUIButtonMessage::new, TermsGUIButtonMessage::handler);
 	}
 }

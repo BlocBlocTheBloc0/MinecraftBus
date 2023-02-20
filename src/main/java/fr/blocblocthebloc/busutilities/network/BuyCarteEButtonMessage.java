@@ -80,7 +80,6 @@ public class BuyCarteEButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(BuyCarteEButtonMessage.class, BuyCarteEButtonMessage::buffer, BuyCarteEButtonMessage::new,
-				BuyCarteEButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(BuyCarteEButtonMessage.class, BuyCarteEButtonMessage::buffer, BuyCarteEButtonMessage::new, BuyCarteEButtonMessage::handler);
 	}
 }

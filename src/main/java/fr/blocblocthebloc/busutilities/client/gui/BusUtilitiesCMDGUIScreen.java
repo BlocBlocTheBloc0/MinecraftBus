@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,8 @@ public class BusUtilitiesCMDGUIScreen extends AbstractContainerScreen<BusUtiliti
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_reset_controles_variables;
+	Button button_x;
 
 	public BusUtilitiesCMDGUIScreen(BusUtilitiesCMDGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,7 +72,7 @@ public class BusUtilitiesCMDGUIScreen extends AbstractContainerScreen<BusUtiliti
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Bus Utilities CMDs", 42, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.bus_utilities_cmdgui.label_bus_utilities_cmds"), 42, 7, -12829636);
 	}
 
 	@Override
@@ -84,17 +85,21 @@ public class BusUtilitiesCMDGUIScreen extends AbstractContainerScreen<BusUtiliti
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 25, 155, 20, Component.literal("Reset Controles Variables"), e -> {
+		button_reset_controles_variables = new Button(this.leftPos + 6, this.topPos + 25, 155, 20, Component.translatable("gui.busutilities.bus_utilities_cmdgui.button_reset_controles_variables"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new BusUtilitiesCMDGUIButtonMessage(0, x, y, z));
 				BusUtilitiesCMDGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.literal("X"), e -> {
+		});
+		guistate.put("button:button_reset_controles_variables", button_reset_controles_variables);
+		this.addRenderableWidget(button_reset_controles_variables);
+		button_x = new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.translatable("gui.busutilities.bus_utilities_cmdgui.button_x"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new BusUtilitiesCMDGUIButtonMessage(1, x, y, z));
 				BusUtilitiesCMDGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_x", button_x);
+		this.addRenderableWidget(button_x);
 	}
 }

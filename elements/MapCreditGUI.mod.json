@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Crédits de la map",
+          "name": "label_credits_de_la_map",
+          "text": {
+            "fixedValue": "Crédits de la map"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Crédits de la map",
           "x": 168,
           "y": 44
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Réalisé par : ",
+          "name": "label_realise_par",
+          "text": {
+            "fixedValue": "Réalisé par : "
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Réalisé par : ",
           "x": 141,
           "y": 62
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Contact :",
+          "name": "label_contact",
+          "text": {
+            "fixedValue": "Contact :"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Contact :",
           "x": 141,
           "y": 107
         }

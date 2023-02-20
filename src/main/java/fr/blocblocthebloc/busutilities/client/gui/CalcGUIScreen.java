@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -15,7 +14,6 @@ import java.util.HashMap;
 
 import fr.blocblocthebloc.busutilities.world.inventory.CalcGUIMenu;
 import fr.blocblocthebloc.busutilities.network.CalcGUIButtonMessage;
-import fr.blocblocthebloc.busutilities.network.BusutilitiesModVariables;
 import fr.blocblocthebloc.busutilities.BusutilitiesMod;
 
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -27,6 +25,7 @@ public class CalcGUIScreen extends AbstractContainerScreen<CalcGUIMenu> {
 	private final int x, y, z;
 	private final Player entity;
 	EditBox Resultat;
+	Button button_calculer;
 
 	public CalcGUIScreen(CalcGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -78,12 +77,10 @@ public class CalcGUIScreen extends AbstractContainerScreen<CalcGUIMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Calcule Bloc", 51, 7, -12829636);
-		this.font.draw(poseStack, "" + ((entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new BusutilitiesModVariables.PlayerVariables())).CalcV1) + "", 51, 43, -12829636);
-		this.font.draw(poseStack, "+", 78, 43, -12829636);
-		this.font.draw(poseStack, "" + ((entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new BusutilitiesModVariables.PlayerVariables())).CalcV2) + "", 96, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.calc_gui.label_calcule_bloc"), 51, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.calc_gui.label_varcalcv1"), 51, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.calc_gui.label_empty"), 78, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.calc_gui.label_varcalcv2"), 96, 43, -12829636);
 	}
 
 	@Override
@@ -96,15 +93,17 @@ public class CalcGUIScreen extends AbstractContainerScreen<CalcGUIMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		Resultat = new EditBox(this.font, this.leftPos + 24, this.topPos + 88, 120, 20, Component.literal(""));
-		guistate.put("text:Resultat", Resultat);
+		Resultat = new EditBox(this.font, this.leftPos + 24, this.topPos + 88, 120, 20, Component.translatable("gui.busutilities.calc_gui.Resultat"));
 		Resultat.setMaxLength(32767);
+		guistate.put("text:Resultat", Resultat);
 		this.addWidget(this.Resultat);
-		this.addRenderableWidget(new Button(this.leftPos + 51, this.topPos + 124, 67, 20, Component.literal("Calculer"), e -> {
+		button_calculer = new Button(this.leftPos + 51, this.topPos + 124, 67, 20, Component.translatable("gui.busutilities.calc_gui.button_calculer"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new CalcGUIButtonMessage(0, x, y, z));
 				CalcGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_calculer", button_calculer);
+		this.addRenderableWidget(button_calculer);
 	}
 }

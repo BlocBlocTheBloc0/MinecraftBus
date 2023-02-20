@@ -95,7 +95,6 @@ public class LieuGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(LieuGUIButtonMessage.class, LieuGUIButtonMessage::buffer, LieuGUIButtonMessage::new,
-				LieuGUIButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(LieuGUIButtonMessage.class, LieuGUIButtonMessage::buffer, LieuGUIButtonMessage::new, LieuGUIButtonMessage::handler);
 	}
 }

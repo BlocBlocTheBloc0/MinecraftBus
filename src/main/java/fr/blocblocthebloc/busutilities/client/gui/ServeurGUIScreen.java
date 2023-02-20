@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -68,15 +67,15 @@ public class ServeurGUIScreen extends AbstractContainerScreen<ServeurGUIMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Cr\u00E9dit du serveur", 42, 7, -12829636);
-		this.font.draw(poseStack, "Serveur :", 6, 25, -12829636);
-		this.font.draw(poseStack, "H\u00E9berg\u00E9 par BlocBlocTheBloc", 6, 43, -12829636);
-		this.font.draw(poseStack, "Contact : BlocBlocTheBloc\u0D9E#1645", 6, 61, -12829636);
-		this.font.draw(poseStack, "Proxy :", 6, 88, -12829636);
-		this.font.draw(poseStack, "H\u00E9berg\u00E9 par FalixNodes", 6, 106, -12829636);
-		this.font.draw(poseStack, "Contact : ", 6, 124, -12829636);
-		this.font.draw(poseStack, "https://falixnodes.net/", 6, 142, -12829636);
-		this.font.draw(poseStack, "----------------------------------", -2, 70, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.serveur_gui.label_credit_du_serveur"), 42, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.serveur_gui.label_serveur"), 6, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.serveur_gui.label_heberge_par_blocblocthebloc"), 6, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.serveur_gui.label_contact_blocbloctheblocng1645"), 6, 61, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.serveur_gui.label_proxy"), 6, 88, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.serveur_gui.label_heberge_par_falixnodes"), 6, 106, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.serveur_gui.label_contact"), 6, 124, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.serveur_gui.label_httpsfalixnodesnet"), 6, 142, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.serveur_gui.label_empty"), -2, 70, -12829636);
 	}
 
 	@Override

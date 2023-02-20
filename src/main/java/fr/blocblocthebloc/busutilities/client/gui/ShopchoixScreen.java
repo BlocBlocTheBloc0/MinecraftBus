@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,9 @@ public class ShopchoixScreen extends AbstractContainerScreen<ShopchoixMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_x;
+	Button button_boutique_de_tickets;
+	Button button_boutique_de_cartes;
 
 	public ShopchoixScreen(ShopchoixMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,8 +73,8 @@ public class ShopchoixScreen extends AbstractContainerScreen<ShopchoixMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Selecteur de boutique", 33, 7, -12829636);
-		this.font.draw(poseStack, "D\u00E9sactiv\u00E9", 60, 88, -3407872);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.shopchoix.label_selecteur_de_boutique"), 33, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.shopchoix.label_desactive"), 60, 88, -3407872);
 	}
 
 	@Override
@@ -85,19 +87,25 @@ public class ShopchoixScreen extends AbstractContainerScreen<ShopchoixMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.literal("X"), e -> {
+		button_x = new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.translatable("gui.busutilities.shopchoix.button_x"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new ShopchoixButtonMessage(0, x, y, z));
 				ShopchoixButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 43, 124, 20, Component.literal("Boutique de Tickets"), e -> {
+		});
+		guistate.put("button:button_x", button_x);
+		this.addRenderableWidget(button_x);
+		button_boutique_de_tickets = new Button(this.leftPos + 24, this.topPos + 43, 124, 20, Component.translatable("gui.busutilities.shopchoix.button_boutique_de_tickets"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new ShopchoixButtonMessage(1, x, y, z));
 				ShopchoixButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 97, 119, 20, Component.literal("Boutique de Cartes"), e -> {
-		}));
+		});
+		guistate.put("button:button_boutique_de_tickets", button_boutique_de_tickets);
+		this.addRenderableWidget(button_boutique_de_tickets);
+		button_boutique_de_cartes = new Button(this.leftPos + 24, this.topPos + 97, 119, 20, Component.translatable("gui.busutilities.shopchoix.button_boutique_de_cartes"), e -> {
+		});
+		guistate.put("button:button_boutique_de_cartes", button_boutique_de_cartes);
+		this.addRenderableWidget(button_boutique_de_cartes);
 	}
 }

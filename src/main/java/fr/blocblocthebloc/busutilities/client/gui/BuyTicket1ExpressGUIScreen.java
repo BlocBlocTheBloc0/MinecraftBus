@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ public class BuyTicket1ExpressGUIScreen extends AbstractContainerScreen<BuyTicke
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_acheter;
 
 	public BuyTicket1ExpressGUIScreen(BuyTicket1ExpressGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,7 +71,7 @@ public class BuyTicket1ExpressGUIScreen extends AbstractContainerScreen<BuyTicke
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Boutique Expresse", 42, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.buy_ticket_1_express_gui.label_boutique_expresse"), 42, 7, -12829636);
 	}
 
 	@Override
@@ -84,11 +84,13 @@ public class BuyTicket1ExpressGUIScreen extends AbstractContainerScreen<BuyTicke
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 51, this.topPos + 34, 61, 20, Component.literal("Acheter"), e -> {
+		button_acheter = new Button(this.leftPos + 51, this.topPos + 34, 61, 20, Component.translatable("gui.busutilities.buy_ticket_1_express_gui.button_acheter"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new BuyTicket1ExpressGUIButtonMessage(0, x, y, z));
 				BuyTicket1ExpressGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_acheter", button_acheter);
+		this.addRenderableWidget(button_acheter);
 	}
 }

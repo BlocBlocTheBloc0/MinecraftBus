@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Acceptez-vous les termes ?",
+          "name": "label_acceptezvous_les_termes",
+          "text": {
+            "fixedValue": "Acceptez-vous les termes ?"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Acceptez-vous les termes ?",
           "x": 141,
           "y": 44
         }
@@ -26,8 +28,8 @@
       {
         "type": "checkbox",
         "data": {
-          "text": "Lu et approuvé",
           "name": "terms",
+          "text": "Lu et approuvé",
           "x": 159,
           "y": 80
         }
@@ -35,13 +37,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_terminer",
           "text": "Terminer",
           "onClick": {
             "name": "TermsVerif"
           },
           "width": 67,
           "height": 20,
-          "name": "Terminer",
           "x": 177,
           "y": 170
         }

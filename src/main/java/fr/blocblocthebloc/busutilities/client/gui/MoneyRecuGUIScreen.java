@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -14,7 +13,6 @@ import java.util.HashMap;
 
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyRecuGUIMenu;
 import fr.blocblocthebloc.busutilities.network.MoneyRecuGUIButtonMessage;
-import fr.blocblocthebloc.busutilities.network.BusutilitiesModVariables;
 import fr.blocblocthebloc.busutilities.BusutilitiesMod;
 
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -25,6 +23,7 @@ public class MoneyRecuGUIScreen extends AbstractContainerScreen<MoneyRecuGUIMenu
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_recuperer_1;
 
 	public MoneyRecuGUIScreen(MoneyRecuGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -72,9 +71,8 @@ public class MoneyRecuGUIScreen extends AbstractContainerScreen<MoneyRecuGUIMenu
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Distributeur de Money", 33, 7, -12829636);
-		this.font.draw(poseStack, "Vous avez : " + ((entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new BusutilitiesModVariables.PlayerVariables())).Money) + " Money", 15, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.money_recu_gui.label_distributeur_de_money"), 33, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.money_recu_gui.label_vous_avez_varmoney_money"), 15, 43, -12829636);
 	}
 
 	@Override
@@ -87,11 +85,13 @@ public class MoneyRecuGUIScreen extends AbstractContainerScreen<MoneyRecuGUIMenu
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 42, this.topPos + 61, 82, 20, Component.literal("Recuperer 1"), e -> {
+		button_recuperer_1 = new Button(this.leftPos + 42, this.topPos + 61, 82, 20, Component.translatable("gui.busutilities.money_recu_gui.button_recuperer_1"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new MoneyRecuGUIButtonMessage(0, x, y, z));
 				MoneyRecuGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_recuperer_1", button_recuperer_1);
+		this.addRenderableWidget(button_recuperer_1);
 	}
 }

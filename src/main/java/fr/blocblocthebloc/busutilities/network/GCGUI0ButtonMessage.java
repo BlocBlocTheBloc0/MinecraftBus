@@ -70,7 +70,6 @@ public class GCGUI0ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(GCGUI0ButtonMessage.class, GCGUI0ButtonMessage::buffer, GCGUI0ButtonMessage::new,
-				GCGUI0ButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(GCGUI0ButtonMessage.class, GCGUI0ButtonMessage::buffer, GCGUI0ButtonMessage::new, GCGUI0ButtonMessage::handler);
 	}
 }

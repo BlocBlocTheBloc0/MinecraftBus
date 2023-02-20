@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Select your lang",
+          "name": "label_select_your_lang",
+          "text": {
+            "fixedValue": "Select your lang"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Select your lang",
           "x": 168,
           "y": 44
         }
@@ -26,13 +28,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_x",
           "text": "X",
           "onClick": {
             "name": "ExitGUI"
           },
           "width": 30,
           "height": 20,
-          "name": "X",
           "x": 267,
           "y": 179
         }
@@ -40,13 +42,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_fra",
           "text": "FRA",
           "onClick": {
             "name": "StartFrOpen"
           },
           "width": 35,
           "height": 20,
-          "name": "FRA",
           "x": 150,
           "y": 71
         }
@@ -54,13 +56,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_eng",
           "text": "ENG",
           "onClick": {
             "name": "StartEngOpen"
           },
           "width": 40,
           "height": 20,
-          "name": "ENG",
           "x": 240,
           "y": 71
         }

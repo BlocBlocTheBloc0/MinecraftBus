@@ -80,7 +80,6 @@ public class CarteexistanteButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(CarteexistanteButtonMessage.class, CarteexistanteButtonMessage::buffer, CarteexistanteButtonMessage::new,
-				CarteexistanteButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(CarteexistanteButtonMessage.class, CarteexistanteButtonMessage::buffer, CarteexistanteButtonMessage::new, CarteexistanteButtonMessage::handler);
 	}
 }

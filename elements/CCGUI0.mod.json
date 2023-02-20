@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Fonctions",
+          "name": "label_fonctions",
+          "text": {
+            "fixedValue": "Fonctions"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Fonctions",
           "x": 186,
           "y": 44
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Achat de cosmetiques",
+          "name": "label_achat_de_cosmetiques",
+          "text": {
+            "fixedValue": "Achat de cosmetiques"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Achat de cosmetiques",
           "x": 159,
           "y": 62
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "de type particules",
+          "name": "label_de_type_particules",
+          "text": {
+            "fixedValue": "de type particules"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "de type particules",
           "x": 159,
           "y": 80
         }
@@ -52,10 +58,10 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": ">",
           "width": 30,
           "height": 20,
-          "name": ">",
           "x": 267,
           "y": 179
         }

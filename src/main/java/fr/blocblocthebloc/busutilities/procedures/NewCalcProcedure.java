@@ -25,10 +25,8 @@ public class NewCalcProcedure {
 			});
 		}
 		{
-			double _setval = (entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new BusutilitiesModVariables.PlayerVariables())).CalcV1
-					+ (entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new BusutilitiesModVariables.PlayerVariables())).CalcV2;
+			double _setval = (entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BusutilitiesModVariables.PlayerVariables())).CalcV1
+					+ (entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BusutilitiesModVariables.PlayerVariables())).CalcV2;
 			entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.CalcResult = _setval;
 				capability.syncPlayerVariables(entity);

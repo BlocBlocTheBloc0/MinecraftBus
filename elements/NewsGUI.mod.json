@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "News Tab",
+          "name": "label_news_tab",
+          "text": {
+            "fixedValue": "News Tab"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "News Tab",
           "x": 186,
           "y": 44
         }
@@ -26,13 +28,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_x",
           "text": "X",
           "onClick": {
             "name": "ExitGUI"
           },
           "width": 30,
           "height": 20,
-          "name": "X",
           "x": 267,
           "y": 179
         }
@@ -40,12 +42,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Ajout d'un generateur d'argent",
+          "name": "label_ajout_dun_generateur_dargent",
+          "text": {
+            "fixedValue": "Ajout d'un generateur d'argent"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Ajout d'un generateur d'argent",
           "x": 132,
           "y": 62
         }

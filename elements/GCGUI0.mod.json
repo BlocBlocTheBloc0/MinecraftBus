@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Fonctions",
+          "name": "label_fonctions",
+          "text": {
+            "fixedValue": "Fonctions"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Fonctions",
           "x": 186,
           "y": 44
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Gare des lignes expresses",
+          "name": "label_gare_des_lignes_expresses",
+          "text": {
+            "fixedValue": "Gare des lignes expresses"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Gare des lignes expresses",
           "x": 150,
           "y": 62
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "A, B et C",
+          "name": "label_a_b_et_c",
+          "text": {
+            "fixedValue": "A, B et C"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "A, B et C",
           "x": 186,
           "y": 80
         }
@@ -52,13 +58,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": ">",
           "onClick": {
             "name": "CGOPEN1"
           },
           "width": 30,
           "height": 20,
-          "name": ">",
           "x": 267,
           "y": 179
         }

@@ -19,16 +19,15 @@ public class CalcVerifProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, HashMap guistate) {
 		if (entity == null || guistate == null)
 			return;
-		if ((entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new BusutilitiesModVariables.PlayerVariables())).CalcResult == new Object() {
-					double convert(String s) {
-						try {
-							return Double.parseDouble(s.trim());
-						} catch (Exception e) {
-						}
-						return 0;
-					}
-				}.convert(guistate.containsKey("text:Resultat") ? ((EditBox) guistate.get("text:Resultat")).getValue() : "")) {
+		if ((entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BusutilitiesModVariables.PlayerVariables())).CalcResult == new Object() {
+			double convert(String s) {
+				try {
+					return Double.parseDouble(s.trim());
+				} catch (Exception e) {
+				}
+				return 0;
+			}
+		}.convert(guistate.containsKey("text:Resultat") ? ((EditBox) guistate.get("text:Resultat")).getValue() : "")) {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(Items.EMERALD);
 				_setstack.setCount(3);
@@ -36,16 +35,15 @@ public class CalcVerifProcedure {
 			}
 			NewCalcProcedure.execute(entity);
 			CalcGUIOpenProcedure.execute(world, x, y, z, entity);
-		} else if ((entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new BusutilitiesModVariables.PlayerVariables())).CalcResult != new Object() {
-					double convert(String s) {
-						try {
-							return Double.parseDouble(s.trim());
-						} catch (Exception e) {
-						}
-						return 0;
-					}
-				}.convert(guistate.containsKey("text:Resultat") ? ((EditBox) guistate.get("text:Resultat")).getValue() : "")) {
+		} else if ((entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BusutilitiesModVariables.PlayerVariables())).CalcResult != new Object() {
+			double convert(String s) {
+				try {
+					return Double.parseDouble(s.trim());
+				} catch (Exception e) {
+				}
+				return 0;
+			}
+		}.convert(guistate.containsKey("text:Resultat") ? ((EditBox) guistate.get("text:Resultat")).getValue() : "")) {
 			CalcGUIOpenProcedure.execute(world, x, y, z, entity);
 		}
 	}

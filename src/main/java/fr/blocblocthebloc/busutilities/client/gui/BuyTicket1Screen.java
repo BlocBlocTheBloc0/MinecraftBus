@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,8 @@ public class BuyTicket1Screen extends AbstractContainerScreen<BuyTicket1Menu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
+	Button button_acheter;
 
 	public BuyTicket1Screen(BuyTicket1Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,8 +72,8 @@ public class BuyTicket1Screen extends AbstractContainerScreen<BuyTicket1Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Boutique Ticket 1 Voyage", 24, 7, -12829636);
-		this.font.draw(poseStack, "Page 1/3", 60, 70, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.buy_ticket_1.label_boutique_ticket_1_voyage"), 24, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.buy_ticket_1.label_page_13"), 60, 70, -12829636);
 	}
 
 	@Override
@@ -85,17 +86,21 @@ public class BuyTicket1Screen extends AbstractContainerScreen<BuyTicket1Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 141, this.topPos + 61, 30, 20, Component.literal(">"), e -> {
+		button_empty = new Button(this.leftPos + 141, this.topPos + 61, 30, 20, Component.translatable("gui.busutilities.buy_ticket_1.button_empty"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new BuyTicket1ButtonMessage(0, x, y, z));
 				BuyTicket1ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 51, this.topPos + 25, 61, 20, Component.literal("Acheter"), e -> {
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
+		button_acheter = new Button(this.leftPos + 51, this.topPos + 25, 61, 20, Component.translatable("gui.busutilities.buy_ticket_1.button_acheter"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new BuyTicket1ButtonMessage(1, x, y, z));
 				BuyTicket1ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_acheter", button_acheter);
+		this.addRenderableWidget(button_acheter);
 	}
 }

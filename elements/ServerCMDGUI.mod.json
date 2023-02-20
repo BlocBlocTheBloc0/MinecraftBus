@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Server CMDs",
+          "name": "label_server_cmds",
+          "text": {
+            "fixedValue": "Server CMDs"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Server CMDs",
           "x": 186,
           "y": 44
         }
@@ -26,13 +28,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_save_all",
           "text": "Save All",
           "onClick": {
             "name": "Saveall"
           },
           "width": 66,
           "height": 20,
-          "name": "Save All",
           "x": 141,
           "y": 62
         }
@@ -40,13 +42,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_set_whitelist_on",
           "text": "Set Whitelist on",
           "onClick": {
             "name": "WhitelistOn"
           },
           "width": 108,
           "height": 20,
-          "name": "Set Whitelist on",
           "x": 141,
           "y": 89
         }
@@ -54,13 +56,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_kick_all",
           "text": "Kick All",
           "onClick": {
             "name": "Kickall"
           },
           "width": 66,
           "height": 20,
-          "name": "Kick All",
           "x": 222,
           "y": 62
         }
@@ -68,13 +70,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_set_whitelist_off",
           "text": "Set Whitelist off",
           "onClick": {
             "name": "WhitelistOff"
           },
           "width": 113,
           "height": 20,
-          "name": "Set Whitelist off",
           "x": 141,
           "y": 116
         }
@@ -82,13 +84,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_restart_server",
           "text": "Restart Server",
           "onClick": {
             "name": "Restartserver"
           },
           "width": 98,
           "height": 20,
-          "name": "Restart Server",
           "x": 141,
           "y": 143
         }
@@ -96,13 +98,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_stop_server",
           "text": "Stop Server",
           "onClick": {
             "name": "Stopserver"
           },
           "width": 82,
           "height": 20,
-          "name": "Stop Server",
           "x": 141,
           "y": 170
         }
@@ -110,13 +112,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_x",
           "text": "X",
           "onClick": {
             "name": "ExitGUI"
           },
           "width": 30,
           "height": 20,
-          "name": "X",
           "x": 267,
           "y": 179
         }

@@ -70,7 +70,6 @@ public class MoneyAddGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(MoneyAddGUIButtonMessage.class, MoneyAddGUIButtonMessage::buffer, MoneyAddGUIButtonMessage::new,
-				MoneyAddGUIButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(MoneyAddGUIButtonMessage.class, MoneyAddGUIButtonMessage::buffer, MoneyAddGUIButtonMessage::new, MoneyAddGUIButtonMessage::handler);
 	}
 }

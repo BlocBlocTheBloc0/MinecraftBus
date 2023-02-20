@@ -19,6 +19,7 @@ import fr.blocblocthebloc.busutilities.procedures.OpenAidt1Procedure;
 import fr.blocblocthebloc.busutilities.procedures.MoneyDemoOpenProcedure;
 import fr.blocblocthebloc.busutilities.procedures.LignesAccesProcedure;
 import fr.blocblocthebloc.busutilities.procedures.LieuGUIOpenProcedure;
+import fr.blocblocthebloc.busutilities.procedures.CreditsOpenProcedure;
 import fr.blocblocthebloc.busutilities.BusutilitiesMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -81,11 +82,14 @@ public class HelpMenuButtonMessage {
 
 			MoneyDemoOpenProcedure.execute(world, x, y, z, entity);
 		}
+		if (buttonID == 4) {
+
+			CreditsOpenProcedure.execute(world, x, y, z, entity);
+		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(HelpMenuButtonMessage.class, HelpMenuButtonMessage::buffer, HelpMenuButtonMessage::new,
-				HelpMenuButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(HelpMenuButtonMessage.class, HelpMenuButtonMessage::buffer, HelpMenuButtonMessage::new, HelpMenuButtonMessage::handler);
 	}
 }

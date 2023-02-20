@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ public class CLGUI0Screen extends AbstractContainerScreen<CLGUI0Menu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
 
 	public CLGUI0Screen(CLGUI0Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,9 +71,9 @@ public class CLGUI0Screen extends AbstractContainerScreen<CLGUI0Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Fonctions", 60, 7, -12829636);
-		this.font.draw(poseStack, "Lieu de g\u00E9n\u00E9ration d'argent", 15, 25, -12829636);
-		this.font.draw(poseStack, "avec des Calcules Blocs", 24, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.clgui_0.label_fonctions"), 60, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.clgui_0.label_lieu_de_generation_dargent"), 15, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.clgui_0.label_avec_des_calcules_blocs"), 24, 43, -12829636);
 	}
 
 	@Override
@@ -86,11 +86,13 @@ public class CLGUI0Screen extends AbstractContainerScreen<CLGUI0Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.literal(">"), e -> {
+		button_empty = new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.translatable("gui.busutilities.clgui_0.button_empty"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new CLGUI0ButtonMessage(0, x, y, z));
 				CLGUI0ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
 	}
 }

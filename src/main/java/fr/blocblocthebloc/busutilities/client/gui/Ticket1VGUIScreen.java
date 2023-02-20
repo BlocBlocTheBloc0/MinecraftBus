@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ public class Ticket1VGUIScreen extends AbstractContainerScreen<Ticket1VGUIMenu> 
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
 
 	public Ticket1VGUIScreen(Ticket1VGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -75,13 +75,13 @@ public class Ticket1VGUIScreen extends AbstractContainerScreen<Ticket1VGUIMenu> 
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Ticket 1 Voyage", 69, 10, -12829636);
-		this.font.draw(poseStack, "Co\u00FBt : 1 Emeraude", 24, 37, -12829636);
-		this.font.draw(poseStack, "Temps de voyage : 1h", 24, 64, -12829636);
-		this.font.draw(poseStack, "Nombre de voyages : 1", 24, 91, -12829636);
-		this.font.draw(poseStack, "Lieu d'achat :", 24, 118, -12829636);
-		this.font.draw(poseStack, "-Gare", 33, 136, -12829636);
-		this.font.draw(poseStack, "-Point de vente", 33, 154, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.ticket_1_vgui.label_ticket_1_voyage"), 69, 10, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.ticket_1_vgui.label_cout_1_emeraude"), 24, 37, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.ticket_1_vgui.label_temps_de_voyage_1h"), 24, 64, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.ticket_1_vgui.label_nombre_de_voyages_1"), 24, 91, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.ticket_1_vgui.label_lieu_dachat"), 24, 118, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.ticket_1_vgui.label_gare"), 33, 136, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.ticket_1_vgui.label_point_de_vente"), 33, 154, -12829636);
 	}
 
 	@Override
@@ -94,11 +94,13 @@ public class Ticket1VGUIScreen extends AbstractContainerScreen<Ticket1VGUIMenu> 
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 141, this.topPos + 181, 30, 20, Component.literal(">"), e -> {
+		button_empty = new Button(this.leftPos + 141, this.topPos + 181, 30, 20, Component.translatable("gui.busutilities.ticket_1_vgui.button_empty"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new Ticket1VGUIButtonMessage(0, x, y, z));
 				Ticket1VGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
 	}
 }

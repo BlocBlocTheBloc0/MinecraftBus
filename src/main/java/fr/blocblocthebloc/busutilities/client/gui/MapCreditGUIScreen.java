@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -68,9 +67,9 @@ public class MapCreditGUIScreen extends AbstractContainerScreen<MapCreditGUIMenu
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Cr\u00E9dits de la map", 42, 7, -12829636);
-		this.font.draw(poseStack, "R\u00E9alis\u00E9 par : ", 15, 25, -12829636);
-		this.font.draw(poseStack, "Contact :", 15, 70, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.map_credit_gui.label_credits_de_la_map"), 42, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.map_credit_gui.label_realise_par"), 15, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.map_credit_gui.label_contact"), 15, 70, -12829636);
 	}
 
 	@Override

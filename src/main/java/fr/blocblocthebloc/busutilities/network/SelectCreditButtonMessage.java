@@ -15,8 +15,13 @@ import java.util.function.Supplier;
 import java.util.HashMap;
 
 import fr.blocblocthebloc.busutilities.world.inventory.SelectCreditMenu;
+import fr.blocblocthebloc.busutilities.procedures.TheOneProbeOpenProcedure;
 import fr.blocblocthebloc.busutilities.procedures.ServeurOpenProcedure;
+import fr.blocblocthebloc.busutilities.procedures.OptifineOpenProcedure;
+import fr.blocblocthebloc.busutilities.procedures.ModsBusOpenProcedure;
 import fr.blocblocthebloc.busutilities.procedures.MapCreditOpenProcedure;
+import fr.blocblocthebloc.busutilities.procedures.JEIOpenProcedure;
+import fr.blocblocthebloc.busutilities.procedures.CreateOpenProcedure;
 import fr.blocblocthebloc.busutilities.BusutilitiesMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -71,11 +76,30 @@ public class SelectCreditButtonMessage {
 
 			ServeurOpenProcedure.execute(world, x, y, z, entity);
 		}
+		if (buttonID == 2) {
+
+			ModsBusOpenProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 3) {
+
+			CreateOpenProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 4) {
+
+			JEIOpenProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 5) {
+
+			TheOneProbeOpenProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 6) {
+
+			OptifineOpenProcedure.execute(world, x, y, z, entity);
+		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(SelectCreditButtonMessage.class, SelectCreditButtonMessage::buffer, SelectCreditButtonMessage::new,
-				SelectCreditButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(SelectCreditButtonMessage.class, SelectCreditButtonMessage::buffer, SelectCreditButtonMessage::new, SelectCreditButtonMessage::handler);
 	}
 }

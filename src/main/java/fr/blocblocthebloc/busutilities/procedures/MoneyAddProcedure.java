@@ -29,13 +29,10 @@ public class MoneyAddProcedure {
 		if (entity == null)
 			return;
 		double valeur = 0;
-		if ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
-				? ((Slot) _slt.get(0)).getItem()
-				: ItemStack.EMPTY).getItem() == Items.EMERALD) {
+		if ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Items.EMERALD) {
 			valeur = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -43,14 +40,12 @@ public class MoneyAddProcedure {
 					return 0;
 				}
 			}.getAmount(0);
-			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-					&& _current.get() instanceof Map _slots) {
+			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				((Slot) _slots.get(0)).remove(64);
 				_player.containerMenu.broadcastChanges();
 			}
 			{
-				double _setval = (entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new BusutilitiesModVariables.PlayerVariables())).Money + valeur;
+				double _setval = (entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BusutilitiesModVariables.PlayerVariables())).Money + valeur;
 				entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Money = _setval;
 					capability.syncPlayerVariables(entity);

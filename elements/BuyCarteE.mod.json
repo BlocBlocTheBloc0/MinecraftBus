@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Boutique Abonnements",
+          "name": "label_boutique_abonnements",
+          "text": {
+            "fixedValue": "Boutique Abonnements"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Boutique Abonnements",
           "x": 159,
           "y": 44
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Type : Essentiel",
+          "name": "label_type_essentiel",
+          "text": {
+            "fixedValue": "Type : Essentiel"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Type : Essentiel",
           "x": 168,
           "y": 53
         }
@@ -42,10 +46,14 @@
           "inputLimit": {
             "value": "CUSTOM:Cartedetransport"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 141,
           "y": 71
         }
@@ -56,10 +64,14 @@
           "inputLimit": {
             "value": "Items.EMERALD"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 1,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #1",
           "x": 168,
           "y": 71
         }
@@ -67,13 +79,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_acheter",
           "text": "Acheter",
           "onClick": {
             "name": "BuyCarteEProces"
           },
           "width": 61,
           "height": 20,
-          "name": "Acheter",
           "x": 195,
           "y": 71
         }
@@ -82,9 +94,10 @@
         "type": "outputslot",
         "data": {
           "id": 2,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #2",
           "x": 267,
           "y": 71
         }
@@ -92,12 +105,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Page : 2/3",
+          "name": "label_page_23",
+          "text": {
+            "fixedValue": "Page : 2/3"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Page : 2/3",
           "x": 186,
           "y": 107
         }
@@ -105,13 +120,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": ">",
           "onClick": {
             "name": "BuyCarteIllimiteOpen"
           },
           "width": 30,
           "height": 20,
-          "name": ">",
           "x": 267,
           "y": 98
         }
@@ -119,13 +134,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty1",
           "text": "<",
           "onClick": {
             "name": "BuyCarte10Open"
           },
           "width": 30,
           "height": 20,
-          "name": "<",
           "x": 132,
           "y": 98
         }

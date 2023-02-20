@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ public class NewsGUIScreen extends AbstractContainerScreen<NewsGUIMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_x;
 
 	public NewsGUIScreen(NewsGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,8 +71,8 @@ public class NewsGUIScreen extends AbstractContainerScreen<NewsGUIMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "News Tab", 60, 7, -12829636);
-		this.font.draw(poseStack, "Ajout d'un generateur d'argent", 6, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.news_gui.label_news_tab"), 60, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.news_gui.label_ajout_dun_generateur_dargent"), 6, 25, -12829636);
 	}
 
 	@Override
@@ -85,11 +85,13 @@ public class NewsGUIScreen extends AbstractContainerScreen<NewsGUIMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.literal("X"), e -> {
+		button_x = new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.translatable("gui.busutilities.news_gui.button_x"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new NewsGUIButtonMessage(0, x, y, z));
 				NewsGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_x", button_x);
+		this.addRenderableWidget(button_x);
 	}
 }

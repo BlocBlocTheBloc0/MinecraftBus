@@ -80,13 +80,13 @@ public class BuyCarteIllimiteMenu extends AbstractContainerMenu implements Suppl
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (BusutilitiesModItems.CARTEDETRANSPORT.get() == stack.getItem());
+				return BusutilitiesModItems.CARTEDETRANSPORT.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (Items.EMERALD == stack.getItem());
+				return Items.EMERALD == stack.getItem();
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 142, 35) {

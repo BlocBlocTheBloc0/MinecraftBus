@@ -75,7 +75,6 @@ public class Ticket10VGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(Ticket10VGUIButtonMessage.class, Ticket10VGUIButtonMessage::buffer, Ticket10VGUIButtonMessage::new,
-				Ticket10VGUIButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(Ticket10VGUIButtonMessage.class, Ticket10VGUIButtonMessage::buffer, Ticket10VGUIButtonMessage::new, Ticket10VGUIButtonMessage::handler);
 	}
 }

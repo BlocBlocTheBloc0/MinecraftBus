@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,9 @@ public class CarteexistanteScreen extends AbstractContainerScreen<Carteexistante
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_jai_une_carte;
+	Button button_je_nai_pas_de_carte;
+	Button button_x;
 
 	public CarteexistanteScreen(CarteexistanteMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,7 +73,7 @@ public class CarteexistanteScreen extends AbstractContainerScreen<Carteexistante
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Boutique Carte", 51, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carteexistante.label_boutique_carte"), 51, 7, -12829636);
 	}
 
 	@Override
@@ -84,23 +86,29 @@ public class CarteexistanteScreen extends AbstractContainerScreen<Carteexistante
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 42, this.topPos + 79, 98, 20, Component.literal("J'ai une carte"), e -> {
+		button_jai_une_carte = new Button(this.leftPos + 42, this.topPos + 79, 98, 20, Component.translatable("gui.busutilities.carteexistante.button_jai_une_carte"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new CarteexistanteButtonMessage(0, x, y, z));
 				CarteexistanteButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 34, 129, 20, Component.literal("Je n'ai pas de carte"), e -> {
+		});
+		guistate.put("button:button_jai_une_carte", button_jai_une_carte);
+		this.addRenderableWidget(button_jai_une_carte);
+		button_je_nai_pas_de_carte = new Button(this.leftPos + 24, this.topPos + 34, 129, 20, Component.translatable("gui.busutilities.carteexistante.button_je_nai_pas_de_carte"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new CarteexistanteButtonMessage(1, x, y, z));
 				CarteexistanteButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.literal("X"), e -> {
+		});
+		guistate.put("button:button_je_nai_pas_de_carte", button_je_nai_pas_de_carte);
+		this.addRenderableWidget(button_je_nai_pas_de_carte);
+		button_x = new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.translatable("gui.busutilities.carteexistante.button_x"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new CarteexistanteButtonMessage(2, x, y, z));
 				CarteexistanteButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_x", button_x);
+		this.addRenderableWidget(button_x);
 	}
 }

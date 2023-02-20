@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,9 @@ public class StartFr6Screen extends AbstractContainerScreen<StartFr6Menu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_suite;
+	Button button_fermer;
+	Button button_retour;
 
 	public StartFr6Screen(StartFr6Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,13 +73,13 @@ public class StartFr6Screen extends AbstractContainerScreen<StartFr6Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Ticket d'urgence", 56, 7, -12829636);
-		this.font.draw(poseStack, "Toutefois si vous n'avez pas", 11, 25, -12829636);
-		this.font.draw(poseStack, "pu acheter de titre, une option", 11, 43, -12829636);
-		this.font.draw(poseStack, "est disponible pour vous !", 11, 61, -12829636);
-		this.font.draw(poseStack, "Le ticket d'urgence est", 11, 79, -12829636);
-		this.font.draw(poseStack, "comme un ticket 1 voyage mais", 11, 97, -12829636);
-		this.font.draw(poseStack, "factur\u00E9 au prix de 2 emeraudes", 11, 115, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_6.label_ticket_durgence"), 56, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_6.label_toutefois_si_vous_navez_pas"), 11, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_6.label_pu_acheter_de_titre_une_option"), 11, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_6.label_est_disponible_pour_vous"), 11, 61, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_6.label_le_ticket_durgence_est"), 11, 79, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_6.label_comme_un_ticket_1_voyage_mais"), 11, 97, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_6.label_facture_au_prix_de_2_emeraudes"), 11, 115, -12829636);
 	}
 
 	@Override
@@ -90,23 +92,29 @@ public class StartFr6Screen extends AbstractContainerScreen<StartFr6Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 146, this.topPos + 142, 51, 20, Component.literal("Suite"), e -> {
+		button_suite = new Button(this.leftPos + 146, this.topPos + 142, 51, 20, Component.translatable("gui.busutilities.start_fr_6.button_suite"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFr6ButtonMessage(0, x, y, z));
 				StartFr6ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 74, this.topPos + 142, 56, 20, Component.literal("Fermer"), e -> {
+		});
+		guistate.put("button:button_suite", button_suite);
+		this.addRenderableWidget(button_suite);
+		button_fermer = new Button(this.leftPos + 74, this.topPos + 142, 56, 20, Component.translatable("gui.busutilities.start_fr_6.button_fermer"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFr6ButtonMessage(1, x, y, z));
 				StartFr6ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 2, this.topPos + 142, 56, 20, Component.literal("Retour"), e -> {
+		});
+		guistate.put("button:button_fermer", button_fermer);
+		this.addRenderableWidget(button_fermer);
+		button_retour = new Button(this.leftPos + 2, this.topPos + 142, 56, 20, Component.translatable("gui.busutilities.start_fr_6.button_retour"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFr6ButtonMessage(2, x, y, z));
 				StartFr6ButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_retour", button_retour);
+		this.addRenderableWidget(button_retour);
 	}
 }

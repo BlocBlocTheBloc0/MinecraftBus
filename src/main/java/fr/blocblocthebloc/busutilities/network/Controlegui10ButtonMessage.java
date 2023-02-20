@@ -70,7 +70,6 @@ public class Controlegui10ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(Controlegui10ButtonMessage.class, Controlegui10ButtonMessage::buffer, Controlegui10ButtonMessage::new,
-				Controlegui10ButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(Controlegui10ButtonMessage.class, Controlegui10ButtonMessage::buffer, Controlegui10ButtonMessage::new, Controlegui10ButtonMessage::handler);
 	}
 }

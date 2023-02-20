@@ -70,7 +70,6 @@ public class GareGUI0ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(GareGUI0ButtonMessage.class, GareGUI0ButtonMessage::buffer, GareGUI0ButtonMessage::new,
-				GareGUI0ButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(GareGUI0ButtonMessage.class, GareGUI0ButtonMessage::buffer, GareGUI0ButtonMessage::new, GareGUI0ButtonMessage::handler);
 	}
 }

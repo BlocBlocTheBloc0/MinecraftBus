@@ -77,7 +77,6 @@ public class VerifBlocBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		VerifProcedureProcedure.execute(world, entity);
 		return InteractionResult.SUCCESS;
 	}

@@ -80,7 +80,6 @@ public class StartFr6ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(StartFr6ButtonMessage.class, StartFr6ButtonMessage::buffer, StartFr6ButtonMessage::new,
-				StartFr6ButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(StartFr6ButtonMessage.class, StartFr6ButtonMessage::buffer, StartFr6ButtonMessage::new, StartFr6ButtonMessage::handler);
 	}
 }

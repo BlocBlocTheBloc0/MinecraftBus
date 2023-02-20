@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -14,7 +13,6 @@ import java.util.HashMap;
 
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyAddGUIMenu;
 import fr.blocblocthebloc.busutilities.network.MoneyAddGUIButtonMessage;
-import fr.blocblocthebloc.busutilities.network.BusutilitiesModVariables;
 import fr.blocblocthebloc.busutilities.BusutilitiesMod;
 
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -25,6 +23,7 @@ public class MoneyAddGUIScreen extends AbstractContainerScreen<MoneyAddGUIMenu> 
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_ajouter;
 
 	public MoneyAddGUIScreen(MoneyAddGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -72,9 +71,8 @@ public class MoneyAddGUIScreen extends AbstractContainerScreen<MoneyAddGUIMenu> 
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Ajout de money", 51, 7, -12829636);
-		this.font.draw(poseStack, "Vous avez : " + ((entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new BusutilitiesModVariables.PlayerVariables())).Money) + " Money", 15, 61, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.money_add_gui.label_ajout_de_money"), 51, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.money_add_gui.label_vous_avez_varmoney_money"), 15, 61, -12829636);
 	}
 
 	@Override
@@ -87,11 +85,13 @@ public class MoneyAddGUIScreen extends AbstractContainerScreen<MoneyAddGUIMenu> 
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 78, this.topPos + 25, 61, 20, Component.literal("Ajouter"), e -> {
+		button_ajouter = new Button(this.leftPos + 78, this.topPos + 25, 61, 20, Component.translatable("gui.busutilities.money_add_gui.button_ajouter"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new MoneyAddGUIButtonMessage(0, x, y, z));
 				MoneyAddGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_ajouter", button_ajouter);
+		this.addRenderableWidget(button_ajouter);
 	}
 }

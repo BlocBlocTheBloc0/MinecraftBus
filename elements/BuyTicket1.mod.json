@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -13,13 +13,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": ">",
           "onClick": {
             "name": "BuyTicket3Acces"
           },
           "width": 30,
           "height": 20,
-          "name": ">",
           "x": 267,
           "y": 98
         }
@@ -27,12 +27,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Boutique Ticket 1 Voyage",
+          "name": "label_boutique_ticket_1_voyage",
+          "text": {
+            "fixedValue": "Boutique Ticket 1 Voyage"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Boutique Ticket 1 Voyage",
           "x": 150,
           "y": 44
         }
@@ -43,10 +45,14 @@
           "inputLimit": {
             "value": "Items.EMERALD"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 150,
           "y": 62
         }
@@ -54,13 +60,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_acheter",
           "text": "Acheter",
           "onClick": {
             "name": "BuyTicket1Verif"
           },
           "width": 61,
           "height": 20,
-          "name": "Acheter",
           "x": 177,
           "y": 62
         }
@@ -69,9 +75,10 @@
         "type": "outputslot",
         "data": {
           "id": 1,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #1",
           "x": 249,
           "y": 62
         }
@@ -79,12 +86,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Page 1/3",
+          "name": "label_page_13",
+          "text": {
+            "fixedValue": "Page 1/3"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Page 1/3",
           "x": 186,
           "y": 107
         }

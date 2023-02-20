@@ -75,7 +75,6 @@ public class BusUtilitiesCMDGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(BusUtilitiesCMDGUIButtonMessage.class, BusUtilitiesCMDGUIButtonMessage::buffer,
-				BusUtilitiesCMDGUIButtonMessage::new, BusUtilitiesCMDGUIButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(BusUtilitiesCMDGUIButtonMessage.class, BusUtilitiesCMDGUIButtonMessage::buffer, BusUtilitiesCMDGUIButtonMessage::new, BusUtilitiesCMDGUIButtonMessage::handler);
 	}
 }

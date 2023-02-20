@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Aide",
+          "name": "label_aide",
+          "text": {
+            "fixedValue": "Aide"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Aide",
           "x": 195,
           "y": 44
         }
@@ -26,13 +28,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_lignes",
           "text": "Lignes",
           "onClick": {
             "name": "LignesAcces"
           },
           "width": 56,
           "height": 20,
-          "name": "Lignes",
           "x": 132,
           "y": 62
         }
@@ -40,13 +42,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_tickets",
           "text": "Tickets",
           "onClick": {
             "name": "OpenAidt1"
           },
           "width": 61,
           "height": 20,
-          "name": "Tickets",
           "x": 231,
           "y": 62
         }
@@ -54,13 +56,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_lieu",
           "text": "Lieu",
           "onClick": {
             "name": "LieuGUIOpen"
           },
           "width": 46,
           "height": 20,
-          "name": "Lieu",
           "x": 132,
           "y": 89
         }
@@ -68,13 +70,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_money",
           "text": "Money",
           "onClick": {
             "name": "MoneyDemoOpen"
           },
           "width": 51,
           "height": 20,
-          "name": "Money",
           "x": 240,
           "y": 89
         }
@@ -82,10 +84,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_credits",
           "text": "Crédits",
+          "onClick": {
+            "name": "CreditsOpen"
+          },
           "width": 61,
           "height": 20,
-          "name": "Crédits",
           "x": 177,
           "y": 179
         }
@@ -93,10 +98,10 @@
       {
         "type": "button",
         "data": {
+          "name": "button_autre",
           "text": "Autre",
           "width": 51,
           "height": 20,
-          "name": "Autre",
           "x": 366,
           "y": 215
         }

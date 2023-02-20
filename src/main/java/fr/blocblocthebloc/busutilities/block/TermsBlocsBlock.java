@@ -77,7 +77,6 @@ public class TermsBlocsBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		TermsOpenProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}

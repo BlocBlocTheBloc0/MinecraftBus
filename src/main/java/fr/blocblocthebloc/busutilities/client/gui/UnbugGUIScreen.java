@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -12,7 +11,6 @@ import net.minecraft.client.Minecraft;
 import java.util.HashMap;
 
 import fr.blocblocthebloc.busutilities.world.inventory.UnbugGUIMenu;
-import fr.blocblocthebloc.busutilities.network.BusutilitiesModVariables;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -69,12 +67,9 @@ public class UnbugGUIScreen extends AbstractContainerScreen<UnbugGUIMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "" + ((entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new BusutilitiesModVariables.PlayerVariables())).CalcV1) + "", 54, 26, -12829636);
-		this.font.draw(poseStack, "" + ((entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new BusutilitiesModVariables.PlayerVariables())).CalcV2) + "", 50, 55, -12829636);
-		this.font.draw(poseStack, "" + ((entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new BusutilitiesModVariables.PlayerVariables())).CalcResult) + "", 44, 100, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.unbug_gui.label_varcalcv1"), 54, 26, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.unbug_gui.label_varcalcv2"), 50, 55, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.unbug_gui.label_varcalcresult"), 44, 100, -12829636);
 	}
 
 	@Override

@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -68,12 +67,12 @@ public class MoneyGUIDemoScreen extends AbstractContainerScreen<MoneyGUIDemoMenu
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Syst\u00E8me de Money", 42, 7, -12829636);
-		this.font.draw(poseStack, "Le syst\u00E8me agit comme un", 6, 25, -12829636);
-		this.font.draw(poseStack, "stockage d'\u00E9meraudes", 6, 43, -12829636);
-		this.font.draw(poseStack, "Vous pouvez ajouter et", 6, 61, -12829636);
-		this.font.draw(poseStack, "retirer des \u00E9meraude via", 6, 79, -12829636);
-		this.font.draw(poseStack, "la commande : /money", 6, 97, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.money_gui_demo.label_systeme_de_money"), 42, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.money_gui_demo.label_le_systeme_agit_comme_un"), 6, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.money_gui_demo.label_stockage_demeraudes"), 6, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.money_gui_demo.label_vous_pouvez_ajouter_et"), 6, 61, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.money_gui_demo.label_retirer_des_emeraude_via"), 6, 79, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.money_gui_demo.label_la_commande_money"), 6, 97, -12829636);
 	}
 
 	@Override

@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,8 @@ public class StartFrScreen extends AbstractContainerScreen<StartFrMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_suite;
+	Button button_fermer;
 
 	public StartFrScreen(StartFrMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,11 +72,11 @@ public class StartFrScreen extends AbstractContainerScreen<StartFrMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Bienvenue sur la map MinecraftBus !", 10, 5, -12829636);
-		this.font.draw(poseStack, "Sur cette map vous allez", 11, 25, -12829636);
-		this.font.draw(poseStack, "pouvoir exp\u00E9rimenter le syst\u00E8me", 11, 43, -12829636);
-		this.font.draw(poseStack, "de transport en commun sur Minecraft", 11, 61, -12829636);
-		this.font.draw(poseStack, "avec les trains du mod Create", 11, 79, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr.label_bienvenue_sur_la_map_minecraftbu"), 10, 5, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr.label_sur_cette_map_vous_allez"), 11, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr.label_pouvoir_experimenter_le_systeme"), 11, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr.label_de_transport_en_commun_sur_minec"), 11, 61, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr.label_avec_les_trains_du_mod_create"), 11, 79, -12829636);
 	}
 
 	@Override
@@ -88,17 +89,21 @@ public class StartFrScreen extends AbstractContainerScreen<StartFrMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 146, this.topPos + 142, 51, 20, Component.literal("Suite"), e -> {
+		button_suite = new Button(this.leftPos + 146, this.topPos + 142, 51, 20, Component.translatable("gui.busutilities.start_fr.button_suite"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFrButtonMessage(0, x, y, z));
 				StartFrButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 74, this.topPos + 142, 56, 20, Component.literal("Fermer"), e -> {
+		});
+		guistate.put("button:button_suite", button_suite);
+		this.addRenderableWidget(button_suite);
+		button_fermer = new Button(this.leftPos + 74, this.topPos + 142, 56, 20, Component.translatable("gui.busutilities.start_fr.button_fermer"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFrButtonMessage(1, x, y, z));
 				StartFrButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_fermer", button_fermer);
+		this.addRenderableWidget(button_fermer);
 	}
 }

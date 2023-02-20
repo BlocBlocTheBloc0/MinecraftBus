@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -26,6 +25,7 @@ public class TermsGUIScreen extends AbstractContainerScreen<TermsGUIMenu> {
 	private final int x, y, z;
 	private final Player entity;
 	Checkbox terms;
+	Button button_terminer;
 
 	public TermsGUIScreen(TermsGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -73,7 +73,7 @@ public class TermsGUIScreen extends AbstractContainerScreen<TermsGUIMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Acceptez-vous les termes ?", 15, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.terms_gui.label_acceptezvous_les_termes"), 15, 7, -12829636);
 	}
 
 	@Override
@@ -86,14 +86,16 @@ public class TermsGUIScreen extends AbstractContainerScreen<TermsGUIMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		terms = new Checkbox(this.leftPos + 33, this.topPos + 43, 20, 20, Component.literal("Lu et approuvé"), false);
-		guistate.put("checkbox:terms", terms);
-		this.addRenderableWidget(terms);
-		this.addRenderableWidget(new Button(this.leftPos + 51, this.topPos + 133, 67, 20, Component.literal("Terminer"), e -> {
+		button_terminer = new Button(this.leftPos + 51, this.topPos + 133, 67, 20, Component.translatable("gui.busutilities.terms_gui.button_terminer"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new TermsGUIButtonMessage(0, x, y, z));
 				TermsGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_terminer", button_terminer);
+		this.addRenderableWidget(button_terminer);
+		terms = new Checkbox(this.leftPos + 33, this.topPos + 43, 20, 20, Component.translatable("gui.busutilities.terms_gui.terms"), false);
+		guistate.put("checkbox:terms", terms);
+		this.addRenderableWidget(terms);
 	}
 }

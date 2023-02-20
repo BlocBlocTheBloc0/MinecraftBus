@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Coût : 8 Emeraudes",
+          "name": "label_cout_8_emeraudes",
+          "text": {
+            "fixedValue": "Coût : 8 Emeraudes"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Coût : 8 Emeraudes",
           "x": 24,
           "y": 62
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Temps de voyage : 1h",
+          "name": "label_temps_de_voyage_1h",
+          "text": {
+            "fixedValue": "Temps de voyage : 1h"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Temps de voyage : 1h",
           "x": 24,
           "y": 89
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Nombre de voyages : 10",
+          "name": "label_nombre_de_voyages_10",
+          "text": {
+            "fixedValue": "Nombre de voyages : 10"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Nombre de voyages : 10",
           "x": 24,
           "y": 116
         }
@@ -52,12 +58,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Lieu d'achat :",
+          "name": "label_lieu_dachat",
+          "text": {
+            "fixedValue": "Lieu d'achat :"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Lieu d'achat :",
           "x": 24,
           "y": 143
         }
@@ -65,12 +73,14 @@
       {
         "type": "label",
         "data": {
-          "text": "-Gare",
+          "name": "label_gare",
+          "text": {
+            "fixedValue": "-Gare"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "-Gare",
           "x": 33,
           "y": 161
         }
@@ -78,13 +88,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": "<",
           "onClick": {
             "name": "OpenAidT10"
           },
           "width": 30,
           "height": 20,
-          "name": "<",
           "x": 15,
           "y": 197
         }
@@ -92,12 +102,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Carte 10 Voyages",
+          "name": "label_carte_10_voyages",
+          "text": {
+            "fixedValue": "Carte 10 Voyages"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Carte 10 Voyages",
           "x": 33,
           "y": 35
         }
@@ -105,12 +117,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Carte Illimité",
+          "name": "label_carte_illimite",
+          "text": {
+            "fixedValue": "Carte Illimité"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Carte Illimité",
           "x": 177,
           "y": 35
         }
@@ -118,12 +132,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Coût : 64 Emeraudes",
+          "name": "label_cout_64_emeraudes",
+          "text": {
+            "fixedValue": "Coût : 64 Emeraudes"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Coût : 64 Emeraudes",
           "x": 159,
           "y": 62
         }
@@ -131,12 +147,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Temps de voyage : 1h",
+          "name": "label_temps_de_voyage_1h1",
+          "text": {
+            "fixedValue": "Temps de voyage : 1h"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Temps de voyage : 1h",
           "x": 159,
           "y": 89
         }
@@ -144,12 +162,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Nombre de voyages : ∞",
+          "name": "label_nombre_de_voyages",
+          "text": {
+            "fixedValue": "Nombre de voyages : ∞"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Nombre de voyages : ∞",
           "x": 159,
           "y": 116
         }
@@ -157,12 +177,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Lieu d'achat :",
+          "name": "label_lieu_dachat1",
+          "text": {
+            "fixedValue": "Lieu d'achat :"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Lieu d'achat :",
           "x": 159,
           "y": 143
         }
@@ -170,12 +192,14 @@
       {
         "type": "label",
         "data": {
-          "text": "-Gare",
+          "name": "label_gare1",
+          "text": {
+            "fixedValue": "-Gare"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "-Gare",
           "x": 168,
           "y": 161
         }
@@ -185,7 +209,6 @@
         "data": {
           "image": "carte_infite_voayge.png",
           "use1Xscale": false,
-          "name": "carte_infite_voayge.png",
           "x": 195,
           "y": 179
         }
@@ -193,12 +216,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Carte Essensiel",
+          "name": "label_carte_essensiel",
+          "text": {
+            "fixedValue": "Carte Essensiel"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Carte Essensiel",
           "x": 312,
           "y": 35
         }
@@ -206,12 +231,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Coût : 4 Emeraudes",
+          "name": "label_cout_4_emeraudes",
+          "text": {
+            "fixedValue": "Coût : 4 Emeraudes"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Coût : 4 Emeraudes",
           "x": 294,
           "y": 62
         }
@@ -219,12 +246,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Temps de voyage : 1h",
+          "name": "label_temps_de_voyage_1h2",
+          "text": {
+            "fixedValue": "Temps de voyage : 1h"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Temps de voyage : 1h",
           "x": 294,
           "y": 89
         }
@@ -232,12 +261,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Nombre de voyages : 5",
+          "name": "label_nombre_de_voyages_5",
+          "text": {
+            "fixedValue": "Nombre de voyages : 5"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Nombre de voyages : 5",
           "x": 294,
           "y": 116
         }
@@ -245,12 +276,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Lieu d'achat :",
+          "name": "label_lieu_dachat2",
+          "text": {
+            "fixedValue": "Lieu d'achat :"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Lieu d'achat :",
           "x": 294,
           "y": 143
         }
@@ -258,12 +291,14 @@
       {
         "type": "label",
         "data": {
-          "text": "-Gare",
+          "name": "label_gare2",
+          "text": {
+            "fixedValue": "-Gare"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "-Gare",
           "x": 303,
           "y": 161
         }

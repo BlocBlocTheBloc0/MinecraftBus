@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Lieu",
+          "name": "label_lieu",
+          "text": {
+            "fixedValue": "Lieu"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Lieu",
           "x": 204,
           "y": 26
         }
@@ -26,13 +28,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_gare",
           "text": "Gare",
           "onClick": {
             "name": "GareGUI0Open"
           },
           "width": 46,
           "height": 20,
-          "name": "Gare",
           "x": 96,
           "y": 44
         }
@@ -40,13 +42,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_centre_logistique",
           "text": "Centre Logistique",
           "onClick": {
             "name": "CLOpen0"
           },
           "width": 114,
           "height": 20,
-          "name": "Centre Logistique",
           "x": 150,
           "y": 44
         }
@@ -54,13 +56,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_centre_administratif",
           "text": "Centre Administratif",
           "onClick": {
             "name": "CAOPEN0"
           },
           "width": 129,
           "height": 20,
-          "name": "Centre Administratif",
           "x": 96,
           "y": 71
         }
@@ -68,13 +70,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_magasin_usines",
           "text": "Magasin Usines",
           "onClick": {
             "name": "MUOPEN0"
           },
           "width": 98,
           "height": 20,
-          "name": "Magasin Usines",
           "x": 231,
           "y": 71
         }
@@ -82,13 +84,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_gare_centrale",
           "text": "Gare Centrale",
           "onClick": {
             "name": "CGOPEN0"
           },
           "width": 93,
           "height": 20,
-          "name": "Gare Centrale",
           "x": 222,
           "y": 98
         }
@@ -96,13 +98,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_centre_commercial",
           "text": "Centre Commercial",
           "onClick": {
             "name": "CCOPEN0"
           },
           "width": 114,
           "height": 20,
-          "name": "Centre Commercial",
           "x": 96,
           "y": 98
         }

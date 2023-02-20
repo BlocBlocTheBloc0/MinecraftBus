@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Debug Menu",
+          "name": "label_debug_menu",
+          "text": {
+            "fixedValue": "Debug Menu"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Debug Menu",
           "x": 186,
           "y": 44
         }
@@ -26,13 +28,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_exit",
           "text": "Exit",
           "onClick": {
             "name": "ExitGUI"
           },
           "width": 46,
           "height": 20,
-          "name": "Exit",
           "x": 249,
           "y": 179
         }
@@ -40,13 +42,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_server_cmds",
           "text": "Server CMDs",
           "onClick": {
             "name": "ServerCMDopenGUI"
           },
           "width": 82,
           "height": 20,
-          "name": "Server CMDs",
           "x": 168,
           "y": 98
         }
@@ -54,13 +56,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_busutilities_cmds",
           "text": "BusUtilities CMDs",
           "onClick": {
             "name": "BusUtilitiesCMDGUIopen"
           },
           "width": 114,
           "height": 20,
-          "name": "BusUtilities CMDs",
           "x": 150,
           "y": 62
         }
@@ -68,13 +70,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_maintenance_mode",
           "text": "Maintenance Mode",
           "onClick": {
             "name": "Maintenancemodopen"
           },
           "width": 108,
           "height": 20,
-          "name": "Maintenance Mode",
           "x": 159,
           "y": 134
         }

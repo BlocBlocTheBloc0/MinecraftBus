@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ public class CarteGUIScreen extends AbstractContainerScreen<CarteGUIMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
 
 	public CarteGUIScreen(CarteGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -75,24 +75,24 @@ public class CarteGUIScreen extends AbstractContainerScreen<CarteGUIMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Co\u00FBt : 8 Emeraudes", 10, 46, -12829636);
-		this.font.draw(poseStack, "Temps de voyage : 1h", 10, 73, -12829636);
-		this.font.draw(poseStack, "Nombre de voyages : 10", 10, 100, -12829636);
-		this.font.draw(poseStack, "Lieu d'achat :", 10, 127, -12829636);
-		this.font.draw(poseStack, "-Gare", 19, 145, -12829636);
-		this.font.draw(poseStack, "Carte 10 Voyages", 19, 19, -12829636);
-		this.font.draw(poseStack, "Carte Illimit\u00E9", 163, 19, -12829636);
-		this.font.draw(poseStack, "Co\u00FBt : 64 Emeraudes", 145, 46, -12829636);
-		this.font.draw(poseStack, "Temps de voyage : 1h", 145, 73, -12829636);
-		this.font.draw(poseStack, "Nombre de voyages : \u221E", 145, 100, -12829636);
-		this.font.draw(poseStack, "Lieu d'achat :", 145, 127, -12829636);
-		this.font.draw(poseStack, "-Gare", 154, 145, -12829636);
-		this.font.draw(poseStack, "Carte Essensiel", 298, 19, -12829636);
-		this.font.draw(poseStack, "Co\u00FBt : 4 Emeraudes", 280, 46, -12829636);
-		this.font.draw(poseStack, "Temps de voyage : 1h", 280, 73, -12829636);
-		this.font.draw(poseStack, "Nombre de voyages : 5", 280, 100, -12829636);
-		this.font.draw(poseStack, "Lieu d'achat :", 280, 127, -12829636);
-		this.font.draw(poseStack, "-Gare", 289, 145, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_cout_8_emeraudes"), 10, 46, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_temps_de_voyage_1h"), 10, 73, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_nombre_de_voyages_10"), 10, 100, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_lieu_dachat"), 10, 127, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_gare"), 19, 145, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_carte_10_voyages"), 19, 19, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_carte_illimite"), 163, 19, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_cout_64_emeraudes"), 145, 46, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_temps_de_voyage_1h1"), 145, 73, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_nombre_de_voyages"), 145, 100, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_lieu_dachat1"), 145, 127, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_gare1"), 154, 145, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_carte_essensiel"), 298, 19, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_cout_4_emeraudes"), 280, 46, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_temps_de_voyage_1h2"), 280, 73, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_nombre_de_voyages_5"), 280, 100, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_lieu_dachat2"), 280, 127, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.carte_gui.label_gare2"), 289, 145, -12829636);
 	}
 
 	@Override
@@ -105,11 +105,13 @@ public class CarteGUIScreen extends AbstractContainerScreen<CarteGUIMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 1, this.topPos + 181, 30, 20, Component.literal("<"), e -> {
+		button_empty = new Button(this.leftPos + 1, this.topPos + 181, 30, 20, Component.translatable("gui.busutilities.carte_gui.button_empty"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new CarteGUIButtonMessage(0, x, y, z));
 				CarteGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
 	}
 }

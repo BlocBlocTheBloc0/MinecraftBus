@@ -17,9 +17,7 @@ public class VerifCarteEProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof Player _playerHasItem
-				? _playerHasItem.getInventory().contains(new ItemStack(BusutilitiesModItems.CARTEDETRANSPORT_5.get()))
-				: false) {
+		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BusutilitiesModItems.CARTEDETRANSPORT_5.get())) : false) {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(BusutilitiesModItems.CARTEDETRANSPORT_4.get());
 				_setstack.setCount(1);
@@ -27,16 +25,14 @@ public class VerifCarteEProcedure {
 			}
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(BusutilitiesModItems.CARTEDETRANSPORT_5.get());
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-						_player.inventoryMenu.getCraftSlots());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			ControleVariableChangeProcedure.execute(world);
 			BusutilitiesModVariables.MapVariables.get(world).last_ticket_use_name = entity.getDisplayName().getString();
 			BusutilitiesModVariables.MapVariables.get(world).syncData(world);
 			BusutilitiesModVariables.MapVariables.get(world).last_ticket_use_text = "Carte type : Essential";
 			BusutilitiesModVariables.MapVariables.get(world).syncData(world);
-			BusutilitiesModVariables.MapVariables.get(world).last_ticket_use_date = new java.text.SimpleDateFormat("dd-MM-yyyy")
-					.format(Calendar.getInstance().getTime());
+			BusutilitiesModVariables.MapVariables.get(world).last_ticket_use_date = new java.text.SimpleDateFormat("dd-MM-yyyy").format(Calendar.getInstance().getTime());
 			BusutilitiesModVariables.MapVariables.get(world).syncData(world);
 			BusutilitiesModVariables.MapVariables.get(world).last_ticket_use_heure = Calendar.getInstance().getTime().toString();
 			BusutilitiesModVariables.MapVariables.get(world).syncData(world);

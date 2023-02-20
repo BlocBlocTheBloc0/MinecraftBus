@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Fonctions",
+          "name": "label_fonctions",
+          "text": {
+            "fixedValue": "Fonctions"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Fonctions",
           "x": 186,
           "y": 44
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Relie les lignes de A à F",
+          "name": "label_relie_les_lignes_de_a_a_f",
+          "text": {
+            "fixedValue": "Relie les lignes de A à F"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Relie les lignes de A à F",
           "x": 150,
           "y": 71
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Achat de tickets ou cartes",
+          "name": "label_achat_de_tickets_ou_cartes",
+          "text": {
+            "fixedValue": "Achat de tickets ou cartes"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Achat de tickets ou cartes",
           "x": 150,
           "y": 107
         }
@@ -52,13 +58,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": ">",
           "onClick": {
             "name": "GareGUI1Open"
           },
           "width": 30,
           "height": 20,
-          "name": ">",
           "x": 267,
           "y": 179
         }

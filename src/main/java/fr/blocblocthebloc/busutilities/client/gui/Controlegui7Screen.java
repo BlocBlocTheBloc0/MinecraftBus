@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -14,7 +13,6 @@ import java.util.HashMap;
 
 import fr.blocblocthebloc.busutilities.world.inventory.Controlegui7Menu;
 import fr.blocblocthebloc.busutilities.network.Controlegui7ButtonMessage;
-import fr.blocblocthebloc.busutilities.network.BusutilitiesModVariables;
 import fr.blocblocthebloc.busutilities.BusutilitiesMod;
 
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -25,6 +23,8 @@ public class Controlegui7Screen extends AbstractContainerScreen<Controlegui7Menu
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
+	Button button_empty1;
 
 	public Controlegui7Screen(Controlegui7Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -72,11 +72,11 @@ public class Controlegui7Screen extends AbstractContainerScreen<Controlegui7Menu
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "" + (BusutilitiesModVariables.MapVariables.get(world).ticket_use_name_6) + "", 37, 15, -12829636);
-		this.font.draw(poseStack, "" + (BusutilitiesModVariables.MapVariables.get(world).ticket_use_text_6) + "", 37, 51, -12829636);
-		this.font.draw(poseStack, "" + (BusutilitiesModVariables.MapVariables.get(world).ticket_use_date_6) + "", 37, 96, -12829636);
-		this.font.draw(poseStack, "" + (BusutilitiesModVariables.MapVariables.get(world).ticket_use_heure_6) + "", 37, 132, -12829636);
-		this.font.draw(poseStack, "Page 7/10", 91, 177, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.controlegui_7.label_varticket_use_name_6"), 37, 15, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.controlegui_7.label_varticket_use_text_6"), 37, 51, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.controlegui_7.label_varticket_use_date_6"), 37, 96, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.controlegui_7.label_varticket_use_heure_6"), 37, 132, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.controlegui_7.label_page_710"), 91, 177, -12829636);
 	}
 
 	@Override
@@ -89,17 +89,21 @@ public class Controlegui7Screen extends AbstractContainerScreen<Controlegui7Menu
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 10, this.topPos + 168, 30, 20, Component.literal("<"), e -> {
+		button_empty = new Button(this.leftPos + 10, this.topPos + 168, 30, 20, Component.translatable("gui.busutilities.controlegui_7.button_empty"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new Controlegui7ButtonMessage(0, x, y, z));
 				Controlegui7ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 181, this.topPos + 168, 30, 20, Component.literal(">"), e -> {
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
+		button_empty1 = new Button(this.leftPos + 181, this.topPos + 168, 30, 20, Component.translatable("gui.busutilities.controlegui_7.button_empty1"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new Controlegui7ButtonMessage(1, x, y, z));
 				Controlegui7ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_empty1", button_empty1);
+		this.addRenderableWidget(button_empty1);
 	}
 }

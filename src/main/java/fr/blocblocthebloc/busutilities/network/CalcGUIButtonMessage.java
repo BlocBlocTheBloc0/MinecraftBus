@@ -70,7 +70,6 @@ public class CalcGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(CalcGUIButtonMessage.class, CalcGUIButtonMessage::buffer, CalcGUIButtonMessage::new,
-				CalcGUIButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(CalcGUIButtonMessage.class, CalcGUIButtonMessage::buffer, CalcGUIButtonMessage::new, CalcGUIButtonMessage::handler);
 	}
 }

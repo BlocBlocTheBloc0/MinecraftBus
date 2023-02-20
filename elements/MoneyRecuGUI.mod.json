@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Distributeur de Money",
+          "name": "label_distributeur_de_money",
+          "text": {
+            "fixedValue": "Distributeur de Money"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Distributeur de Money",
           "x": 159,
           "y": 44
         }
@@ -26,13 +28,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_recuperer_1",
           "text": "Recuperer 1",
           "onClick": {
             "name": "MoneyRecup"
           },
           "width": 82,
           "height": 20,
-          "name": "Recuperer 1",
           "x": 168,
           "y": 98
         }
@@ -41,9 +43,10 @@
         "type": "outputslot",
         "data": {
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 204,
           "y": 62
         }
@@ -51,12 +54,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Vous avez : <VAR:Money> Money",
+          "name": "label_vous_avez_varmoney_money",
+          "text": {
+            "fixedValue": "Vous avez : <VAR:Money> Money"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Vous avez : <VAR:Money> Money",
           "x": 141,
           "y": 80
         }

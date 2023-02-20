@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Selecteur de boutique",
+          "name": "label_selecteur_de_boutique",
+          "text": {
+            "fixedValue": "Selecteur de boutique"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Selecteur de boutique",
           "x": 159,
           "y": 44
         }
@@ -26,13 +28,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_x",
           "text": "X",
           "onClick": {
             "name": "ExitGUI"
           },
           "width": 30,
           "height": 20,
-          "name": "X",
           "x": 267,
           "y": 179
         }
@@ -40,13 +42,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_boutique_de_tickets",
           "text": "Boutique de Tickets",
           "onClick": {
             "name": "BuyTicket1Acces"
           },
           "width": 124,
           "height": 20,
-          "name": "Boutique de Tickets",
           "x": 150,
           "y": 80
         }
@@ -54,10 +56,10 @@
       {
         "type": "button",
         "data": {
+          "name": "button_boutique_de_cartes",
           "text": "Boutique de Cartes",
           "width": 119,
           "height": 20,
-          "name": "Boutique de Cartes",
           "x": 150,
           "y": 134
         }
@@ -65,12 +67,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Désactivé",
+          "name": "label_desactive",
+          "text": {
+            "fixedValue": "Désactivé"
+          },
           "color": {
             "value": -3407872,
             "falpha": 0.0
           },
-          "name": "Désactivé",
           "x": 186,
           "y": 125
         }

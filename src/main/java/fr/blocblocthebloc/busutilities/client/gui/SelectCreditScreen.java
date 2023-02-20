@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,13 @@ public class SelectCreditScreen extends AbstractContainerScreen<SelectCreditMenu
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_la_map;
+	Button button_serveur;
+	Button button_busutilitiessoundsverif;
+	Button button_create;
+	Button button_jei;
+	Button button_the_one_probe;
+	Button button_optifine;
 
 	public SelectCreditScreen(SelectCreditMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,7 +77,7 @@ public class SelectCreditScreen extends AbstractContainerScreen<SelectCreditMenu
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Selection du cr\u00E9dit", 33, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.select_credit.label_selection_du_credit"), 33, 7, -12829636);
 	}
 
 	@Override
@@ -84,27 +90,61 @@ public class SelectCreditScreen extends AbstractContainerScreen<SelectCreditMenu
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 25, 56, 20, Component.literal("La Map"), e -> {
+		button_la_map = new Button(this.leftPos + 6, this.topPos + 25, 56, 20, Component.translatable("gui.busutilities.select_credit.button_la_map"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new SelectCreditButtonMessage(0, x, y, z));
 				SelectCreditButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 69, this.topPos + 25, 61, 20, Component.literal("Serveur"), e -> {
+		});
+		guistate.put("button:button_la_map", button_la_map);
+		this.addRenderableWidget(button_la_map);
+		button_serveur = new Button(this.leftPos + 69, this.topPos + 25, 61, 20, Component.translatable("gui.busutilities.select_credit.button_serveur"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new SelectCreditButtonMessage(1, x, y, z));
 				SelectCreditButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 52, 156, 20, Component.literal("BusUtilities/Sounds/Verif"), e -> {
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 79, 56, 20, Component.literal("Create"), e -> {
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 69, this.topPos + 79, 40, 20, Component.literal("JEI"), e -> {
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 106, 92, 20, Component.literal("The One Probe"), e -> {
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 133, 67, 20, Component.literal("Optifine"), e -> {
-		}));
+		});
+		guistate.put("button:button_serveur", button_serveur);
+		this.addRenderableWidget(button_serveur);
+		button_busutilitiessoundsverif = new Button(this.leftPos + 6, this.topPos + 52, 156, 20, Component.translatable("gui.busutilities.select_credit.button_busutilitiessoundsverif"), e -> {
+			if (true) {
+				BusutilitiesMod.PACKET_HANDLER.sendToServer(new SelectCreditButtonMessage(2, x, y, z));
+				SelectCreditButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		});
+		guistate.put("button:button_busutilitiessoundsverif", button_busutilitiessoundsverif);
+		this.addRenderableWidget(button_busutilitiessoundsverif);
+		button_create = new Button(this.leftPos + 6, this.topPos + 79, 56, 20, Component.translatable("gui.busutilities.select_credit.button_create"), e -> {
+			if (true) {
+				BusutilitiesMod.PACKET_HANDLER.sendToServer(new SelectCreditButtonMessage(3, x, y, z));
+				SelectCreditButtonMessage.handleButtonAction(entity, 3, x, y, z);
+			}
+		});
+		guistate.put("button:button_create", button_create);
+		this.addRenderableWidget(button_create);
+		button_jei = new Button(this.leftPos + 69, this.topPos + 79, 40, 20, Component.translatable("gui.busutilities.select_credit.button_jei"), e -> {
+			if (true) {
+				BusutilitiesMod.PACKET_HANDLER.sendToServer(new SelectCreditButtonMessage(4, x, y, z));
+				SelectCreditButtonMessage.handleButtonAction(entity, 4, x, y, z);
+			}
+		});
+		guistate.put("button:button_jei", button_jei);
+		this.addRenderableWidget(button_jei);
+		button_the_one_probe = new Button(this.leftPos + 6, this.topPos + 106, 92, 20, Component.translatable("gui.busutilities.select_credit.button_the_one_probe"), e -> {
+			if (true) {
+				BusutilitiesMod.PACKET_HANDLER.sendToServer(new SelectCreditButtonMessage(5, x, y, z));
+				SelectCreditButtonMessage.handleButtonAction(entity, 5, x, y, z);
+			}
+		});
+		guistate.put("button:button_the_one_probe", button_the_one_probe);
+		this.addRenderableWidget(button_the_one_probe);
+		button_optifine = new Button(this.leftPos + 6, this.topPos + 133, 67, 20, Component.translatable("gui.busutilities.select_credit.button_optifine"), e -> {
+			if (true) {
+				BusutilitiesMod.PACKET_HANDLER.sendToServer(new SelectCreditButtonMessage(6, x, y, z));
+				SelectCreditButtonMessage.handleButtonAction(entity, 6, x, y, z);
+			}
+		});
+		guistate.put("button:button_optifine", button_optifine);
+		this.addRenderableWidget(button_optifine);
 	}
 }

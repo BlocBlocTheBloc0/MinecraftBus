@@ -70,7 +70,6 @@ public class CAGUI1ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(CAGUI1ButtonMessage.class, CAGUI1ButtonMessage::buffer, CAGUI1ButtonMessage::new,
-				CAGUI1ButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(CAGUI1ButtonMessage.class, CAGUI1ButtonMessage::buffer, CAGUI1ButtonMessage::new, CAGUI1ButtonMessage::handler);
 	}
 }

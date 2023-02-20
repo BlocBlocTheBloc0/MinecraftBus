@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -14,7 +13,6 @@ import java.util.HashMap;
 
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyGUIMenu;
 import fr.blocblocthebloc.busutilities.network.MoneyGUIButtonMessage;
-import fr.blocblocthebloc.busutilities.network.BusutilitiesModVariables;
 import fr.blocblocthebloc.busutilities.BusutilitiesMod;
 
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -25,6 +23,9 @@ public class MoneyGUIScreen extends AbstractContainerScreen<MoneyGUIMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_x;
+	Button button_ajouter;
+	Button button_retirer;
 
 	public MoneyGUIScreen(MoneyGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -72,9 +73,8 @@ public class MoneyGUIScreen extends AbstractContainerScreen<MoneyGUIMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Money GUI", 60, 7, -12829636);
-		this.font.draw(poseStack, "Vous avez : " + ((entity.getCapability(BusutilitiesModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new BusutilitiesModVariables.PlayerVariables())).Money) + " Money", 15, 115, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.money_gui.label_money_gui"), 60, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.money_gui.label_vous_avez_varmoney_money"), 15, 115, -12829636);
 	}
 
 	@Override
@@ -87,23 +87,29 @@ public class MoneyGUIScreen extends AbstractContainerScreen<MoneyGUIMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.literal("X"), e -> {
+		button_x = new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.translatable("gui.busutilities.money_gui.button_x"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new MoneyGUIButtonMessage(0, x, y, z));
 				MoneyGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 51, this.topPos + 43, 61, 20, Component.literal("Ajouter"), e -> {
+		});
+		guistate.put("button:button_x", button_x);
+		this.addRenderableWidget(button_x);
+		button_ajouter = new Button(this.leftPos + 51, this.topPos + 43, 61, 20, Component.translatable("gui.busutilities.money_gui.button_ajouter"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new MoneyGUIButtonMessage(1, x, y, z));
 				MoneyGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 51, this.topPos + 88, 61, 20, Component.literal("Retirer"), e -> {
+		});
+		guistate.put("button:button_ajouter", button_ajouter);
+		this.addRenderableWidget(button_ajouter);
+		button_retirer = new Button(this.leftPos + 51, this.topPos + 88, 61, 20, Component.translatable("gui.busutilities.money_gui.button_retirer"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new MoneyGUIButtonMessage(2, x, y, z));
 				MoneyGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_retirer", button_retirer);
+		this.addRenderableWidget(button_retirer);
 	}
 }

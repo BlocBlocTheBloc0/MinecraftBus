@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,10 @@ public class ServerToolGUIScreen extends AbstractContainerScreen<ServerToolGUIMe
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_exit;
+	Button button_server_cmds;
+	Button button_busutilities_cmds;
+	Button button_maintenance_mode;
 
 	public ServerToolGUIScreen(ServerToolGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,7 +74,7 @@ public class ServerToolGUIScreen extends AbstractContainerScreen<ServerToolGUIMe
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Debug Menu", 60, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.server_tool_gui.label_debug_menu"), 60, 7, -12829636);
 	}
 
 	@Override
@@ -84,29 +87,37 @@ public class ServerToolGUIScreen extends AbstractContainerScreen<ServerToolGUIMe
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 123, this.topPos + 142, 46, 20, Component.literal("Exit"), e -> {
+		button_exit = new Button(this.leftPos + 123, this.topPos + 142, 46, 20, Component.translatable("gui.busutilities.server_tool_gui.button_exit"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new ServerToolGUIButtonMessage(0, x, y, z));
 				ServerToolGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 42, this.topPos + 61, 82, 20, Component.literal("Server CMDs"), e -> {
+		});
+		guistate.put("button:button_exit", button_exit);
+		this.addRenderableWidget(button_exit);
+		button_server_cmds = new Button(this.leftPos + 42, this.topPos + 61, 82, 20, Component.translatable("gui.busutilities.server_tool_gui.button_server_cmds"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new ServerToolGUIButtonMessage(1, x, y, z));
 				ServerToolGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 25, 114, 20, Component.literal("BusUtilities CMDs"), e -> {
+		});
+		guistate.put("button:button_server_cmds", button_server_cmds);
+		this.addRenderableWidget(button_server_cmds);
+		button_busutilities_cmds = new Button(this.leftPos + 24, this.topPos + 25, 114, 20, Component.translatable("gui.busutilities.server_tool_gui.button_busutilities_cmds"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new ServerToolGUIButtonMessage(2, x, y, z));
 				ServerToolGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 33, this.topPos + 97, 108, 20, Component.literal("Maintenance Mode"), e -> {
+		});
+		guistate.put("button:button_busutilities_cmds", button_busutilities_cmds);
+		this.addRenderableWidget(button_busutilities_cmds);
+		button_maintenance_mode = new Button(this.leftPos + 33, this.topPos + 97, 108, 20, Component.translatable("gui.busutilities.server_tool_gui.button_maintenance_mode"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new ServerToolGUIButtonMessage(3, x, y, z));
 				ServerToolGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_maintenance_mode", button_maintenance_mode);
+		this.addRenderableWidget(button_maintenance_mode);
 	}
 }

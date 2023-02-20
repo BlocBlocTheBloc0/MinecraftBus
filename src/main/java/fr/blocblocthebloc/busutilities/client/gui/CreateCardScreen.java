@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ public class CreateCardScreen extends AbstractContainerScreen<CreateCardMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_creer;
 
 	public CreateCardScreen(CreateCardMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,7 +71,7 @@ public class CreateCardScreen extends AbstractContainerScreen<CreateCardMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Cr\u00E9ation de la carte", 33, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.create_card.label_creation_de_la_carte"), 33, 7, -12829636);
 	}
 
 	@Override
@@ -84,11 +84,13 @@ public class CreateCardScreen extends AbstractContainerScreen<CreateCardMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 60, this.topPos + 61, 51, 20, Component.literal("Créer"), e -> {
+		button_creer = new Button(this.leftPos + 60, this.topPos + 61, 51, 20, Component.translatable("gui.busutilities.create_card.button_creer"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new CreateCardButtonMessage(0, x, y, z));
 				CreateCardButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_creer", button_creer);
+		this.addRenderableWidget(button_creer);
 	}
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,13 +13,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_suite",
           "text": "Suite",
           "onClick": {
             "name": "StartFrOp8"
           },
           "width": 51,
           "height": 20,
-          "name": "Suite",
           "x": 258,
           "y": 179
         }
@@ -27,13 +27,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_fermer",
           "text": "Fermer",
           "onClick": {
             "name": "ExitGUI"
           },
           "width": 56,
           "height": 20,
-          "name": "Fermer",
           "x": 186,
           "y": 179
         }
@@ -41,12 +41,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Ticket d'urgence",
+          "name": "label_ticket_durgence",
+          "text": {
+            "fixedValue": "Ticket d'urgence"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Ticket d'urgence",
           "x": 168,
           "y": 44
         }
@@ -54,13 +56,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_retour",
           "text": "Retour",
           "onClick": {
             "name": "StartFrOp6"
           },
           "width": 56,
           "height": 20,
-          "name": "Retour",
           "x": 114,
           "y": 179
         }
@@ -68,12 +70,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Vous pouvez acheté ce ticket",
+          "name": "label_vous_pouvez_achete_ce_ticket",
+          "text": {
+            "fixedValue": "Vous pouvez acheté ce ticket"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Vous pouvez acheté ce ticket",
           "x": 123,
           "y": 62
         }
@@ -81,12 +85,14 @@
       {
         "type": "label",
         "data": {
-          "text": "avec la commande :",
+          "name": "label_avec_la_commande",
+          "text": {
+            "fixedValue": "avec la commande :"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "avec la commande :",
           "x": 123,
           "y": 80
         }
@@ -94,12 +100,14 @@
       {
         "type": "label",
         "data": {
-          "text": "/ticket",
+          "name": "label_ticket",
+          "text": {
+            "fixedValue": "/ticket"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "/ticket",
           "x": 222,
           "y": 80
         }

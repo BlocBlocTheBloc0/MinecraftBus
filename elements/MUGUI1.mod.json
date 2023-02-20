@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Accès",
+          "name": "label_acces",
+          "text": {
+            "fixedValue": "Accès"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Accès",
           "x": 195,
           "y": 44
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Via les lignes",
+          "name": "label_via_les_lignes",
+          "text": {
+            "fixedValue": "Via les lignes"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Via les lignes",
           "x": 177,
           "y": 71
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "C, H et Expresse C",
+          "name": "label_c_h_et_expresse_c",
+          "text": {
+            "fixedValue": "C, H et Expresse C"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "C, H et Expresse C",
           "x": 168,
           "y": 98
         }
@@ -52,13 +58,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": "<",
           "onClick": {
             "name": "MUOPEN0"
           },
           "width": 30,
           "height": 20,
-          "name": "<",
           "x": 132,
           "y": 179
         }

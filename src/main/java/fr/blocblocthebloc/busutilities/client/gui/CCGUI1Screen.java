@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -22,6 +21,7 @@ public class CCGUI1Screen extends AbstractContainerScreen<CCGUI1Menu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
 
 	public CCGUI1Screen(CCGUI1Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -69,9 +69,9 @@ public class CCGUI1Screen extends AbstractContainerScreen<CCGUI1Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Acc\u00E8s", 69, 7, -12829636);
-		this.font.draw(poseStack, "Via les lignes", 51, 25, -12829636);
-		this.font.draw(poseStack, "D et Expresse B", 51, 52, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.ccgui_1.label_acces"), 69, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.ccgui_1.label_via_les_lignes"), 51, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.ccgui_1.label_d_et_expresse_b"), 51, 52, -12829636);
 	}
 
 	@Override
@@ -84,7 +84,9 @@ public class CCGUI1Screen extends AbstractContainerScreen<CCGUI1Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 142, 30, 20, Component.literal("<"), e -> {
-		}));
+		button_empty = new Button(this.leftPos + 6, this.topPos + 142, 30, 20, Component.translatable("gui.busutilities.ccgui_1.button_empty"), e -> {
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
 	}
 }

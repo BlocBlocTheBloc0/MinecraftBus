@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ public class GareGUI0Screen extends AbstractContainerScreen<GareGUI0Menu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
 
 	public GareGUI0Screen(GareGUI0Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,9 +71,9 @@ public class GareGUI0Screen extends AbstractContainerScreen<GareGUI0Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Fonctions", 60, 7, -12829636);
-		this.font.draw(poseStack, "Relie les lignes de A \u00E0 F", 24, 34, -12829636);
-		this.font.draw(poseStack, "Achat de tickets ou cartes", 24, 70, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.gare_gui_0.label_fonctions"), 60, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.gare_gui_0.label_relie_les_lignes_de_a_a_f"), 24, 34, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.gare_gui_0.label_achat_de_tickets_ou_cartes"), 24, 70, -12829636);
 	}
 
 	@Override
@@ -86,11 +86,13 @@ public class GareGUI0Screen extends AbstractContainerScreen<GareGUI0Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.literal(">"), e -> {
+		button_empty = new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.translatable("gui.busutilities.gare_gui_0.button_empty"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new GareGUI0ButtonMessage(0, x, y, z));
 				GareGUI0ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
 	}
 }

@@ -15,6 +15,7 @@ import fr.blocblocthebloc.busutilities.world.inventory.UnbugGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.Ticket3VGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.Ticket1VGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.Ticket10VGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.TheOneProbsGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.TermsGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.StartlangMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.StartFrMenu;
@@ -33,21 +34,25 @@ import fr.blocblocthebloc.busutilities.world.inventory.ServeurGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.ServerToolGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.ServerCMDGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.SelectCreditMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.OptifineGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.NewsGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyRecuGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyGUIDemoMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MoneyAddGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.ModsBusGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MapCreditGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MaintenanceModMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.MUGUI1Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.MUGUI0Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.LieuGUIMenu;
+import fr.blocblocthebloc.busutilities.world.inventory.JEIGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.HelpMenuMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.GareGUI1Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.GareGUI0Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.GCGUI1Menu;
 import fr.blocblocthebloc.busutilities.world.inventory.GCGUI0Menu;
+import fr.blocblocthebloc.busutilities.world.inventory.CreateGUIMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.CreateCardMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.ControleguiMenu;
 import fr.blocblocthebloc.busutilities.world.inventory.Controlegui9Menu;
@@ -80,104 +85,57 @@ import fr.blocblocthebloc.busutilities.BusutilitiesMod;
 
 public class BusutilitiesModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, BusutilitiesMod.MODID);
-	public static final RegistryObject<MenuType<ControleguiMenu>> CONTROLEGUI = REGISTRY.register("controlegui",
-			() -> IForgeMenuType.create(ControleguiMenu::new));
-	public static final RegistryObject<MenuType<Controlegui2Menu>> CONTROLEGUI_2 = REGISTRY.register("controlegui_2",
-			() -> IForgeMenuType.create(Controlegui2Menu::new));
-	public static final RegistryObject<MenuType<Controlegui3Menu>> CONTROLEGUI_3 = REGISTRY.register("controlegui_3",
-			() -> IForgeMenuType.create(Controlegui3Menu::new));
-	public static final RegistryObject<MenuType<Controlegui4Menu>> CONTROLEGUI_4 = REGISTRY.register("controlegui_4",
-			() -> IForgeMenuType.create(Controlegui4Menu::new));
-	public static final RegistryObject<MenuType<Controlegui5Menu>> CONTROLEGUI_5 = REGISTRY.register("controlegui_5",
-			() -> IForgeMenuType.create(Controlegui5Menu::new));
-	public static final RegistryObject<MenuType<ServerToolGUIMenu>> SERVER_TOOL_GUI = REGISTRY.register("server_tool_gui",
-			() -> IForgeMenuType.create(ServerToolGUIMenu::new));
-	public static final RegistryObject<MenuType<BusUtilitiesCMDGUIMenu>> BUS_UTILITIES_CMDGUI = REGISTRY.register("bus_utilities_cmdgui",
-			() -> IForgeMenuType.create(BusUtilitiesCMDGUIMenu::new));
-	public static final RegistryObject<MenuType<ServerCMDGUIMenu>> SERVER_CMDGUI = REGISTRY.register("server_cmdgui",
-			() -> IForgeMenuType.create(ServerCMDGUIMenu::new));
-	public static final RegistryObject<MenuType<Controlegui6Menu>> CONTROLEGUI_6 = REGISTRY.register("controlegui_6",
-			() -> IForgeMenuType.create(Controlegui6Menu::new));
-	public static final RegistryObject<MenuType<Controlegui7Menu>> CONTROLEGUI_7 = REGISTRY.register("controlegui_7",
-			() -> IForgeMenuType.create(Controlegui7Menu::new));
-	public static final RegistryObject<MenuType<Controlegui8Menu>> CONTROLEGUI_8 = REGISTRY.register("controlegui_8",
-			() -> IForgeMenuType.create(Controlegui8Menu::new));
-	public static final RegistryObject<MenuType<Controlegui9Menu>> CONTROLEGUI_9 = REGISTRY.register("controlegui_9",
-			() -> IForgeMenuType.create(Controlegui9Menu::new));
-	public static final RegistryObject<MenuType<Controlegui10Menu>> CONTROLEGUI_10 = REGISTRY.register("controlegui_10",
-			() -> IForgeMenuType.create(Controlegui10Menu::new));
-	public static final RegistryObject<MenuType<MaintenanceModMenu>> MAINTENANCE_MOD = REGISTRY.register("maintenance_mod",
-			() -> IForgeMenuType.create(MaintenanceModMenu::new));
-	public static final RegistryObject<MenuType<ShopchoixMenu>> SHOPCHOIX = REGISTRY.register("shopchoix",
-			() -> IForgeMenuType.create(ShopchoixMenu::new));
-	public static final RegistryObject<MenuType<BuyTicket1Menu>> BUY_TICKET_1 = REGISTRY.register("buy_ticket_1",
-			() -> IForgeMenuType.create(BuyTicket1Menu::new));
-	public static final RegistryObject<MenuType<BuyTicket3Menu>> BUY_TICKET_3 = REGISTRY.register("buy_ticket_3",
-			() -> IForgeMenuType.create(BuyTicket3Menu::new));
-	public static final RegistryObject<MenuType<BuyTicket10Menu>> BUY_TICKET_10 = REGISTRY.register("buy_ticket_10",
-			() -> IForgeMenuType.create(BuyTicket10Menu::new));
-	public static final RegistryObject<MenuType<CarteexistanteMenu>> CARTEEXISTANTE = REGISTRY.register("carteexistante",
-			() -> IForgeMenuType.create(CarteexistanteMenu::new));
-	public static final RegistryObject<MenuType<CreateCardMenu>> CREATE_CARD = REGISTRY.register("create_card",
-			() -> IForgeMenuType.create(CreateCardMenu::new));
-	public static final RegistryObject<MenuType<BuyCarte10Menu>> BUY_CARTE_10 = REGISTRY.register("buy_carte_10",
-			() -> IForgeMenuType.create(BuyCarte10Menu::new));
-	public static final RegistryObject<MenuType<BuyCarteEMenu>> BUY_CARTE_E = REGISTRY.register("buy_carte_e",
-			() -> IForgeMenuType.create(BuyCarteEMenu::new));
-	public static final RegistryObject<MenuType<BuyCarteIllimiteMenu>> BUY_CARTE_ILLIMITE = REGISTRY.register("buy_carte_illimite",
-			() -> IForgeMenuType.create(BuyCarteIllimiteMenu::new));
-	public static final RegistryObject<MenuType<MoneyGUIMenu>> MONEY_GUI = REGISTRY.register("money_gui",
-			() -> IForgeMenuType.create(MoneyGUIMenu::new));
-	public static final RegistryObject<MenuType<MoneyAddGUIMenu>> MONEY_ADD_GUI = REGISTRY.register("money_add_gui",
-			() -> IForgeMenuType.create(MoneyAddGUIMenu::new));
-	public static final RegistryObject<MenuType<MoneyRecuGUIMenu>> MONEY_RECU_GUI = REGISTRY.register("money_recu_gui",
-			() -> IForgeMenuType.create(MoneyRecuGUIMenu::new));
-	public static final RegistryObject<MenuType<BuyTicket1ExpressGUIMenu>> BUY_TICKET_1_EXPRESS_GUI = REGISTRY.register("buy_ticket_1_express_gui",
-			() -> IForgeMenuType.create(BuyTicket1ExpressGUIMenu::new));
+	public static final RegistryObject<MenuType<ControleguiMenu>> CONTROLEGUI = REGISTRY.register("controlegui", () -> IForgeMenuType.create(ControleguiMenu::new));
+	public static final RegistryObject<MenuType<Controlegui2Menu>> CONTROLEGUI_2 = REGISTRY.register("controlegui_2", () -> IForgeMenuType.create(Controlegui2Menu::new));
+	public static final RegistryObject<MenuType<Controlegui3Menu>> CONTROLEGUI_3 = REGISTRY.register("controlegui_3", () -> IForgeMenuType.create(Controlegui3Menu::new));
+	public static final RegistryObject<MenuType<Controlegui4Menu>> CONTROLEGUI_4 = REGISTRY.register("controlegui_4", () -> IForgeMenuType.create(Controlegui4Menu::new));
+	public static final RegistryObject<MenuType<Controlegui5Menu>> CONTROLEGUI_5 = REGISTRY.register("controlegui_5", () -> IForgeMenuType.create(Controlegui5Menu::new));
+	public static final RegistryObject<MenuType<ServerToolGUIMenu>> SERVER_TOOL_GUI = REGISTRY.register("server_tool_gui", () -> IForgeMenuType.create(ServerToolGUIMenu::new));
+	public static final RegistryObject<MenuType<BusUtilitiesCMDGUIMenu>> BUS_UTILITIES_CMDGUI = REGISTRY.register("bus_utilities_cmdgui", () -> IForgeMenuType.create(BusUtilitiesCMDGUIMenu::new));
+	public static final RegistryObject<MenuType<ServerCMDGUIMenu>> SERVER_CMDGUI = REGISTRY.register("server_cmdgui", () -> IForgeMenuType.create(ServerCMDGUIMenu::new));
+	public static final RegistryObject<MenuType<Controlegui6Menu>> CONTROLEGUI_6 = REGISTRY.register("controlegui_6", () -> IForgeMenuType.create(Controlegui6Menu::new));
+	public static final RegistryObject<MenuType<Controlegui7Menu>> CONTROLEGUI_7 = REGISTRY.register("controlegui_7", () -> IForgeMenuType.create(Controlegui7Menu::new));
+	public static final RegistryObject<MenuType<Controlegui8Menu>> CONTROLEGUI_8 = REGISTRY.register("controlegui_8", () -> IForgeMenuType.create(Controlegui8Menu::new));
+	public static final RegistryObject<MenuType<Controlegui9Menu>> CONTROLEGUI_9 = REGISTRY.register("controlegui_9", () -> IForgeMenuType.create(Controlegui9Menu::new));
+	public static final RegistryObject<MenuType<Controlegui10Menu>> CONTROLEGUI_10 = REGISTRY.register("controlegui_10", () -> IForgeMenuType.create(Controlegui10Menu::new));
+	public static final RegistryObject<MenuType<MaintenanceModMenu>> MAINTENANCE_MOD = REGISTRY.register("maintenance_mod", () -> IForgeMenuType.create(MaintenanceModMenu::new));
+	public static final RegistryObject<MenuType<ShopchoixMenu>> SHOPCHOIX = REGISTRY.register("shopchoix", () -> IForgeMenuType.create(ShopchoixMenu::new));
+	public static final RegistryObject<MenuType<BuyTicket1Menu>> BUY_TICKET_1 = REGISTRY.register("buy_ticket_1", () -> IForgeMenuType.create(BuyTicket1Menu::new));
+	public static final RegistryObject<MenuType<BuyTicket3Menu>> BUY_TICKET_3 = REGISTRY.register("buy_ticket_3", () -> IForgeMenuType.create(BuyTicket3Menu::new));
+	public static final RegistryObject<MenuType<BuyTicket10Menu>> BUY_TICKET_10 = REGISTRY.register("buy_ticket_10", () -> IForgeMenuType.create(BuyTicket10Menu::new));
+	public static final RegistryObject<MenuType<CarteexistanteMenu>> CARTEEXISTANTE = REGISTRY.register("carteexistante", () -> IForgeMenuType.create(CarteexistanteMenu::new));
+	public static final RegistryObject<MenuType<CreateCardMenu>> CREATE_CARD = REGISTRY.register("create_card", () -> IForgeMenuType.create(CreateCardMenu::new));
+	public static final RegistryObject<MenuType<BuyCarte10Menu>> BUY_CARTE_10 = REGISTRY.register("buy_carte_10", () -> IForgeMenuType.create(BuyCarte10Menu::new));
+	public static final RegistryObject<MenuType<BuyCarteEMenu>> BUY_CARTE_E = REGISTRY.register("buy_carte_e", () -> IForgeMenuType.create(BuyCarteEMenu::new));
+	public static final RegistryObject<MenuType<BuyCarteIllimiteMenu>> BUY_CARTE_ILLIMITE = REGISTRY.register("buy_carte_illimite", () -> IForgeMenuType.create(BuyCarteIllimiteMenu::new));
+	public static final RegistryObject<MenuType<MoneyGUIMenu>> MONEY_GUI = REGISTRY.register("money_gui", () -> IForgeMenuType.create(MoneyGUIMenu::new));
+	public static final RegistryObject<MenuType<MoneyAddGUIMenu>> MONEY_ADD_GUI = REGISTRY.register("money_add_gui", () -> IForgeMenuType.create(MoneyAddGUIMenu::new));
+	public static final RegistryObject<MenuType<MoneyRecuGUIMenu>> MONEY_RECU_GUI = REGISTRY.register("money_recu_gui", () -> IForgeMenuType.create(MoneyRecuGUIMenu::new));
+	public static final RegistryObject<MenuType<BuyTicket1ExpressGUIMenu>> BUY_TICKET_1_EXPRESS_GUI = REGISTRY.register("buy_ticket_1_express_gui", () -> IForgeMenuType.create(BuyTicket1ExpressGUIMenu::new));
 	public static final RegistryObject<MenuType<NewsGUIMenu>> NEWS_GUI = REGISTRY.register("news_gui", () -> IForgeMenuType.create(NewsGUIMenu::new));
-	public static final RegistryObject<MenuType<StartlangMenu>> STARTLANG = REGISTRY.register("startlang",
-			() -> IForgeMenuType.create(StartlangMenu::new));
+	public static final RegistryObject<MenuType<StartlangMenu>> STARTLANG = REGISTRY.register("startlang", () -> IForgeMenuType.create(StartlangMenu::new));
 	public static final RegistryObject<MenuType<StartFrMenu>> START_FR = REGISTRY.register("start_fr", () -> IForgeMenuType.create(StartFrMenu::new));
-	public static final RegistryObject<MenuType<StartFr0Menu>> START_FR_0 = REGISTRY.register("start_fr_0",
-			() -> IForgeMenuType.create(StartFr0Menu::new));
-	public static final RegistryObject<MenuType<StartFr1Menu>> START_FR_1 = REGISTRY.register("start_fr_1",
-			() -> IForgeMenuType.create(StartFr1Menu::new));
-	public static final RegistryObject<MenuType<StartFr2Menu>> START_FR_2 = REGISTRY.register("start_fr_2",
-			() -> IForgeMenuType.create(StartFr2Menu::new));
-	public static final RegistryObject<MenuType<StartFr3Menu>> START_FR_3 = REGISTRY.register("start_fr_3",
-			() -> IForgeMenuType.create(StartFr3Menu::new));
-	public static final RegistryObject<MenuType<StartFr4Menu>> START_FR_4 = REGISTRY.register("start_fr_4",
-			() -> IForgeMenuType.create(StartFr4Menu::new));
-	public static final RegistryObject<MenuType<StartFr5Menu>> START_FR_5 = REGISTRY.register("start_fr_5",
-			() -> IForgeMenuType.create(StartFr5Menu::new));
-	public static final RegistryObject<MenuType<StartFr6Menu>> START_FR_6 = REGISTRY.register("start_fr_6",
-			() -> IForgeMenuType.create(StartFr6Menu::new));
-	public static final RegistryObject<MenuType<StartFr7Menu>> START_FR_7 = REGISTRY.register("start_fr_7",
-			() -> IForgeMenuType.create(StartFr7Menu::new));
-	public static final RegistryObject<MenuType<StartFr8Menu>> START_FR_8 = REGISTRY.register("start_fr_8",
-			() -> IForgeMenuType.create(StartFr8Menu::new));
-	public static final RegistryObject<MenuType<StartFr9Menu>> START_FR_9 = REGISTRY.register("start_fr_9",
-			() -> IForgeMenuType.create(StartFr9Menu::new));
-	public static final RegistryObject<MenuType<HelpMenuMenu>> HELP_MENU = REGISTRY.register("help_menu",
-			() -> IForgeMenuType.create(HelpMenuMenu::new));
-	public static final RegistryObject<MenuType<Ticket1VGUIMenu>> TICKET_1_VGUI = REGISTRY.register("ticket_1_vgui",
-			() -> IForgeMenuType.create(Ticket1VGUIMenu::new));
-	public static final RegistryObject<MenuType<Ticket3VGUIMenu>> TICKET_3_VGUI = REGISTRY.register("ticket_3_vgui",
-			() -> IForgeMenuType.create(Ticket3VGUIMenu::new));
-	public static final RegistryObject<MenuType<Ticket10VGUIMenu>> TICKET_10_VGUI = REGISTRY.register("ticket_10_vgui",
-			() -> IForgeMenuType.create(Ticket10VGUIMenu::new));
-	public static final RegistryObject<MenuType<CarteGUIMenu>> CARTE_GUI = REGISTRY.register("carte_gui",
-			() -> IForgeMenuType.create(CarteGUIMenu::new));
+	public static final RegistryObject<MenuType<StartFr0Menu>> START_FR_0 = REGISTRY.register("start_fr_0", () -> IForgeMenuType.create(StartFr0Menu::new));
+	public static final RegistryObject<MenuType<StartFr1Menu>> START_FR_1 = REGISTRY.register("start_fr_1", () -> IForgeMenuType.create(StartFr1Menu::new));
+	public static final RegistryObject<MenuType<StartFr2Menu>> START_FR_2 = REGISTRY.register("start_fr_2", () -> IForgeMenuType.create(StartFr2Menu::new));
+	public static final RegistryObject<MenuType<StartFr3Menu>> START_FR_3 = REGISTRY.register("start_fr_3", () -> IForgeMenuType.create(StartFr3Menu::new));
+	public static final RegistryObject<MenuType<StartFr4Menu>> START_FR_4 = REGISTRY.register("start_fr_4", () -> IForgeMenuType.create(StartFr4Menu::new));
+	public static final RegistryObject<MenuType<StartFr5Menu>> START_FR_5 = REGISTRY.register("start_fr_5", () -> IForgeMenuType.create(StartFr5Menu::new));
+	public static final RegistryObject<MenuType<StartFr6Menu>> START_FR_6 = REGISTRY.register("start_fr_6", () -> IForgeMenuType.create(StartFr6Menu::new));
+	public static final RegistryObject<MenuType<StartFr7Menu>> START_FR_7 = REGISTRY.register("start_fr_7", () -> IForgeMenuType.create(StartFr7Menu::new));
+	public static final RegistryObject<MenuType<StartFr8Menu>> START_FR_8 = REGISTRY.register("start_fr_8", () -> IForgeMenuType.create(StartFr8Menu::new));
+	public static final RegistryObject<MenuType<StartFr9Menu>> START_FR_9 = REGISTRY.register("start_fr_9", () -> IForgeMenuType.create(StartFr9Menu::new));
+	public static final RegistryObject<MenuType<HelpMenuMenu>> HELP_MENU = REGISTRY.register("help_menu", () -> IForgeMenuType.create(HelpMenuMenu::new));
+	public static final RegistryObject<MenuType<Ticket1VGUIMenu>> TICKET_1_VGUI = REGISTRY.register("ticket_1_vgui", () -> IForgeMenuType.create(Ticket1VGUIMenu::new));
+	public static final RegistryObject<MenuType<Ticket3VGUIMenu>> TICKET_3_VGUI = REGISTRY.register("ticket_3_vgui", () -> IForgeMenuType.create(Ticket3VGUIMenu::new));
+	public static final RegistryObject<MenuType<Ticket10VGUIMenu>> TICKET_10_VGUI = REGISTRY.register("ticket_10_vgui", () -> IForgeMenuType.create(Ticket10VGUIMenu::new));
+	public static final RegistryObject<MenuType<CarteGUIMenu>> CARTE_GUI = REGISTRY.register("carte_gui", () -> IForgeMenuType.create(CarteGUIMenu::new));
 	public static final RegistryObject<MenuType<LieuGUIMenu>> LIEU_GUI = REGISTRY.register("lieu_gui", () -> IForgeMenuType.create(LieuGUIMenu::new));
-	public static final RegistryObject<MenuType<GareGUI0Menu>> GARE_GUI_0 = REGISTRY.register("gare_gui_0",
-			() -> IForgeMenuType.create(GareGUI0Menu::new));
-	public static final RegistryObject<MenuType<GareGUI1Menu>> GARE_GUI_1 = REGISTRY.register("gare_gui_1",
-			() -> IForgeMenuType.create(GareGUI1Menu::new));
+	public static final RegistryObject<MenuType<GareGUI0Menu>> GARE_GUI_0 = REGISTRY.register("gare_gui_0", () -> IForgeMenuType.create(GareGUI0Menu::new));
+	public static final RegistryObject<MenuType<GareGUI1Menu>> GARE_GUI_1 = REGISTRY.register("gare_gui_1", () -> IForgeMenuType.create(GareGUI1Menu::new));
 	public static final RegistryObject<MenuType<CalcGUIMenu>> CALC_GUI = REGISTRY.register("calc_gui", () -> IForgeMenuType.create(CalcGUIMenu::new));
-	public static final RegistryObject<MenuType<UnbugGUIMenu>> UNBUG_GUI = REGISTRY.register("unbug_gui",
-			() -> IForgeMenuType.create(UnbugGUIMenu::new));
-	public static final RegistryObject<MenuType<TermsGUIMenu>> TERMS_GUI = REGISTRY.register("terms_gui",
-			() -> IForgeMenuType.create(TermsGUIMenu::new));
+	public static final RegistryObject<MenuType<UnbugGUIMenu>> UNBUG_GUI = REGISTRY.register("unbug_gui", () -> IForgeMenuType.create(UnbugGUIMenu::new));
+	public static final RegistryObject<MenuType<TermsGUIMenu>> TERMS_GUI = REGISTRY.register("terms_gui", () -> IForgeMenuType.create(TermsGUIMenu::new));
 	public static final RegistryObject<MenuType<CLGUI0Menu>> CLGUI_0 = REGISTRY.register("clgui_0", () -> IForgeMenuType.create(CLGUI0Menu::new));
 	public static final RegistryObject<MenuType<CLGUI1Menu>> CLGUI_1 = REGISTRY.register("clgui_1", () -> IForgeMenuType.create(CLGUI1Menu::new));
 	public static final RegistryObject<MenuType<CAGUI0Menu>> CAGUI_0 = REGISTRY.register("cagui_0", () -> IForgeMenuType.create(CAGUI0Menu::new));
@@ -188,12 +146,13 @@ public class BusutilitiesModMenus {
 	public static final RegistryObject<MenuType<CCGUI1Menu>> CCGUI_1 = REGISTRY.register("ccgui_1", () -> IForgeMenuType.create(CCGUI1Menu::new));
 	public static final RegistryObject<MenuType<GCGUI0Menu>> GCGUI_0 = REGISTRY.register("gcgui_0", () -> IForgeMenuType.create(GCGUI0Menu::new));
 	public static final RegistryObject<MenuType<GCGUI1Menu>> GCGUI_1 = REGISTRY.register("gcgui_1", () -> IForgeMenuType.create(GCGUI1Menu::new));
-	public static final RegistryObject<MenuType<MoneyGUIDemoMenu>> MONEY_GUI_DEMO = REGISTRY.register("money_gui_demo",
-			() -> IForgeMenuType.create(MoneyGUIDemoMenu::new));
-	public static final RegistryObject<MenuType<SelectCreditMenu>> SELECT_CREDIT = REGISTRY.register("select_credit",
-			() -> IForgeMenuType.create(SelectCreditMenu::new));
-	public static final RegistryObject<MenuType<MapCreditGUIMenu>> MAP_CREDIT_GUI = REGISTRY.register("map_credit_gui",
-			() -> IForgeMenuType.create(MapCreditGUIMenu::new));
-	public static final RegistryObject<MenuType<ServeurGUIMenu>> SERVEUR_GUI = REGISTRY.register("serveur_gui",
-			() -> IForgeMenuType.create(ServeurGUIMenu::new));
+	public static final RegistryObject<MenuType<MoneyGUIDemoMenu>> MONEY_GUI_DEMO = REGISTRY.register("money_gui_demo", () -> IForgeMenuType.create(MoneyGUIDemoMenu::new));
+	public static final RegistryObject<MenuType<SelectCreditMenu>> SELECT_CREDIT = REGISTRY.register("select_credit", () -> IForgeMenuType.create(SelectCreditMenu::new));
+	public static final RegistryObject<MenuType<MapCreditGUIMenu>> MAP_CREDIT_GUI = REGISTRY.register("map_credit_gui", () -> IForgeMenuType.create(MapCreditGUIMenu::new));
+	public static final RegistryObject<MenuType<ServeurGUIMenu>> SERVEUR_GUI = REGISTRY.register("serveur_gui", () -> IForgeMenuType.create(ServeurGUIMenu::new));
+	public static final RegistryObject<MenuType<ModsBusGUIMenu>> MODS_BUS_GUI = REGISTRY.register("mods_bus_gui", () -> IForgeMenuType.create(ModsBusGUIMenu::new));
+	public static final RegistryObject<MenuType<CreateGUIMenu>> CREATE_GUI = REGISTRY.register("create_gui", () -> IForgeMenuType.create(CreateGUIMenu::new));
+	public static final RegistryObject<MenuType<JEIGUIMenu>> JEIGUI = REGISTRY.register("jeigui", () -> IForgeMenuType.create(JEIGUIMenu::new));
+	public static final RegistryObject<MenuType<TheOneProbsGUIMenu>> THE_ONE_PROBS_GUI = REGISTRY.register("the_one_probs_gui", () -> IForgeMenuType.create(TheOneProbsGUIMenu::new));
+	public static final RegistryObject<MenuType<OptifineGUIMenu>> OPTIFINE_GUI = REGISTRY.register("optifine_gui", () -> IForgeMenuType.create(OptifineGUIMenu::new));
 }

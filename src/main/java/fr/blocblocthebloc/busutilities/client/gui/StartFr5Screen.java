@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,9 @@ public class StartFr5Screen extends AbstractContainerScreen<StartFr5Menu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_suite;
+	Button button_fermer;
+	Button button_retour;
 
 	public StartFr5Screen(StartFr5Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,12 +73,12 @@ public class StartFr5Screen extends AbstractContainerScreen<StartFr5Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Choses \u00E0 savoir !", 56, 7, -12829636);
-		this.font.draw(poseStack, "La carte est au prix de 5 Emeraudes", 11, 25, -12829636);
-		this.font.draw(poseStack, "et est rechargeable que lorsque", 11, 43, -12829636);
-		this.font.draw(poseStack, "plus aucun voyages ne puisse", 11, 61, -12829636);
-		this.font.draw(poseStack, "\u00EAtre r\u00E9alis\u00E9", 11, 79, -12829636);
-		this.font.draw(poseStack, "Soyez vigilants !", 56, 106, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_5.label_choses_a_savoir"), 56, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_5.label_la_carte_est_au_prix_de_5_emerau"), 11, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_5.label_et_est_rechargeable_que_lorsque"), 11, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_5.label_plus_aucun_voyages_ne_puisse"), 11, 61, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_5.label_etre_realise"), 11, 79, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_5.label_soyez_vigilants"), 56, 106, -12829636);
 	}
 
 	@Override
@@ -89,23 +91,29 @@ public class StartFr5Screen extends AbstractContainerScreen<StartFr5Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 146, this.topPos + 142, 51, 20, Component.literal("Suite"), e -> {
+		button_suite = new Button(this.leftPos + 146, this.topPos + 142, 51, 20, Component.translatable("gui.busutilities.start_fr_5.button_suite"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFr5ButtonMessage(0, x, y, z));
 				StartFr5ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 74, this.topPos + 142, 56, 20, Component.literal("Fermer"), e -> {
+		});
+		guistate.put("button:button_suite", button_suite);
+		this.addRenderableWidget(button_suite);
+		button_fermer = new Button(this.leftPos + 74, this.topPos + 142, 56, 20, Component.translatable("gui.busutilities.start_fr_5.button_fermer"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFr5ButtonMessage(1, x, y, z));
 				StartFr5ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 2, this.topPos + 142, 56, 20, Component.literal("Retour"), e -> {
+		});
+		guistate.put("button:button_fermer", button_fermer);
+		this.addRenderableWidget(button_fermer);
+		button_retour = new Button(this.leftPos + 2, this.topPos + 142, 56, 20, Component.translatable("gui.busutilities.start_fr_5.button_retour"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFr5ButtonMessage(2, x, y, z));
 				StartFr5ButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_retour", button_retour);
+		this.addRenderableWidget(button_retour);
 	}
 }

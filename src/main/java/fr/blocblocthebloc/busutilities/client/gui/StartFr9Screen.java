@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,8 @@ public class StartFr9Screen extends AbstractContainerScreen<StartFr9Menu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_fermer;
+	Button button_retour;
 
 	public StartFr9Screen(StartFr9Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,12 +72,12 @@ public class StartFr9Screen extends AbstractContainerScreen<StartFr9Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Fin", 92, 7, -12829636);
-		this.font.draw(poseStack, "Si vous avez d'autre questions", 11, 25, -12829636);
-		this.font.draw(poseStack, "Faite la commande /aide ou", 11, 43, -12829636);
-		this.font.draw(poseStack, "rejoignez le serveur discord :", 11, 61, -12829636);
-		this.font.draw(poseStack, "*ID DISCORD*", 11, 79, -12829636);
-		this.font.draw(poseStack, "Bon jeu !", 79, 119, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_9.label_fin"), 92, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_9.label_si_vous_avez_dautre_questions"), 11, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_9.label_faite_la_commande_aide_ou"), 11, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_9.label_rejoignez_le_serveur_discord"), 11, 61, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_9.label_id_discord"), 11, 79, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.start_fr_9.label_bon_jeu"), 79, 119, -12829636);
 	}
 
 	@Override
@@ -89,17 +90,21 @@ public class StartFr9Screen extends AbstractContainerScreen<StartFr9Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 74, this.topPos + 142, 56, 20, Component.literal("Fermer"), e -> {
+		button_fermer = new Button(this.leftPos + 74, this.topPos + 142, 56, 20, Component.translatable("gui.busutilities.start_fr_9.button_fermer"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFr9ButtonMessage(0, x, y, z));
 				StartFr9ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 2, this.topPos + 142, 56, 20, Component.literal("Retour"), e -> {
+		});
+		guistate.put("button:button_fermer", button_fermer);
+		this.addRenderableWidget(button_fermer);
+		button_retour = new Button(this.leftPos + 2, this.topPos + 142, 56, 20, Component.translatable("gui.busutilities.start_fr_9.button_retour"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartFr9ButtonMessage(1, x, y, z));
 				StartFr9ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_retour", button_retour);
+		this.addRenderableWidget(button_retour);
 	}
 }

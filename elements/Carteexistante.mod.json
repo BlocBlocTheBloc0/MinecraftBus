@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Boutique Carte",
+          "name": "label_boutique_carte",
+          "text": {
+            "fixedValue": "Boutique Carte"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Boutique Carte",
           "x": 177,
           "y": 44
         }
@@ -26,13 +28,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_jai_une_carte",
           "text": "J'ai une carte",
           "onClick": {
             "name": "BuyCarte10Open"
           },
           "width": 98,
           "height": 20,
-          "name": "J'ai une carte",
           "x": 168,
           "y": 116
         }
@@ -40,13 +42,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_je_nai_pas_de_carte",
           "text": "Je n'ai pas de carte",
           "onClick": {
             "name": "CreateCardOpen"
           },
           "width": 129,
           "height": 20,
-          "name": "Je n'ai pas de carte",
           "x": 150,
           "y": 71
         }
@@ -54,13 +56,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_x",
           "text": "X",
           "onClick": {
             "name": "ExitGUI"
           },
           "width": 30,
           "height": 20,
-          "name": "X",
           "x": 267,
           "y": 179
         }

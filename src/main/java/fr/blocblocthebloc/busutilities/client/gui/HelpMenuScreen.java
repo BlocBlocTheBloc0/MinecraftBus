@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,12 @@ public class HelpMenuScreen extends AbstractContainerScreen<HelpMenuMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_lignes;
+	Button button_tickets;
+	Button button_lieu;
+	Button button_money;
+	Button button_credits;
+	Button button_autre;
 
 	public HelpMenuScreen(HelpMenuMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,7 +76,7 @@ public class HelpMenuScreen extends AbstractContainerScreen<HelpMenuMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Aide", 69, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.help_menu.label_aide"), 69, 7, -12829636);
 	}
 
 	@Override
@@ -84,33 +89,49 @@ public class HelpMenuScreen extends AbstractContainerScreen<HelpMenuMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 25, 56, 20, Component.literal("Lignes"), e -> {
+		button_lignes = new Button(this.leftPos + 6, this.topPos + 25, 56, 20, Component.translatable("gui.busutilities.help_menu.button_lignes"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new HelpMenuButtonMessage(0, x, y, z));
 				HelpMenuButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 105, this.topPos + 25, 61, 20, Component.literal("Tickets"), e -> {
+		});
+		guistate.put("button:button_lignes", button_lignes);
+		this.addRenderableWidget(button_lignes);
+		button_tickets = new Button(this.leftPos + 105, this.topPos + 25, 61, 20, Component.translatable("gui.busutilities.help_menu.button_tickets"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new HelpMenuButtonMessage(1, x, y, z));
 				HelpMenuButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 6, this.topPos + 52, 46, 20, Component.literal("Lieu"), e -> {
+		});
+		guistate.put("button:button_tickets", button_tickets);
+		this.addRenderableWidget(button_tickets);
+		button_lieu = new Button(this.leftPos + 6, this.topPos + 52, 46, 20, Component.translatable("gui.busutilities.help_menu.button_lieu"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new HelpMenuButtonMessage(2, x, y, z));
 				HelpMenuButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 114, this.topPos + 52, 51, 20, Component.literal("Money"), e -> {
+		});
+		guistate.put("button:button_lieu", button_lieu);
+		this.addRenderableWidget(button_lieu);
+		button_money = new Button(this.leftPos + 114, this.topPos + 52, 51, 20, Component.translatable("gui.busutilities.help_menu.button_money"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new HelpMenuButtonMessage(3, x, y, z));
 				HelpMenuButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 51, this.topPos + 142, 61, 20, Component.literal("Crédits"), e -> {
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 240, this.topPos + 178, 51, 20, Component.literal("Autre"), e -> {
-		}));
+		});
+		guistate.put("button:button_money", button_money);
+		this.addRenderableWidget(button_money);
+		button_credits = new Button(this.leftPos + 51, this.topPos + 142, 61, 20, Component.translatable("gui.busutilities.help_menu.button_credits"), e -> {
+			if (true) {
+				BusutilitiesMod.PACKET_HANDLER.sendToServer(new HelpMenuButtonMessage(4, x, y, z));
+				HelpMenuButtonMessage.handleButtonAction(entity, 4, x, y, z);
+			}
+		});
+		guistate.put("button:button_credits", button_credits);
+		this.addRenderableWidget(button_credits);
+		button_autre = new Button(this.leftPos + 240, this.topPos + 178, 51, 20, Component.translatable("gui.busutilities.help_menu.button_autre"), e -> {
+		});
+		guistate.put("button:button_autre", button_autre);
+		this.addRenderableWidget(button_autre);
 	}
 }

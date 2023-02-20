@@ -80,7 +80,6 @@ public class MaintenanceModButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(MaintenanceModButtonMessage.class, MaintenanceModButtonMessage::buffer, MaintenanceModButtonMessage::new,
-				MaintenanceModButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(MaintenanceModButtonMessage.class, MaintenanceModButtonMessage::buffer, MaintenanceModButtonMessage::new, MaintenanceModButtonMessage::handler);
 	}
 }

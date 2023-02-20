@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,13 +13,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_suite",
           "text": "Suite",
           "onClick": {
             "name": "StartFrOp7"
           },
           "width": 51,
           "height": 20,
-          "name": "Suite",
           "x": 258,
           "y": 179
         }
@@ -27,13 +27,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_fermer",
           "text": "Fermer",
           "onClick": {
             "name": "ExitGUI"
           },
           "width": 56,
           "height": 20,
-          "name": "Fermer",
           "x": 186,
           "y": 179
         }
@@ -41,12 +41,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Ticket d'urgence",
+          "name": "label_ticket_durgence",
+          "text": {
+            "fixedValue": "Ticket d'urgence"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Ticket d'urgence",
           "x": 168,
           "y": 44
         }
@@ -54,13 +56,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_retour",
           "text": "Retour",
           "onClick": {
             "name": "StartFrOp5"
           },
           "width": 56,
           "height": 20,
-          "name": "Retour",
           "x": 114,
           "y": 179
         }
@@ -68,12 +70,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Toutefois si vous n'avez pas",
+          "name": "label_toutefois_si_vous_navez_pas",
+          "text": {
+            "fixedValue": "Toutefois si vous n'avez pas"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Toutefois si vous n'avez pas",
           "x": 123,
           "y": 62
         }
@@ -81,12 +85,14 @@
       {
         "type": "label",
         "data": {
-          "text": "pu acheter de titre, une option",
+          "name": "label_pu_acheter_de_titre_une_option",
+          "text": {
+            "fixedValue": "pu acheter de titre, une option"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "pu acheter de titre, une option",
           "x": 123,
           "y": 80
         }
@@ -94,12 +100,14 @@
       {
         "type": "label",
         "data": {
-          "text": "est disponible pour vous !",
+          "name": "label_est_disponible_pour_vous",
+          "text": {
+            "fixedValue": "est disponible pour vous !"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "est disponible pour vous !",
           "x": 123,
           "y": 98
         }
@@ -107,12 +115,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Le ticket d'urgence est",
+          "name": "label_le_ticket_durgence_est",
+          "text": {
+            "fixedValue": "Le ticket d'urgence est"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Le ticket d'urgence est",
           "x": 123,
           "y": 116
         }
@@ -120,12 +130,14 @@
       {
         "type": "label",
         "data": {
-          "text": "comme un ticket 1 voyage mais",
+          "name": "label_comme_un_ticket_1_voyage_mais",
+          "text": {
+            "fixedValue": "comme un ticket 1 voyage mais"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "comme un ticket 1 voyage mais",
           "x": 123,
           "y": 134
         }
@@ -133,12 +145,14 @@
       {
         "type": "label",
         "data": {
-          "text": "facturé au prix de 2 emeraudes",
+          "name": "label_facture_au_prix_de_2_emeraudes",
+          "text": {
+            "fixedValue": "facturé au prix de 2 emeraudes"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "facturé au prix de 2 emeraudes",
           "x": 123,
           "y": 152
         }

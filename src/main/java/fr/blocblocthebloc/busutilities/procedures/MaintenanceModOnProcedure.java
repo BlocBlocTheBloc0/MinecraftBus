@@ -25,8 +25,7 @@ public class MaintenanceModOnProcedure {
 				_player.displayClientMessage(Component.literal("Le mode maintenance est d\u00E9j\u00E0 activ\u00E9"), (false));
 		} else {
 			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO,
-						_level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "whitelist on");
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "whitelist on");
 			BusutilitiesMod.queueServerWork(20, () -> {
 				if (!world.isClientSide()) {
 					MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
@@ -105,8 +104,8 @@ public class MaintenanceModOnProcedure {
 				}
 			});
 			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO,
-						_level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "kick @a Maintenance du serveur");
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						"kick @a Maintenance du serveur");
 			BusutilitiesModVariables.MapVariables.get(world).Maintenace_Mode = "On";
 			BusutilitiesModVariables.MapVariables.get(world).syncData(world);
 		}

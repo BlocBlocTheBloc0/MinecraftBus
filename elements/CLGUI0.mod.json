@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Fonctions",
+          "name": "label_fonctions",
+          "text": {
+            "fixedValue": "Fonctions"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Fonctions",
           "x": 186,
           "y": 44
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Lieu de génération d'argent",
+          "name": "label_lieu_de_generation_dargent",
+          "text": {
+            "fixedValue": "Lieu de génération d'argent"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Lieu de génération d'argent",
           "x": 141,
           "y": 62
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "avec des Calcules Blocs",
+          "name": "label_avec_des_calcules_blocs",
+          "text": {
+            "fixedValue": "avec des Calcules Blocs"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "avec des Calcules Blocs",
           "x": 150,
           "y": 80
         }
@@ -52,13 +58,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": ">",
           "onClick": {
             "name": "CLOpen1"
           },
           "width": 30,
           "height": 20,
-          "name": ">",
           "x": 267,
           "y": 179
         }

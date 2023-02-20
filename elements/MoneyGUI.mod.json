@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Money GUI",
+          "name": "label_money_gui",
+          "text": {
+            "fixedValue": "Money GUI"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Money GUI",
           "x": 186,
           "y": 44
         }
@@ -26,13 +28,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_x",
           "text": "X",
           "onClick": {
             "name": "ExitGUI"
           },
           "width": 30,
           "height": 20,
-          "name": "X",
           "x": 267,
           "y": 179
         }
@@ -40,13 +42,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_ajouter",
           "text": "Ajouter",
           "onClick": {
             "name": "MoneyAddopen"
           },
           "width": 61,
           "height": 20,
-          "name": "Ajouter",
           "x": 177,
           "y": 80
         }
@@ -54,13 +56,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_retirer",
           "text": "Retirer",
           "onClick": {
             "name": "MoneyRecuAddopen"
           },
           "width": 61,
           "height": 20,
-          "name": "Retirer",
           "x": 177,
           "y": 125
         }
@@ -68,12 +70,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Vous avez : <VAR:Money> Money",
+          "name": "label_vous_avez_varmoney_money",
+          "text": {
+            "fixedValue": "Vous avez : <VAR:Money> Money"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Vous avez : <VAR:Money> Money",
           "x": 141,
           "y": 152
         }

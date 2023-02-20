@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Ajout de money",
+          "name": "label_ajout_de_money",
+          "text": {
+            "fixedValue": "Ajout de money"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Ajout de money",
           "x": 177,
           "y": 44
         }
@@ -29,10 +31,14 @@
           "inputLimit": {
             "value": "Items.EMERALD"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 159,
           "y": 62
         }
@@ -40,12 +46,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Vous avez : <VAR:Money> Money",
+          "name": "label_vous_avez_varmoney_money",
+          "text": {
+            "fixedValue": "Vous avez : <VAR:Money> Money"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Vous avez : <VAR:Money> Money",
           "x": 141,
           "y": 98
         }
@@ -53,13 +61,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_ajouter",
           "text": "Ajouter",
           "onClick": {
             "name": "MoneyAdd"
           },
           "width": 61,
           "height": 20,
-          "name": "Ajouter",
           "x": 204,
           "y": 62
         }

@@ -75,7 +75,6 @@ public class BuyCarte10ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(BuyCarte10ButtonMessage.class, BuyCarte10ButtonMessage::buffer, BuyCarte10ButtonMessage::new,
-				BuyCarte10ButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(BuyCarte10ButtonMessage.class, BuyCarte10ButtonMessage::buffer, BuyCarte10ButtonMessage::new, BuyCarte10ButtonMessage::handler);
 	}
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Maintenance GUI",
+          "name": "label_maintenance_gui",
+          "text": {
+            "fixedValue": "Maintenance GUI"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Maintenance GUI",
           "x": 168,
           "y": 44
         }
@@ -26,13 +28,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_x",
           "text": "X",
           "onClick": {
             "name": "ExitGUI"
           },
           "width": 30,
           "height": 20,
-          "name": "X",
           "x": 267,
           "y": 179
         }
@@ -40,12 +42,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Maintenance Mode is : ",
+          "name": "label_maintenance_mode_is",
+          "text": {
+            "fixedValue": "Maintenance Mode is : "
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Maintenance Mode is : ",
           "x": 141,
           "y": 62
         }
@@ -53,12 +57,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:Maintenace_Mode>",
+          "name": "label_varmaintenace_mode",
+          "text": {
+            "fixedValue": "<VAR:Maintenace_Mode>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:Maintenace_Mode>",
           "x": 258,
           "y": 62
         }
@@ -66,13 +72,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_set_to_on",
           "text": "Set to ON",
           "onClick": {
             "name": "MaintenanceModOn"
           },
           "width": 71,
           "height": 20,
-          "name": "Set to ON",
           "x": 177,
           "y": 89
         }
@@ -80,13 +86,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_set_to_off",
           "text": "Set to OFF",
           "onClick": {
             "name": "MaintenanceModOff"
           },
           "width": 77,
           "height": 20,
-          "name": "Set to OFF",
           "x": 177,
           "y": 134
         }

@@ -26,8 +26,7 @@ public class JoinEventProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player && !_player.level.isClientSide())
-			_player.displayClientMessage(Component.literal(("Bienvenue sur \u00A7cMinecraftBus \u00A7r" + entity.getDisplayName().getString())),
-					(false));
+			_player.displayClientMessage(Component.literal(("Bienvenue sur \u00A7cMinecraftBus \u00A7r" + entity.getDisplayName().getString())), (false));
 		if (entity instanceof Player _player && !_player.level.isClientSide())
 			_player.displayClientMessage(Component.literal("Si vous \u00EAtre nouveau faites /start"), (false));
 	}

@@ -70,7 +70,6 @@ public class BuyTicket1ExpressGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(BuyTicket1ExpressGUIButtonMessage.class, BuyTicket1ExpressGUIButtonMessage::buffer,
-				BuyTicket1ExpressGUIButtonMessage::new, BuyTicket1ExpressGUIButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(BuyTicket1ExpressGUIButtonMessage.class, BuyTicket1ExpressGUIButtonMessage::buffer, BuyTicket1ExpressGUIButtonMessage::new, BuyTicket1ExpressGUIButtonMessage::handler);
 	}
 }

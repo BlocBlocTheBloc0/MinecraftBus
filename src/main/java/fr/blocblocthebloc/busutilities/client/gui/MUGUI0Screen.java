@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ public class MUGUI0Screen extends AbstractContainerScreen<MUGUI0Menu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
 
 	public MUGUI0Screen(MUGUI0Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,9 +71,9 @@ public class MUGUI0Screen extends AbstractContainerScreen<MUGUI0Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Fonctions", 60, 7, -12829636);
-		this.font.draw(poseStack, "Achat de cosmetiques", 33, 25, -12829636);
-		this.font.draw(poseStack, "de type vetements", 42, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.mugui_0.label_fonctions"), 60, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.mugui_0.label_achat_de_cosmetiques"), 33, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.mugui_0.label_de_type_vetements"), 42, 43, -12829636);
 	}
 
 	@Override
@@ -86,11 +86,13 @@ public class MUGUI0Screen extends AbstractContainerScreen<MUGUI0Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.literal(">"), e -> {
+		button_empty = new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.translatable("gui.busutilities.mugui_0.button_empty"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new MUGUI0ButtonMessage(0, x, y, z));
 				MUGUI0ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
 	}
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Accès",
+          "name": "label_acces",
+          "text": {
+            "fixedValue": "Accès"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Accès",
           "x": 195,
           "y": 44
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Via les lignes :",
+          "name": "label_via_les_lignes",
+          "text": {
+            "fixedValue": "Via les lignes :"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Via les lignes :",
           "x": 168,
           "y": 62
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "A, B, C, D, E et F",
+          "name": "label_a_b_c_d_e_et_f",
+          "text": {
+            "fixedValue": "A, B, C, D, E et F"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "A, B, C, D, E et F",
           "x": 159,
           "y": 80
         }
@@ -52,13 +58,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": "<",
           "onClick": {
             "name": "GareGUI0Open"
           },
           "width": 30,
           "height": 20,
-          "name": "<",
           "x": 132,
           "y": 179
         }

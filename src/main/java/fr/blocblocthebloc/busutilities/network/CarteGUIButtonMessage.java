@@ -70,7 +70,6 @@ public class CarteGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BusutilitiesMod.addNetworkMessage(CarteGUIButtonMessage.class, CarteGUIButtonMessage::buffer, CarteGUIButtonMessage::new,
-				CarteGUIButtonMessage::handler);
+		BusutilitiesMod.addNetworkMessage(CarteGUIButtonMessage.class, CarteGUIButtonMessage::buffer, CarteGUIButtonMessage::new, CarteGUIButtonMessage::handler);
 	}
 }

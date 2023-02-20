@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:ticket_use_name_4>",
+          "name": "label_varticket_use_name_4",
+          "text": {
+            "fixedValue": "<VAR:ticket_use_name_4>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:ticket_use_name_4>",
           "x": 141,
           "y": 35
         }
@@ -26,12 +28,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:ticket_use_text_4>",
+          "name": "label_varticket_use_text_4",
+          "text": {
+            "fixedValue": "<VAR:ticket_use_text_4>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:ticket_use_text_4>",
           "x": 141,
           "y": 71
         }
@@ -39,12 +43,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:ticket_use_date_4>",
+          "name": "label_varticket_use_date_4",
+          "text": {
+            "fixedValue": "<VAR:ticket_use_date_4>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:ticket_use_date_4>",
           "x": 141,
           "y": 116
         }
@@ -52,12 +58,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:ticket_use_heure_4>",
+          "name": "label_varticket_use_heure_4",
+          "text": {
+            "fixedValue": "<VAR:ticket_use_heure_4>"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:ticket_use_heure_4>",
           "x": 141,
           "y": 152
         }
@@ -65,12 +73,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Page 5/10",
+          "name": "label_page_510",
+          "text": {
+            "fixedValue": "Page 5/10"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Page 5/10",
           "x": 195,
           "y": 197
         }
@@ -78,13 +88,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": "<",
           "onClick": {
             "name": "Controlecmdopengui4"
           },
           "width": 30,
           "height": 20,
-          "name": "<",
           "x": 114,
           "y": 188
         }
@@ -92,13 +102,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty1",
           "text": ">",
           "onClick": {
             "name": "Controlecmdopengui6"
           },
           "width": 30,
           "height": 20,
-          "name": ">",
           "x": 285,
           "y": 188
         }

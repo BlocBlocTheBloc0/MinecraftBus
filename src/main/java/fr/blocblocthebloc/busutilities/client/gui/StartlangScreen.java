@@ -1,4 +1,3 @@
-
 package fr.blocblocthebloc.busutilities.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,9 @@ public class StartlangScreen extends AbstractContainerScreen<StartlangMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_x;
+	Button button_fra;
+	Button button_eng;
 
 	public StartlangScreen(StartlangMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,7 +73,7 @@ public class StartlangScreen extends AbstractContainerScreen<StartlangMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Select your lang", 42, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.busutilities.startlang.label_select_your_lang"), 42, 7, -12829636);
 	}
 
 	@Override
@@ -84,23 +86,29 @@ public class StartlangScreen extends AbstractContainerScreen<StartlangMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.literal("X"), e -> {
+		button_x = new Button(this.leftPos + 141, this.topPos + 142, 30, 20, Component.translatable("gui.busutilities.startlang.button_x"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartlangButtonMessage(0, x, y, z));
 				StartlangButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 34, 35, 20, Component.literal("FRA"), e -> {
+		});
+		guistate.put("button:button_x", button_x);
+		this.addRenderableWidget(button_x);
+		button_fra = new Button(this.leftPos + 24, this.topPos + 34, 35, 20, Component.translatable("gui.busutilities.startlang.button_fra"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartlangButtonMessage(1, x, y, z));
 				StartlangButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 114, this.topPos + 34, 40, 20, Component.literal("ENG"), e -> {
+		});
+		guistate.put("button:button_fra", button_fra);
+		this.addRenderableWidget(button_fra);
+		button_eng = new Button(this.leftPos + 114, this.topPos + 34, 40, 20, Component.translatable("gui.busutilities.startlang.button_eng"), e -> {
 			if (true) {
 				BusutilitiesMod.PACKET_HANDLER.sendToServer(new StartlangButtonMessage(2, x, y, z));
 				StartlangButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_eng", button_eng);
+		this.addRenderableWidget(button_eng);
 	}
 }

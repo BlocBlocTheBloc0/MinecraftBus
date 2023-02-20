@@ -79,7 +79,7 @@ public class MoneyAddGUIMenu extends AbstractContainerMenu implements Supplier<M
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 34, 26) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (Items.EMERALD == stack.getItem());
+				return Items.EMERALD == stack.getItem();
 			}
 		}));
 		for (int si = 0; si < 3; ++si)

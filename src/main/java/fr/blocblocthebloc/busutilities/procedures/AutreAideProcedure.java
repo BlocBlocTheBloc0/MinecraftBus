@@ -9,7 +9,6 @@ public class AutreAideProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player && !_player.level.isClientSide())
-			_player.displayClientMessage(Component.literal("Posez vos question sur notre serveur discord ! https://www.discord.gg/********"),
-					(false));
+			_player.displayClientMessage(Component.literal("Posez vos question sur notre serveur discord ! https://www.discord.gg/********"), (false));
 	}
 }
