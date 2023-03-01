@@ -6,6 +6,6 @@
     "icon": {
       "value": "CUSTOM:PlaceCampagne"
     },
-    "showSearch": false
+    "showSearch": true
   }
 }

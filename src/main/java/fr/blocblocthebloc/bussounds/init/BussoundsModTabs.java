@@ -19,8 +19,8 @@ public class BussoundsModTabs {
 
 			@Override
 			public boolean hasSearchBar() {
-				return false;
+				return true;
 			}
-		};
+		}.setBackgroundSuffix("item_search.png");
 	}
 }
